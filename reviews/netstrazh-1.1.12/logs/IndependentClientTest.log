@@ -1,0 +1,44 @@
+INSTRUMENTATION_STATUS: class=lab.netstrazh.IndependentClientTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+lab.netstrazh.IndependentClientTest:
+INSTRUMENTATION_STATUS: test=independentUidRemainsCapturedAfterPowerCycle
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.IndependentClientTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: restarted exact payload and VPN source: ComparisonFailure: TCP source address must prove VPN routing expected:<10.[111.0.1]> but was:<10.[0.2.16]>
+restarted fresh capture: AssertionError: timeout waiting for restarted new external UID capture and counters
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at lab.netstrazh.IndependentClientTest.independentUidRemainsCapturedAfterPowerCycle(IndependentClientTest.kt:202)
+
+INSTRUMENTATION_STATUS: stream=
+Error in independentUidRemainsCapturedAfterPowerCycle(lab.netstrazh.IndependentClientTest):
+java.lang.AssertionError: restarted exact payload and VPN source: ComparisonFailure: TCP source address must prove VPN routing expected:<10.[111.0.1]> but was:<10.[0.2.16]>
+restarted fresh capture: AssertionError: timeout waiting for restarted new external UID capture and counters
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at lab.netstrazh.IndependentClientTest.independentUidRemainsCapturedAfterPowerCycle(IndependentClientTest.kt:202)
+
+INSTRUMENTATION_STATUS: test=independentUidRemainsCapturedAfterPowerCycle
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 73.784
+There was 1 failure:
+1) independentUidRemainsCapturedAfterPowerCycle(lab.netstrazh.IndependentClientTest)
+java.lang.AssertionError: restarted exact payload and VPN source: ComparisonFailure: TCP source address must prove VPN routing expected:<10.[111.0.1]> but was:<10.[0.2.16]>
+restarted fresh capture: AssertionError: timeout waiting for restarted new external UID capture and counters
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at lab.netstrazh.IndependentClientTest.independentUidRemainsCapturedAfterPowerCycle(IndependentClientTest.kt:202)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

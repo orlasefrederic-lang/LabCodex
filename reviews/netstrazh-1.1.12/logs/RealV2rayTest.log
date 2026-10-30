@@ -1,0 +1,164 @@
+INSTRUMENTATION_STATUS: class=lab.netstrazh.RealV2rayTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=7
+INSTRUMENTATION_STATUS: stream=
+lab.netstrazh.RealV2rayTest:
+INSTRUMENTATION_STATUS: test=t00_realProxyOwnerIsIdentifiedBeforeExclusion
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.RealV2rayTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=7
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=t00_realProxyOwnerIsIdentifiedBeforeExclusion
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=lab.netstrazh.RealV2rayTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=7
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=t01_realV2rayCarriesTcpAndPreservesAppAttribution
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.RealV2rayTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=7
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=t01_realV2rayCarriesTcpAndPreservesAppAttribution
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=lab.netstrazh.RealV2rayTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=7
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=t02_realV2rayCarriesUdpAndPreservesAppAttribution
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.RealV2rayTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=7
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=t02_realV2rayCarriesUdpAndPreservesAppAttribution
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=lab.netstrazh.RealV2rayTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=7
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=t03_lanTcpAndUdpBypassConfiguredProxy
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.RealV2rayTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=7
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=t03_lanTcpAndUdpBypassConfiguredProxy
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=lab.netstrazh.RealV2rayTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=7
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=t04_blockedTcpCannotReachV2rayAndUnblockingRestoresProxy
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.RealV2rayTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=7
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=t04_blockedTcpCannotReachV2rayAndUnblockingRestoresProxy
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=lab.netstrazh.RealV2rayTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=7
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=t05_blockedUdpCannotReachV2rayAndUnblockingRestoresProxy
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.RealV2rayTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=7
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=t05_blockedUdpCannotReachV2rayAndUnblockingRestoresProxy
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=lab.netstrazh.RealV2rayTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=7
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=t06_proxyAppDiscoveryRebuildsVpnAndRestoresTcpAndUdp
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.RealV2rayTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=7
+INSTRUMENTATION_STATUS: stack=java.net.ConnectException: failed to connect to /198.51.100.10 (port 18080) from /10.0.2.16 (port 42190) after 15000ms: isConnected failed: ECONNREFUSED (Connection refused)
+	at libcore.io.IoBridge.isConnected(IoBridge.java:288)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:193)
+	at libcore.io.IoBridge.connect(IoBridge.java:135)
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+	at java.net.Socket.connect(Socket.java:621)
+	at lab.netstrazh.RuntimeFixture.http(LocalRuntimeTest.kt:237)
+	at lab.netstrazh.RuntimeFixture.requireHttp(LocalRuntimeTest.kt:245)
+	at lab.netstrazh.RealV2rayTest.t06_proxyAppDiscoveryRebuildsVpnAndRestoresTcpAndUdp(RealV2rayTest.kt:199)
+	... 35 trimmed
+Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+	at libcore.io.IoBridge.isConnected(IoBridge.java:275)
+	... 47 more
+
+INSTRUMENTATION_STATUS: stream=
+Error in t06_proxyAppDiscoveryRebuildsVpnAndRestoresTcpAndUdp(lab.netstrazh.RealV2rayTest):
+java.net.ConnectException: failed to connect to /198.51.100.10 (port 18080) from /10.0.2.16 (port 42190) after 15000ms: isConnected failed: ECONNREFUSED (Connection refused)
+	at libcore.io.IoBridge.isConnected(IoBridge.java:288)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:193)
+	at libcore.io.IoBridge.connect(IoBridge.java:135)
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+	at java.net.Socket.connect(Socket.java:621)
+	at lab.netstrazh.RuntimeFixture.http(LocalRuntimeTest.kt:237)
+	at lab.netstrazh.RuntimeFixture.requireHttp(LocalRuntimeTest.kt:245)
+	at lab.netstrazh.RealV2rayTest.t06_proxyAppDiscoveryRebuildsVpnAndRestoresTcpAndUdp(RealV2rayTest.kt:199)
+	... 35 trimmed
+Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+	at libcore.io.IoBridge.isConnected(IoBridge.java:275)
+	... 47 more
+
+INSTRUMENTATION_STATUS: test=t06_proxyAppDiscoveryRebuildsVpnAndRestoresTcpAndUdp
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 41.43
+There was 1 failure:
+1) t06_proxyAppDiscoveryRebuildsVpnAndRestoresTcpAndUdp(lab.netstrazh.RealV2rayTest)
+java.net.ConnectException: failed to connect to /198.51.100.10 (port 18080) from /10.0.2.16 (port 42190) after 15000ms: isConnected failed: ECONNREFUSED (Connection refused)
+	at libcore.io.IoBridge.isConnected(IoBridge.java:288)
+	at libcore.io.IoBridge.connectErrno(IoBridge.java:193)
+	at libcore.io.IoBridge.connect(IoBridge.java:135)
+	at java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:142)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:390)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:230)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:212)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:436)
+	at java.net.Socket.connect(Socket.java:621)
+	at lab.netstrazh.RuntimeFixture.http(LocalRuntimeTest.kt:237)
+	at lab.netstrazh.RuntimeFixture.requireHttp(LocalRuntimeTest.kt:245)
+	at lab.netstrazh.RealV2rayTest.t06_proxyAppDiscoveryRebuildsVpnAndRestoresTcpAndUdp(RealV2rayTest.kt:199)
+	... 35 trimmed
+Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+	at libcore.io.IoBridge.isConnected(IoBridge.java:275)
+	... 47 more
+
+FAILURES!!!
+Tests run: 7,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

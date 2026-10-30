@@ -1,0 +1,53 @@
+initial launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+Status: ok
+LaunchState: COLD
+Activity: lab.netstrazh.reviewclient/.ProbeActivity
+TotalTime: 7170
+WaitTime: 7245
+Complete
+initial helper: {"marker":"client-initial-401132","package":"lab.netstrazh.reviewclient","uid":10119,"pid":3688,"processNonce":"13c3b2eb-0477-4d3a-87ed-fb0ea6055d6d","sequence":1,"startedMs":1793291483239,"networkBefore":{"active":"105","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-initial-401132 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":79,"ok":true,"localAddress":"10.111.0.1","localPort":46950,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Thu, 29 Oct 2026 16:31:24 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 36\r\nConnection: close\r\n\r\nnetstrazh-http:client-initial-401132","responseBytes":209,"payload":"netstrazh-http:client-initial-401132","finalLocalAddress":"10.111.0.1","finalLocalPort":46950,"durationMs":338},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-initial-401132","requestBytes":29,"ok":true,"localAddress":"10.111.0.1","localPort":38114,"response":"netstrazh-udp:ns-test:client-initial-401132","payload":"netstrazh-udp:ns-test:client-initial-401132","responseBytes":43,"durationMs":331},"networkAfter":{"active":"105","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1793291483985}
+initial exact payload and VPN source: PASS
+initial capture since=1793291476071 uid=10119 rows=[Seen(started=1793291483778, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=29, rx=43, blocked=false, via=), Seen(started=1793291483433, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=79, rx=209, blocked=false, via=)] before=Counters(tx=0, rx=0, connections=0) after=Counters(tx=108, rx=252, connections=2)
+initial fresh capture: PASS
+foreground main before power=false: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh/.ui.MainActivity
+TotalTime: 732
+WaitTime: 932
+Complete
+off launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh.reviewclient/.ProbeActivity
+TotalTime: 1735
+WaitTime: 2257
+Complete
+off helper: {"marker":"client-off-413367","package":"lab.netstrazh.reviewclient","uid":10119,"pid":3688,"processNonce":"13c3b2eb-0477-4d3a-87ed-fb0ea6055d6d","sequence":2,"startedMs":1793291489771,"networkBefore":{"active":"101","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::718b:b730:f956:45b6","10.0.2.16"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-off-413367 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":75,"ok":true,"localAddress":"10.0.2.16","localPort":52258,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Thu, 29 Oct 2026 16:31:31 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 32\r\nConnection: close\r\n\r\nnetstrazh-http:client-off-413367","responseBytes":205,"payload":"netstrazh-http:client-off-413367","finalLocalAddress":"10.0.2.16","finalLocalPort":52258,"durationMs":362},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-off-413367","requestBytes":25,"ok":true,"localAddress":"10.0.2.16","localPort":59965,"response":"netstrazh-udp:ns-test:client-off-413367","payload":"netstrazh-udp:ns-test:client-off-413367","responseBytes":39,"durationMs":80},"networkAfter":{"active":"101","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::718b:b730:f956:45b6","10.0.2.16"]},"finishedMs":1793291490814}
+off persistent helper process: PASS
+off exact payload and physical source: PASS
+off no fresh captured fixture flows: PASS
+foreground main before power=true: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh/.ui.MainActivity
+TotalTime: 982
+WaitTime: 1244
+Complete
+restarted launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh.reviewclient/.ProbeActivity
+TotalTime: 1019
+WaitTime: 1293
+Complete
+restarted helper: {"marker":"client-restarted-421347","package":"lab.netstrazh.reviewclient","uid":10119,"pid":3688,"processNonce":"13c3b2eb-0477-4d3a-87ed-fb0ea6055d6d","sequence":3,"startedMs":1793291498039,"networkBefore":{"active":"106","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-restarted-421347 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":81,"ok":true,"localAddress":"10.0.2.16","localPort":52260,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Thu, 29 Oct 2026 16:31:39 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 38\r\nConnection: close\r\n\r\nnetstrazh-http:client-restarted-421347","responseBytes":211,"payload":"netstrazh-http:client-restarted-421347","finalLocalAddress":"10.0.2.16","finalLocalPort":52260,"durationMs":362},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-restarted-421347","requestBytes":31,"ok":true,"localAddress":"10.0.2.16","localPort":50909,"response":"netstrazh-udp:ns-test:client-restarted-421347","payload":"netstrazh-udp:ns-test:client-restarted-421347","responseBytes":45,"durationMs":34},"networkAfter":{"active":"106","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1793291498610}
+restarted persistent helper process: PASS
+restarted exact payload and VPN source: ComparisonFailure: TCP source address must prove VPN routing expected:<10.[111.0.1]> but was:<10.[0.2.16]>
+restarted capture since=1793291496281 uid=10119 rows=[] before=Counters(tx=0, rx=0, connections=0) after=Counters(tx=0, rx=0, connections=0)
+restarted fresh capture: AssertionError: timeout waiting for restarted new external UID capture and counters
+RESULT failures=2

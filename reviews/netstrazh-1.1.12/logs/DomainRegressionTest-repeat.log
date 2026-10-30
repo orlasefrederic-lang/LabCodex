@@ -1,0 +1,119 @@
+INSTRUMENTATION_STATUS: class=lab.netstrazh.DomainRegressionTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+lab.netstrazh.DomainRegressionTest:
+INSTRUMENTATION_STATUS: test=t01_blockedDnsMustNotPoisonOtherNamesOnSameUdpSocket
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.DomainRegressionTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=t01_blockedDnsMustNotPoisonOtherNamesOnSameUdpSocket
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=lab.netstrazh.DomainRegressionTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=t02_blockedHostnameMustNotReachResolverOverTcpDns
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.DomainRegressionTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=t02_blockedHostnameMustNotReachResolverOverTcpDns
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=lab.netstrazh.DomainRegressionTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=t03_existingPendingUdpDnsMustApplyNewAppDnsPolicy
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.DomainRegressionTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: new app/DNS policy must apply to existing UDP flow; responseRcode=0
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at lab.netstrazh.DomainRegressionTest.t03_existingPendingUdpDnsMustApplyNewAppDnsPolicy(DomainRegressionTest.kt:271)
+
+INSTRUMENTATION_STATUS: stream=
+Error in t03_existingPendingUdpDnsMustApplyNewAppDnsPolicy(lab.netstrazh.DomainRegressionTest):
+java.lang.AssertionError: new app/DNS policy must apply to existing UDP flow; responseRcode=0
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at lab.netstrazh.DomainRegressionTest.t03_existingPendingUdpDnsMustApplyNewAppDnsPolicy(DomainRegressionTest.kt:271)
+
+INSTRUMENTATION_STATUS: test=t03_existingPendingUdpDnsMustApplyNewAppDnsPolicy
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=lab.netstrazh.DomainRegressionTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=t04_existingRefusedUdpDnsMustApplyNewBlockDnsSetting
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.DomainRegressionTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: enabling blockDns must prevent an existing NOPATH flow from starting an upstream path; responseRcode=0
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at lab.netstrazh.DomainRegressionTest.t04_existingRefusedUdpDnsMustApplyNewBlockDnsSetting(DomainRegressionTest.kt:308)
+
+INSTRUMENTATION_STATUS: stream=
+Error in t04_existingRefusedUdpDnsMustApplyNewBlockDnsSetting(lab.netstrazh.DomainRegressionTest):
+java.lang.AssertionError: enabling blockDns must prevent an existing NOPATH flow from starting an upstream path; responseRcode=0
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at lab.netstrazh.DomainRegressionTest.t04_existingRefusedUdpDnsMustApplyNewBlockDnsSetting(DomainRegressionTest.kt:308)
+
+INSTRUMENTATION_STATUS: test=t04_existingRefusedUdpDnsMustApplyNewBlockDnsSetting
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=lab.netstrazh.DomainRegressionTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=t05_tcpDnsAppliesHostRulesToFragmentedFramesOnPersistentConnection
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.DomainRegressionTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=t05_tcpDnsAppliesHostRulesToFragmentedFramesOnPersistentConnection
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 19.856
+There were 2 failures:
+1) t03_existingPendingUdpDnsMustApplyNewAppDnsPolicy(lab.netstrazh.DomainRegressionTest)
+java.lang.AssertionError: new app/DNS policy must apply to existing UDP flow; responseRcode=0
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at lab.netstrazh.DomainRegressionTest.t03_existingPendingUdpDnsMustApplyNewAppDnsPolicy(DomainRegressionTest.kt:271)
+2) t04_existingRefusedUdpDnsMustApplyNewBlockDnsSetting(lab.netstrazh.DomainRegressionTest)
+java.lang.AssertionError: enabling blockDns must prevent an existing NOPATH flow from starting an upstream path; responseRcode=0
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at lab.netstrazh.DomainRegressionTest.t04_existingRefusedUdpDnsMustApplyNewBlockDnsSetting(DomainRegressionTest.kt:308)
+
+FAILURES!!!
+Tests run: 5,  Failures: 2
+
+
+INSTRUMENTATION_CODE: -1

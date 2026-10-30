@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab.netstrazh.net.PacketTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-29T16:19:16" hostname="ed277449c99f" time="0.005">
+  <properties/>
+  <testcase name="dnsResponseWithCompression" classname="lab.netstrazh.net.PacketTest" time="0.001"/>
+  <testcase name="dnsPointerLoopIsRejected" classname="lab.netstrazh.net.PacketTest" time="0.0"/>
+  <testcase name="oddLengthPayloadChecksum" classname="lab.netstrazh.net.PacketTest" time="0.0"/>
+  <testcase name="udpBuilderV4AndV6" classname="lab.netstrazh.net.PacketTest" time="0.0"/>
+  <testcase name="parseAndRewriteTcp" classname="lab.netstrazh.net.PacketTest" time="0.0"/>
+  <testcase name="rstForAck" classname="lab.netstrazh.net.PacketTest" time="0.0"/>
+  <testcase name="rstForSyn" classname="lab.netstrazh.net.PacketTest" time="0.001"/>
+  <testcase name="sniExtraction" classname="lab.netstrazh.net.PacketTest" time="0.0"/>
+  <testcase name="checksumKnownVector" classname="lab.netstrazh.net.PacketTest" time="0.0"/>
+  <testcase name="flowKeyEquality" classname="lab.netstrazh.net.PacketTest" time="0.001"/>
+  <testcase name="natTableAllocatesAndSweeps" classname="lab.netstrazh.net.PacketTest" time="0.001"/>
+  <testcase name="rejectsFragmentsAndGarbage" classname="lab.netstrazh.net.PacketTest" time="0.0"/>
+  <testcase name="snifferAcrossChunks" classname="lab.netstrazh.net.PacketTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

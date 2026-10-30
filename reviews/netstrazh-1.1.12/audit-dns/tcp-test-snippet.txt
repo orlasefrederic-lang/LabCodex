@@ -1,0 +1,62 @@
+    /** Sends one frame in separated writes on an existing TCP connection. */
+    private fun tcpFragmented(socket: Socket, name: String, id: Int): ByteArray {
+        val q = query(name, id)
+        val out = socket.getOutputStream()
+        // TCP may coalesce writes, but TCP_NODELAY plus pauses gives the reader an opportunity to
+        // encounter the single-byte length prefix and incomplete body before their remainders arrive.
+        out.write(q.size ushr 8)
+        out.flush()
+        Thread.sleep(40)
+        out.write(q.size and 255)
+        out.flush()
+        Thread.sleep(40)
+        val split = q.size / 2
+        out.write(q, 0, split)
+        out.flush()
+        Thread.sleep(40)
+        out.write(q, split, q.size - split)
+        out.flush()
+        val input = DataInputStream(socket.getInputStream())
+        val response = ByteArray(input.readUnsignedShort())
+        input.readFully(response)
+        assertTrue("DNS header required for $name", response.size >= 12)
+        assertEquals("response transaction ID for $name", id,
+            ((response[0].toInt() and 255) shl 8) or (response[1].toInt() and 255))
+        assertTrue("DNS response bit required for $name", response[2].toInt() and 0x80 != 0)
+        assertEquals("response question for $name", name, Dns.parse(response, 0, response.size)?.qname)
+        return response
+    }
+
+    @Test
+    fun t05_tcpDnsAppliesHostRulesToFragmentedFramesOnPersistentConnection() {
+        val suffix = "${SystemClock.uptimeMillis()}.netstrazh.invalid"
+        val blockedParent = "tcp-fragment-blocked.$suffix"
+        val firstBlocked = "first.$blockedParent"
+        val lastBlocked = "last.$blockedParent"
+        val allowed = "tcp-fragment-allowed.$suffix"
+        Rules.setHostBlocked(Rules.ALL, blockedParent, true)
+        try {
+            Socket().use { socket ->
+                socket.soTimeout = 10_000
+                socket.tcpNoDelay = true
+                socket.connect(InetSocketAddress(InetAddress.getByName(TunConfig.DNS4), 53), 10_000)
+                val first = tcpFragmented(socket, firstBlocked, 0x6501)
+                assertEquals("first blocked hostname is refused on the persistent TCP connection", 5, rcode(first))
+                assertFalse("first blocked hostname must not reach the controlled resolver", proxy.queries.contains(firstBlocked))
+
+                val second = tcpFragmented(socket, allowed, 0x6502)
+                assertControlledAnswer(allowed, second)
+
+                val third = tcpFragmented(socket, lastBlocked, 0x6503)
+                assertEquals("later blocked hostname remains refused after an allowed response", 5, rcode(third))
+                assertFalse("later blocked hostname must not reach the controlled resolver", proxy.queries.contains(lastBlocked))
+                // Compare unique test names, so earlier fixture traffic cannot affect this assertion.
+                val observed = proxy.queries.filter { it == firstBlocked || it == allowed || it == lastBlocked }
+                Log.i(TAG, "persistent fragmented TCP DNS: firstRcode=${rcode(first)}, allowedRcode=${rcode(second)}, " +
+                    "lastRcode=${rcode(third)}, observed=$observed")
+                assertEquals("only the allowed hostname reaches the controlled resolver", listOf(allowed), observed)
+            }
+        } finally {
+            Rules.setHostBlocked(Rules.ALL, blockedParent, false)
+        }
+    }

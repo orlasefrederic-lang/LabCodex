@@ -1,0 +1,3 @@
+after150ms secondAlive=false secondState=TERMINATED secondStack=
+second requestedTimeoutMs=100 elapsedMs=100 finished=true failure=IOException:нет ответа DNS через туннель; firstFinished=false
+PASS: 100ms query ends within its own deadline while another query holds the write lock with a 1200ms budget.

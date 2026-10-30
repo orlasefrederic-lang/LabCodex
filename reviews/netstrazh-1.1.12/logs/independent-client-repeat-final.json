@@ -1,0 +1,54 @@
+{
+  "marker": "client-restarted-39642667",
+  "package": "lab.netstrazh.reviewclient",
+  "uid": 10119,
+  "pid": 6351,
+  "processNonce": "cd24ebe2-1a18-4091-8b89-957311692e3e",
+  "sequence": 3,
+  "startedMs": 1793330719314,
+  "networkBefore": {
+    "active": "117",
+    "bound": "null",
+    "vpn": true,
+    "linkAddresses": [
+      "10.111.0.1"
+    ]
+  },
+  "tcp": {
+    "host": "10.0.2.2",
+    "port": 18080,
+    "request": "GET \/echo\/client-restarted-39642667 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n",
+    "requestBytes": 83,
+    "ok": true,
+    "localAddress": "10.111.0.1",
+    "localPort": 48688,
+    "response": "HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Fri, 30 Oct 2026 03:25:20 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 40\r\nConnection: close\r\n\r\nnetstrazh-http:client-restarted-39642667",
+    "responseBytes": 213,
+    "payload": "netstrazh-http:client-restarted-39642667",
+    "finalLocalAddress": "10.111.0.1",
+    "finalLocalPort": 48688,
+    "durationMs": 1135
+  },
+  "udp": {
+    "host": "10.0.2.2",
+    "port": 18081,
+    "request": "ns-test:client-restarted-39642667",
+    "requestBytes": 33,
+    "ok": true,
+    "localAddress": "10.111.0.1",
+    "localPort": 60529,
+    "response": "netstrazh-udp:ns-test:client-restarted-39642667",
+    "payload": "netstrazh-udp:ns-test:client-restarted-39642667",
+    "responseBytes": 47,
+    "durationMs": 542
+  },
+  "networkAfter": {
+    "active": "117",
+    "bound": "null",
+    "vpn": true,
+    "linkAddresses": [
+      "10.111.0.1"
+    ]
+  },
+  "finishedMs": 1793330721294
+}

@@ -1,0 +1,4 @@
+attempt=1 requestedTimeoutMs=300 elapsedMs=332 closeMs=0 result=IOException: нет ответа DNS через туннель
+attempt=2 requestedTimeoutMs=300 elapsedMs=303 closeMs=0 result=IOException: нет ответа DNS через туннель
+attempt=3 requestedTimeoutMs=300 elapsedMs=299 closeMs=0 result=IOException: нет ответа DNS через туннель
+PASS: 300ms timeout includes the 250ms connection delay and blocked write; close remains prompt.

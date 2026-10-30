@@ -1,0 +1,143 @@
+--------- beginning of main
+--------- beginning of system
+10-29 16:29:37.702  3378  3397 I NetStrazhDomainTest: same UDP socket: blocked=blocked.299469.netstrazh.invalid then allowed=allowed.299469.netstrazh.invalid, allowedRcode=0, allowedForwarded=true
+10-29 16:29:40.026  3378  3397 I NetStrazhDomainTest: pending UDP flow after app DNS policy change: name=after-policy.303666.netstrazh.invalid forwarded=true rcode=0
+10-29 16:29:42.257  3378  3397 I NetStrazhDomainTest: locally refused UDP flow after enabling blockDns: name=new-app-policy.305636.netstrazh.invalid forwarded=true rcode=0
+10-29 16:30:08.355  3492  3511 I NetStrazhRuntimeTest: attributed direct UDP payload: Seen(started=1793291408095, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=25, rx=39, blocked=false, via=)
+10-29 16:30:12.074  3492  3511 I NetStrazhRuntimeTest: UDP rejected by actual app rule: Seen(started=1793291409391, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=0, rx=0, blocked=true, via=)
+10-29 16:30:12.296  3492  3511 I NetStrazhRuntimeTest: UDP allowed and attributed after unblock: Seen(started=1793291412111, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=32, rx=46, blocked=false, via=)
+10-29 16:30:12.426  3492  3511 I NetStrazhRuntimeTest: Reopening MainActivity after test-runner activity cleanup
+10-29 16:31:24.639  3613  3632 I NetStrazhExternalTest: initial launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+10-29 16:31:24.639  3613  3632 I NetStrazhExternalTest: Status: ok
+10-29 16:31:24.639  3613  3632 I NetStrazhExternalTest: LaunchState: COLD
+10-29 16:31:24.639  3613  3632 I NetStrazhExternalTest: Activity: lab.netstrazh.reviewclient/.ProbeActivity
+10-29 16:31:24.639  3613  3632 I NetStrazhExternalTest: TotalTime: 7170
+10-29 16:31:24.639  3613  3632 I NetStrazhExternalTest: WaitTime: 7245
+10-29 16:31:24.639  3613  3632 I NetStrazhExternalTest: Complete
+10-29 16:31:25.324  3613  3632 I NetStrazhExternalTest: initial helper: {"marker":"client-initial-401132","package":"lab.netstrazh.reviewclient","uid":10119,"pid":3688,"processNonce":"13c3b2eb-0477-4d3a-87ed-fb0ea6055d6d","sequence":1,"startedMs":1793291483239,"networkBefore":{"active":"105","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-initial-401132 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":79,"ok":true,"localAddress":"10.111.0.1","localPort":46950,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Thu, 29 Oct 2026 16:31:24 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 36\r\nConnection: close\r\n\r\nnetstrazh-http:client-initial-401132","responseBytes":209,"payload":"netstrazh-http:client-initial-401132","finalLocalAddress":"10.111.0.1","finalLocalPort":46950,"durationMs":338},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-initial-401132","requestBytes":29,"ok":true,"localAddress":"10.111.0.1","localPort":38114,"response":"netstrazh-udp:ns-test:client-initial-401132","payload":"netstrazh-udp:ns-test:client-initial-401132","responseBytes":43,"durationMs":331},"networkAfter":{"active":"105","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1793291483985}
+10-29 16:31:25.343  3613  3632 I NetStrazhExternalTest: initial exact payload and VPN source: PASS
+10-29 16:31:25.590  3613  3632 I NetStrazhExternalTest: initial capture since=1793291476071 uid=10119 rows=[Seen(started=1793291483778, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=29, rx=43, blocked=false, via=), Seen(started=1793291483433, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=79, rx=209, blocked=false, via=)] before=Counters(tx=0, rx=0, connections=0) after=Counters(tx=108, rx=252, connections=2)
+10-29 16:31:25.604  3613  3632 I NetStrazhExternalTest: initial fresh capture: PASS
+10-29 16:31:27.018  3613  3632 I NetStrazhExternalTest: foreground main before power=false: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+10-29 16:31:27.018  3613  3632 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+10-29 16:31:27.018  3613  3632 I NetStrazhExternalTest: Status: ok
+10-29 16:31:27.018  3613  3632 I NetStrazhExternalTest: LaunchState: HOT
+10-29 16:31:27.018  3613  3632 I NetStrazhExternalTest: Activity: lab.netstrazh/.ui.MainActivity
+10-29 16:31:27.018  3613  3632 I NetStrazhExternalTest: TotalTime: 732
+10-29 16:31:27.018  3613  3632 I NetStrazhExternalTest: WaitTime: 932
+10-29 16:31:27.018  3613  3632 I NetStrazhExternalTest: Complete
+10-29 16:31:31.405  3613  3632 I NetStrazhExternalTest: off launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+10-29 16:31:31.405  3613  3632 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+10-29 16:31:31.405  3613  3632 I NetStrazhExternalTest: Status: ok
+10-29 16:31:31.405  3613  3632 I NetStrazhExternalTest: LaunchState: HOT
+10-29 16:31:31.405  3613  3632 I NetStrazhExternalTest: Activity: lab.netstrazh.reviewclient/.ProbeActivity
+10-29 16:31:31.405  3613  3632 I NetStrazhExternalTest: TotalTime: 1735
+10-29 16:31:31.405  3613  3632 I NetStrazhExternalTest: WaitTime: 2257
+10-29 16:31:31.405  3613  3632 I NetStrazhExternalTest: Complete
+10-29 16:31:32.498  3613  3632 I NetStrazhExternalTest: off helper: {"marker":"client-off-413367","package":"lab.netstrazh.reviewclient","uid":10119,"pid":3688,"processNonce":"13c3b2eb-0477-4d3a-87ed-fb0ea6055d6d","sequence":2,"startedMs":1793291489771,"networkBefore":{"active":"101","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::718b:b730:f956:45b6","10.0.2.16"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-off-413367 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":75,"ok":true,"localAddress":"10.0.2.16","localPort":52258,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Thu, 29 Oct 2026 16:31:31 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 32\r\nConnection: close\r\n\r\nnetstrazh-http:client-off-413367","responseBytes":205,"payload":"netstrazh-http:client-off-413367","finalLocalAddress":"10.0.2.16","finalLocalPort":52258,"durationMs":362},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-off-413367","requestBytes":25,"ok":true,"localAddress":"10.0.2.16","localPort":59965,"response":"netstrazh-udp:ns-test:client-off-413367","payload":"netstrazh-udp:ns-test:client-off-413367","responseBytes":39,"durationMs":80},"networkAfter":{"active":"101","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::718b:b730:f956:45b6","10.0.2.16"]},"finishedMs":1793291490814}
+10-29 16:31:32.499  3613  3632 I NetStrazhExternalTest: off persistent helper process: PASS
+10-29 16:31:32.527  3613  3632 I NetStrazhExternalTest: off exact payload and physical source: PASS
+10-29 16:31:32.774  3613  3632 I NetStrazhExternalTest: off no fresh captured fixture flows: PASS
+10-29 16:31:34.788  3613  3632 I NetStrazhExternalTest: foreground main before power=true: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+10-29 16:31:34.788  3613  3632 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+10-29 16:31:34.788  3613  3632 I NetStrazhExternalTest: Status: ok
+10-29 16:31:34.788  3613  3632 I NetStrazhExternalTest: LaunchState: HOT
+10-29 16:31:34.788  3613  3632 I NetStrazhExternalTest: Activity: lab.netstrazh/.ui.MainActivity
+10-29 16:31:34.788  3613  3632 I NetStrazhExternalTest: TotalTime: 982
+10-29 16:31:34.788  3613  3632 I NetStrazhExternalTest: WaitTime: 1244
+10-29 16:31:34.788  3613  3632 I NetStrazhExternalTest: Complete
+10-29 16:31:39.027  3613  3632 I NetStrazhExternalTest: restarted launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+10-29 16:31:39.027  3613  3632 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+10-29 16:31:39.027  3613  3632 I NetStrazhExternalTest: Status: ok
+10-29 16:31:39.027  3613  3632 I NetStrazhExternalTest: LaunchState: HOT
+10-29 16:31:39.027  3613  3632 I NetStrazhExternalTest: Activity: lab.netstrazh.reviewclient/.ProbeActivity
+10-29 16:31:39.027  3613  3632 I NetStrazhExternalTest: TotalTime: 1019
+10-29 16:31:39.027  3613  3632 I NetStrazhExternalTest: WaitTime: 1293
+10-29 16:31:39.027  3613  3632 I NetStrazhExternalTest: Complete
+10-29 16:31:39.957  3613  3632 I NetStrazhExternalTest: restarted helper: {"marker":"client-restarted-421347","package":"lab.netstrazh.reviewclient","uid":10119,"pid":3688,"processNonce":"13c3b2eb-0477-4d3a-87ed-fb0ea6055d6d","sequence":3,"startedMs":1793291498039,"networkBefore":{"active":"106","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-restarted-421347 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":81,"ok":true,"localAddress":"10.0.2.16","localPort":52260,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Thu, 29 Oct 2026 16:31:39 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 38\r\nConnection: close\r\n\r\nnetstrazh-http:client-restarted-421347","responseBytes":211,"payload":"netstrazh-http:client-restarted-421347","finalLocalAddress":"10.0.2.16","finalLocalPort":52260,"durationMs":362},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-restarted-421347","requestBytes":31,"ok":true,"localAddress":"10.0.2.16","localPort":50909,"response":"netstrazh-udp:ns-test:client-restarted-421347","payload":"netstrazh-udp:ns-test:client-restarted-421347","responseBytes":45,"durationMs":34},"networkAfter":{"active":"106","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1793291498610}
+10-29 16:31:39.958  3613  3632 I NetStrazhExternalTest: restarted persistent helper process: PASS
+10-29 16:31:40.009  3613  3632 I NetStrazhExternalTest: restarted exact payload and VPN source: ComparisonFailure: TCP source address must prove VPN routing expected:<10.[111.0.1]> but was:<10.[0.2.16]>
+10-29 16:32:10.238  3613  3632 I NetStrazhExternalTest: restarted capture since=1793291496281 uid=10119 rows=[] before=Counters(tx=0, rx=0, connections=0) after=Counters(tx=0, rx=0, connections=0)
+10-29 16:32:10.239  3613  3632 I NetStrazhExternalTest: restarted fresh capture: AssertionError: timeout waiting for restarted new external UID capture and counters
+10-29 16:32:10.239  3613  3632 I NetStrazhExternalTest: RESULT failures=2
+10-30 03:19:46.186  5757  5780 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null
+10-30 03:19:51.506  5757  5780 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=false, appliedExcluded=false, observedUid=10118, installedUid=10118, lastError=null
+10-30 03:19:57.348  5757  5780 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null
+10-30 03:19:59.660  5757  5780 I NetStrazhRuntimeTest: TCP through actual v2rayNG with app UID and payload: Seen(started=1793330397936, uid=10116, proto=TCP, ip=198.51.100.10, port=18080, tx=82, rx=207, blocked=false, via=proxy)
+10-30 03:20:00.339  5757  5780 I NetStrazhRuntimeTest: UDP through actual v2rayNG with app UID and payload: Seen(started=1793330399807, uid=10116, proto=UDP, ip=198.51.100.10, port=18081, tx=26, rx=40, blocked=false, via=proxy)
+10-30 03:20:00.757  5757  5780 I NetStrazhRuntimeTest: LAN TCP remains direct with proxy enabled: Seen(started=1793330400647, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=0, rx=211, blocked=false, via=)
+10-30 03:20:01.082  5757  5780 I NetStrazhRuntimeTest: LAN UDP remains direct with proxy enabled: Seen(started=1793330400814, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=30, rx=44, blocked=false, via=)
+10-30 03:20:02.720  5757  5780 I NetStrazhRuntimeTest: TCP rejected by actual app rule: Seen(started=1793330402530, uid=10116, proto=TCP, ip=198.51.100.10, port=18080, tx=0, rx=0, blocked=true, via=)
+10-30 03:20:04.059  5757  5780 I NetStrazhRuntimeTest: TCP allowed and attributed after unblock: Seen(started=1793330402768, uid=10116, proto=TCP, ip=198.51.100.10, port=18080, tx=89, rx=214, blocked=false, via=proxy)
+10-30 03:20:07.418  5757  5780 I NetStrazhRuntimeTest: UDP rejected by actual app rule: Seen(started=1793330404406, uid=10116, proto=UDP, ip=198.51.100.10, port=18081, tx=0, rx=0, blocked=true, via=)
+10-30 03:20:07.787  5757  5780 I NetStrazhRuntimeTest: UDP allowed and attributed after unblock: Seen(started=1793330407459, uid=10116, proto=UDP, ip=198.51.100.10, port=18081, tx=34, rx=48, blocked=false, via=proxy)
+10-30 03:20:14.209  5757  5780 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null
+10-30 03:20:38.529  5930  5949 I NetStrazhDomainTest: same UDP socket: blocked=blocked.39360865.netstrazh.invalid then allowed=allowed.39360865.netstrazh.invalid, allowedRcode=0, allowedForwarded=true
+10-30 03:20:39.474  5930  5949 I NetStrazhDomainTest: TCP DNS: name=tcp-blocked.39363871.netstrazh.invalid forwarded=false rcode=5 ioError=null
+10-30 03:20:40.334  5930  5949 I NetStrazhDomainTest: pending UDP flow after app DNS policy change: name=after-policy.39364579.netstrazh.invalid forwarded=true rcode=0
+10-30 03:20:41.276  5930  5949 I NetStrazhDomainTest: locally refused UDP flow after enabling blockDns: name=new-app-policy.39365631.netstrazh.invalid forwarded=true rcode=0
+10-30 03:20:42.559  5930  5949 I NetStrazhDomainTest: persistent fragmented TCP DNS: firstRcode=5, allowedRcode=0, lastRcode=5, observed=[tcp-fragment-allowed.39366925.netstrazh.invalid]
+10-30 03:20:55.148  6034  6054 I NetStrazhE2E: appops vpn: 
+10-30 03:20:55.553  6034  6054 I NetStrazhE2E: appops usage: 
+10-30 03:21:10.496  6034  6054 I NetStrazhE2E: system stats for us: rx=907 tx=245, apps=7
+10-30 03:22:59.894  6162  6182 I NetStrazhRuntimeTest: attributed direct TCP payload: Seen(started=1793330578687, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=78, rx=208, blocked=false, via=)
+10-30 03:23:00.703  6162  6182 I NetStrazhRuntimeTest: attributed direct UDP payload: Seen(started=1793330580482, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=27, rx=41, blocked=false, via=)
+10-30 03:23:01.464  6162  6182 I NetStrazhRuntimeTest: TCP rejected by actual app rule: Seen(started=1793330581246, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=0, rx=0, blocked=true, via=)
+10-30 03:23:02.090  6162  6182 I NetStrazhRuntimeTest: TCP allowed and attributed after unblock: Seen(started=1793330581885, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=84, rx=214, blocked=false, via=)
+10-30 03:23:05.403  6162  6182 I NetStrazhRuntimeTest: UDP rejected by actual app rule: Seen(started=1793330582333, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=0, rx=0, blocked=true, via=)
+10-30 03:23:05.602  6162  6182 I NetStrazhRuntimeTest: UDP allowed and attributed after unblock: Seen(started=1793330585442, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=34, rx=48, blocked=false, via=)
+10-30 03:23:05.837  6162  6182 I NetStrazhRuntimeTest: Reopening MainActivity after test-runner activity cleanup
+10-30 03:23:14.957  6162  6182 I NetStrazhRuntimeTest: TCP captured after UI power cycle: Seen(started=1793330594718, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=81, rx=211, blocked=false, via=)
+10-30 03:25:03.207  6277  6296 I NetStrazhExternalTest: initial launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+10-30 03:25:03.207  6277  6296 I NetStrazhExternalTest: Status: ok
+10-30 03:25:03.207  6277  6296 I NetStrazhExternalTest: LaunchState: COLD
+10-30 03:25:03.207  6277  6296 I NetStrazhExternalTest: Activity: lab.netstrazh.reviewclient/.ProbeActivity
+10-30 03:25:03.207  6277  6296 I NetStrazhExternalTest: TotalTime: 6806
+10-30 03:25:03.207  6277  6296 I NetStrazhExternalTest: WaitTime: 6821
+10-30 03:25:03.207  6277  6296 I NetStrazhExternalTest: Complete
+10-30 03:25:04.302  6277  6296 I NetStrazhExternalTest: initial helper: {"marker":"client-initial-39620042","package":"lab.netstrazh.reviewclient","uid":10119,"pid":6351,"processNonce":"cd24ebe2-1a18-4091-8b89-957311692e3e","sequence":1,"startedMs":1793330701988,"networkBefore":{"active":"116","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-initial-39620042 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":81,"ok":true,"localAddress":"10.111.0.1","localPort":48678,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Fri, 30 Oct 2026 03:25:03 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 38\r\nConnection: close\r\n\r\nnetstrazh-http:client-initial-39620042","responseBytes":211,"payload":"netstrazh-http:client-initial-39620042","finalLocalAddress":"10.111.0.1","finalLocalPort":48678,"durationMs":785},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-initial-39620042","requestBytes":31,"ok":true,"localAddress":"10.111.0.1","localPort":57429,"response":"netstrazh-udp:ns-test:client-initial-39620042","payload":"netstrazh-udp:ns-test:client-initial-39620042","responseBytes":45,"durationMs":393},"networkAfter":{"active":"116","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1793330703338}
+10-30 03:25:04.310  6277  6296 I NetStrazhExternalTest: initial exact payload and VPN source: PASS
+10-30 03:25:04.609  6277  6296 I NetStrazhExternalTest: initial capture since=1793330694981 uid=10119 rows=[Seen(started=1793330703197, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=31, rx=45, blocked=false, via=), Seen(started=1793330702159, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=81, rx=211, blocked=false, via=)] before=Counters(tx=0, rx=0, connections=0) after=Counters(tx=112, rx=256, connections=2)
+10-30 03:25:04.609  6277  6296 I NetStrazhExternalTest: initial fresh capture: PASS
+10-30 03:25:06.538  6277  6296 I NetStrazhExternalTest: foreground main before power=false: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+10-30 03:25:06.538  6277  6296 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+10-30 03:25:06.538  6277  6296 I NetStrazhExternalTest: Status: ok
+10-30 03:25:06.538  6277  6296 I NetStrazhExternalTest: LaunchState: HOT
+10-30 03:25:06.538  6277  6296 I NetStrazhExternalTest: Activity: lab.netstrazh/.ui.MainActivity
+10-30 03:25:06.538  6277  6296 I NetStrazhExternalTest: TotalTime: 838
+10-30 03:25:06.538  6277  6296 I NetStrazhExternalTest: WaitTime: 1050
+10-30 03:25:06.538  6277  6296 I NetStrazhExternalTest: Complete
+10-30 03:25:12.469  6277  6296 I NetStrazhExternalTest: off launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+10-30 03:25:12.469  6277  6296 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+10-30 03:25:12.469  6277  6296 I NetStrazhExternalTest: Status: ok
+10-30 03:25:12.469  6277  6296 I NetStrazhExternalTest: LaunchState: HOT
+10-30 03:25:12.469  6277  6296 I NetStrazhExternalTest: Activity: lab.netstrazh.reviewclient/.ProbeActivity
+10-30 03:25:12.469  6277  6296 I NetStrazhExternalTest: TotalTime: 2242
+10-30 03:25:12.469  6277  6296 I NetStrazhExternalTest: WaitTime: 2470
+10-30 03:25:12.469  6277  6296 I NetStrazhExternalTest: Complete
+10-30 03:25:13.347  6277  6296 I NetStrazhExternalTest: off helper: {"marker":"client-off-39633650","package":"lab.netstrazh.reviewclient","uid":10119,"pid":6351,"processNonce":"cd24ebe2-1a18-4091-8b89-957311692e3e","sequence":2,"startedMs":1793330711141,"networkBefore":{"active":"101","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::718b:b730:f956:45b6","10.0.2.16"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-off-39633650 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":77,"ok":true,"localAddress":"10.0.2.16","localPort":53986,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Fri, 30 Oct 2026 03:25:11 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 34\r\nConnection: close\r\n\r\nnetstrazh-http:client-off-39633650","responseBytes":207,"payload":"netstrazh-http:client-off-39633650","finalLocalAddress":"10.0.2.16","finalLocalPort":53986,"durationMs":214},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-off-39633650","requestBytes":27,"ok":true,"localAddress":"10.0.2.16","localPort":49581,"response":"netstrazh-udp:ns-test:client-off-39633650","payload":"netstrazh-udp:ns-test:client-off-39633650","responseBytes":41,"durationMs":85},"networkAfter":{"active":"101","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::718b:b730:f956:45b6","10.0.2.16"]},"finishedMs":1793330711608}
+10-30 03:25:13.348  6277  6296 I NetStrazhExternalTest: off persistent helper process: PASS
+10-30 03:25:13.404  6277  6296 I NetStrazhExternalTest: off exact payload and physical source: PASS
+10-30 03:25:13.617  6277  6296 I NetStrazhExternalTest: off no fresh captured fixture flows: PASS
+10-30 03:25:15.622  6277  6296 I NetStrazhExternalTest: foreground main before power=true: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+10-30 03:25:15.622  6277  6296 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+10-30 03:25:15.622  6277  6296 I NetStrazhExternalTest: Status: ok
+10-30 03:25:15.622  6277  6296 I NetStrazhExternalTest: LaunchState: HOT
+10-30 03:25:15.622  6277  6296 I NetStrazhExternalTest: Activity: lab.netstrazh/.ui.MainActivity
+10-30 03:25:15.622  6277  6296 I NetStrazhExternalTest: TotalTime: 950
+10-30 03:25:15.622  6277  6296 I NetStrazhExternalTest: WaitTime: 1089
+10-30 03:25:15.622  6277  6296 I NetStrazhExternalTest: Complete
+10-30 03:25:20.979  6277  6296 I NetStrazhExternalTest: restarted launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+10-30 03:25:20.979  6277  6296 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+10-30 03:25:20.979  6277  6296 I NetStrazhExternalTest: Status: ok
+10-30 03:25:20.979  6277  6296 I NetStrazhExternalTest: LaunchState: HOT
+10-30 03:25:20.979  6277  6296 I NetStrazhExternalTest: Activity: lab.netstrazh.reviewclient/.ProbeActivity
+10-30 03:25:20.979  6277  6296 I NetStrazhExternalTest: TotalTime: 1447
+10-30 03:25:20.979  6277  6296 I NetStrazhExternalTest: WaitTime: 1759
+10-30 03:25:20.979  6277  6296 I NetStrazhExternalTest: Complete
+10-30 03:25:21.914  6277  6296 I NetStrazhExternalTest: restarted helper: {"marker":"client-restarted-39642667","package":"lab.netstrazh.reviewclient","uid":10119,"pid":6351,"processNonce":"cd24ebe2-1a18-4091-8b89-957311692e3e","sequence":3,"startedMs":1793330719314,"networkBefore":{"active":"117","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-restarted-39642667 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":83,"ok":true,"localAddress":"10.111.0.1","localPort":48688,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Fri, 30 Oct 2026 03:25:20 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 40\r\nConnection: close\r\n\r\nnetstrazh-http:client-restarted-39642667","responseBytes":213,"payload":"netstrazh-http:client-restarted-39642667","finalLocalAddress":"10.111.0.1","finalLocalPort":48688,"durationMs":1135},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-restarted-39642667","requestBytes":33,"ok":true,"localAddress":"10.111.0.1","localPort":60529,"response":"netstrazh-udp:ns-test:client-restarted-39642667","payload":"netstrazh-udp:ns-test:client-restarted-39642667","responseBytes":47,"durationMs":542},"networkAfter":{"active":"117","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1793330721294}
+10-30 03:25:21.916  6277  6296 I NetStrazhExternalTest: restarted persistent helper process: PASS
+10-30 03:25:21.946  6277  6296 I NetStrazhExternalTest: restarted exact payload and VPN source: PASS
+10-30 03:25:22.324  6277  6296 I NetStrazhExternalTest: restarted capture since=1793330717607 uid=10119 rows=[Seen(started=1793330721071, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=33, rx=47, blocked=false, via=), Seen(started=1793330720030, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=83, rx=213, blocked=false, via=)] before=Counters(tx=0, rx=0, connections=0) after=Counters(tx=116, rx=260, connections=2)
+10-30 03:25:22.324  6277  6296 I NetStrazhExternalTest: restarted fresh capture: PASS
+10-30 03:25:22.325  6277  6296 I NetStrazhExternalTest: RESULT failures=0

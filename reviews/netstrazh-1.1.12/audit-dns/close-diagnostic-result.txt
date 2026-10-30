@@ -1,0 +1,4 @@
+afterClose closeMs=6 opens=2 firstChannelOpen=false workerAlive=true
+workerStack=java.base/sun.nio.ch.SocketDispatcher.write0(Native Method) | java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:62) | java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:137) | java.base/sun.nio.ch.IOUtil.write(IOUtil.java:102) | java.base/sun.nio.ch.IOUtil.write(IOUtil.java:58) | java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:542) | lab.netstrazh.vpn.DnsPipe.send$lambda$13(DnsPipe.kt:143) | lab.netstrazh.net.SocksKt.withDeadline(Socks.kt:25) | lab.netstrazh.vpn.DnsPipe.send(DnsPipe.kt:141)
+final elapsedMs=2004 opens=2 workerAlive=false failure=DeadlineException:нет ответа за 2 с
+CONFIRMED: close promptly closes original channel; query retries once on a fresh channel and eventually hits its bounded deadline.
