@@ -1,0 +1,17 @@
+--------- beginning of main
+--------- beginning of system
+11-04 09:05:27.736  1830  2217 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:05:27.745  1830  2217 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:05:27.745  1830  2217 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:05:32.444  3785  3804 I NetStrazhRuntimeTest: attributed direct TCP payload: Seen(started=1793783131071, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=77, rx=207, blocked=false, via=)
+11-04 09:05:33.466  3785  3804 I NetStrazhRuntimeTest: attributed direct UDP payload: Seen(started=1793783132816, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=26, rx=40, blocked=false, via=)
+11-04 09:05:34.424  3785  3804 I NetStrazhRuntimeTest: TCP rejected by actual app rule: Seen(started=1793783134094, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=0, rx=0, blocked=true, via=)
+11-04 09:05:34.725  3785  3804 I NetStrazhRuntimeTest: TCP allowed and attributed after unblock: Seen(started=1793783134544, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=83, rx=213, blocked=false, via=)
+11-04 09:05:37.999  3785  3804 I NetStrazhRuntimeTest: UDP rejected by actual app rule: Seen(started=1793783134936, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=0, rx=0, blocked=true, via=)
+11-04 09:05:38.286  3785  3804 I NetStrazhRuntimeTest: UDP allowed and attributed after unblock: Seen(started=1793783138054, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=33, rx=47, blocked=false, via=)
+11-04 09:05:38.497  3785  3804 I NetStrazhRuntimeTest: Reopening MainActivity after test-runner activity cleanup
+11-04 09:05:42.144  1830  1902 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-04 09:05:43.165  1830  2217 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:05:43.167  1830  2217 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:05:43.168  1830  2217 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:06:17.203  1830  1902 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect

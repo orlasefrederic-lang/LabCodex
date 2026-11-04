@@ -1,0 +1,13 @@
+{
+  "severities": {
+    "Warning": 26
+  },
+  "issues": {
+    "OldTargetApi": 1,
+    "GradleDependency": 3,
+    "DataExtractionRules": 1,
+    "ObsoleteSdkInt": 1,
+    "StaticFieldLeak": 2,
+    "SetTextI18n": 18
+  }
+}

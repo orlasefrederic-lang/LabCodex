@@ -1,0 +1,22 @@
+--------- beginning of main
+11-04 09:13:20.077  4837  4857 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null
+--------- beginning of system
+11-04 09:13:23.353  4837  4837 W NetStrazh: capture probe lost (1): Android routes around the VPN interface
+11-04 09:13:24.053  1830  2378 I Vpn     : Established by lab.netstrazh on tun1
+11-04 09:13:36.144  4837  4857 I NetStrazhRuntimeTest: LAN TCP remains direct with proxy enabled: Seen(started=1793783615823, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=80, rx=210, blocked=false, via=)
+11-04 09:13:36.549  4837  4857 I NetStrazhRuntimeTest: LAN UDP remains direct with proxy enabled: Seen(started=1793783616250, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=29, rx=43, blocked=false, via=)
+11-04 09:13:38.696  4837  4857 I NetStrazhRuntimeTest: TCP rejected by actual app rule: Seen(started=1793783618167, uid=10116, proto=TCP, ip=198.51.100.10, port=18080, tx=0, rx=0, blocked=true, via=)
+11-04 09:13:40.187  4837  4857 I NetStrazhRuntimeTest: TCP allowed and attributed after unblock: Seen(started=1793783618903, uid=10116, proto=TCP, ip=198.51.100.10, port=18080, tx=88, rx=213, blocked=false, via=proxy)
+11-04 09:13:43.732  4837  4857 I NetStrazhRuntimeTest: UDP rejected by actual app rule: Seen(started=1793783620661, uid=10116, proto=UDP, ip=198.51.100.10, port=18081, tx=0, rx=0, blocked=true, via=)
+11-04 09:13:44.291  4837  4857 I NetStrazhRuntimeTest: UDP allowed and attributed after unblock: Seen(started=1793783623816, uid=10116, proto=UDP, ip=198.51.100.10, port=18081, tx=33, rx=47, blocked=false, via=proxy)
+11-04 09:13:44.978  1830  1968 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-04 09:13:44.978  1830  1968 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:13:44.992  1830  1968 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:13:45.063  1830  1968 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:13:45.734  4837  4837 I NetStrazh: proxy served by com.v2ray.ang: keeping it out of the VPN
+11-04 09:13:46.438  1830  2217 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-04 09:13:46.438  1830  2217 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:13:46.469  1830  2217 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:13:46.539  1830  2217 I Vpn     : Established by lab.netstrazh on tun1
+11-04 09:13:47.198  4837  4857 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null
+11-04 09:13:47.696  1830  1902 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect

@@ -1,0 +1,4 @@
+After clear+pending log: actual=1 counter=0
+After flush: actual=0 counter=-1
+At claimed cap: actual=20001 counter=20000 configured=20000
+CONFIRMED in a controlled concurrency model; no Android DB or firewall traffic exercised.

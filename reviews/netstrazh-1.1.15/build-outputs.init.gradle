@@ -1,0 +1,4 @@
+allprojects { project ->
+    def relative = project.path == ':' ? 'root' : project.path.substring(1).replace(':', '/')
+    project.layout.buildDirectory.set(new File('/workspace/netstrazh-v1.1.15-review/build-output', relative))
+}

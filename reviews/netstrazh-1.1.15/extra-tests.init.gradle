@@ -1,0 +1,5 @@
+allprojects { project ->
+    project.plugins.withId('com.android.application') {
+        project.android.sourceSets.getByName('androidTest').java.srcDir('/workspace/netstrazh-v1.1.15-review/test-src')
+    }
+}

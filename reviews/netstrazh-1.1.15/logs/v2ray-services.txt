@@ -1,0 +1,29 @@
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  Last ANR service:
+ServiceRecord{bc98b1e u0 com.android.systemui/.SystemUIService}
+    intent={cmp=com.android.systemui/.SystemUIService}
+    packageName=com.android.systemui
+    processName=com.android.systemui
+    baseDir=/system/product/priv-app/SystemUI/SystemUI.apk
+    dataDir=/data/user_de/0/com.android.systemui
+    app=ProcessRecord{4a95c41 2045:com.android.systemui/u0a97}
+    createTime=-21s928ms startingBgTimeout=--
+    lastActivity=-21s88ms restartTime=-21s88ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=false lastStartId=1
+    executeNesting=2 executeFg=true executingStart=-21s86ms
+    Delivered Starts:
+    #0 id=1 dur=-21s86ms dc=1
+      intent=Intent { flg=0x100 cmp=com.android.systemui/.SystemUIService }
+
+  User 0 active services:
+  * ServiceRecord{86d5b41 u0 com.v2ray.ang/.service.CoreProxyOnlyService}
+    intent={cmp=com.v2ray.ang/.service.CoreProxyOnlyService}
+    packageName=com.v2ray.ang
+    processName=com.v2ray.ang:daemon
+    baseDir=/data/app/com.v2ray.ang-4ge3QPxgRy318t9rG-9eoQ==/base.apk
+    dataDir=/data/user/0/com.v2ray.ang
+    app=ProcessRecord{5e9d83 4760:com.v2ray.ang:daemon/u0a118}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=CORE_M_CH_ID_V2 pri=-1 contentView=null vibrate=null sound=null defaults=0x0 flags=0x6a color=0x00000000 actions=2 vis=PRIVATE)
+    createTime=-22s859ms startingBgTimeout=--
+    lastActivity=-19s75ms restartTime=-19s75ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1

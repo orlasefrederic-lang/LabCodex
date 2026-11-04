@@ -1,0 +1,60 @@
+{"ready": true, "bind": "127.0.0.1", "http": 18080, "udp": 18081}
+{"kind": "http", "message": "\"GET /echo/direct-http-3216232 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "direct-udp-3218280"}
+{"kind": "http", "message": "\"GET /echo/tcp-before-block-3219106 HTTP/1.1\" 200 -"}
+{"kind": "http", "message": "\"GET /echo/tcp-after-unblock-3219970 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "udp-before-block-3220354"}
+{"kind": "udp", "token": "udp-after-unblock-3223551"}
+{"kind": "http", "message": "\"GET /echo/while-power-off-3227939 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "while-power-off-3228001"}
+{"kind": "http", "message": "\"GET /echo/after-power-on-3229531 HTTP/1.1\" 200 -"}
+{"kind": "http", "message": "\"GET /echo/client-initial-3284232 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-initial-3284232"}
+{"kind": "http", "message": "\"GET /echo/client-off-1-3295491 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-off-1-3295491"}
+{"kind": "http", "message": "\"GET /echo/client-restarted-1-3307546 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-restarted-1-3307546"}
+{"kind": "http", "message": "\"GET /echo/client-off-2-3343660 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-off-2-3343660"}
+{"kind": "http", "message": "\"GET /echo/client-restarted-2-3351151 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-restarted-2-3351151"}
+{"kind": "http", "message": "\"GET /echo/client-off-3-3360464 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-off-3-3360464"}
+{"kind": "http", "message": "\"GET /echo/client-restarted-3-3369725 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-restarted-3-3369725"}
+{"kind": "http", "message": "\"GET /echo/client-initial-3508064 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-initial-3508064"}
+{"kind": "http", "message": "\"GET /echo/client-off-1-3519033 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-off-1-3519033"}
+{"kind": "http", "message": "\"GET /echo/client-restarted-1-3526382 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-restarted-1-3526382"}
+{"kind": "http", "message": "\"GET /echo/client-settled-1-3531047 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-settled-1-3531047"}
+{"kind": "http", "message": "\"GET /echo/client-off-2-3537119 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-off-2-3537119"}
+{"kind": "http", "message": "\"GET /echo/client-restarted-2-3546160 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-restarted-2-3546160"}
+{"kind": "http", "message": "\"GET /echo/client-settled-2-3549253 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-settled-2-3549253"}
+{"kind": "http", "message": "\"GET /echo/client-off-3-3553683 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-off-3-3553683"}
+{"kind": "http", "message": "\"GET /echo/client-restarted-3-3560836 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-restarted-3-3560836"}
+{"kind": "http", "message": "\"GET /echo/client-settled-3-3565731 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "client-settled-3-3565731"}
+{"kind": "http", "message": "\"GET /echo/v2ray-lan-http-3701299 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "v2ray-lan-udp-3701678"}
+{"kind": "http", "message": "\"GET /echo/tcp-before-block-3702235 HTTP/1.1\" 200 -"}
+{"kind": "http", "message": "\"GET /echo/tcp-after-unblock-3704254 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "udp-before-block-3705884"}
+{"kind": "udp", "token": "udp-after-unblock-3709290"}
+{"kind": "http", "message": "\"GET /echo/v2ray-http-21988547 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "v2ray-udp-21990987"}
+{"kind": "http", "message": "\"GET /echo/v2ray-lan-http-21991509 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "v2ray-lan-udp-21991801"}
+{"kind": "http", "message": "\"GET /echo/tcp-before-block-21992455 HTTP/1.1\" 200 -"}
+{"kind": "http", "message": "\"GET /echo/tcp-after-unblock-21994329 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "udp-before-block-21995965"}
+{"kind": "udp", "token": "udp-after-unblock-21999352"}
+{"kind": "http", "message": "\"GET /echo/v2ray-after-discovery-http-22006176 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "v2ray-after-discovery-udp-22007911"}

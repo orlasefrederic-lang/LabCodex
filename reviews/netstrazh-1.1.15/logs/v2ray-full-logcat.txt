@@ -1,0 +1,129 @@
+--------- beginning of main
+--------- beginning of system
+11-04 09:04:51.794  1830  1867 I Vpn     : Switched from [Legacy VPN] to lab.netstrazh
+11-04 09:04:51.806  1830  1867 D Vpn     : setting state=IDLE, reason=prepare
+11-04 09:04:59.758  1830  2205 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:04:59.778  1830  2205 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:04:59.779  1830  2205 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:05:12.775  1830  1902 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-04 09:05:27.736  1830  2217 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:05:27.745  1830  2217 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:05:27.745  1830  2217 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:05:32.444  3785  3804 I NetStrazhRuntimeTest: attributed direct TCP payload: Seen(started=1793783131071, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=77, rx=207, blocked=false, via=)
+11-04 09:05:33.466  3785  3804 I NetStrazhRuntimeTest: attributed direct UDP payload: Seen(started=1793783132816, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=26, rx=40, blocked=false, via=)
+11-04 09:05:34.424  3785  3804 I NetStrazhRuntimeTest: TCP rejected by actual app rule: Seen(started=1793783134094, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=0, rx=0, blocked=true, via=)
+11-04 09:05:34.725  3785  3804 I NetStrazhRuntimeTest: TCP allowed and attributed after unblock: Seen(started=1793783134544, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=83, rx=213, blocked=false, via=)
+11-04 09:05:37.999  3785  3804 I NetStrazhRuntimeTest: UDP rejected by actual app rule: Seen(started=1793783134936, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=0, rx=0, blocked=true, via=)
+11-04 09:05:38.286  3785  3804 I NetStrazhRuntimeTest: UDP allowed and attributed after unblock: Seen(started=1793783138054, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=33, rx=47, blocked=false, via=)
+11-04 09:05:38.497  3785  3804 I NetStrazhRuntimeTest: Reopening MainActivity after test-runner activity cleanup
+11-04 09:05:42.144  1830  1902 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-04 09:05:43.165  1830  2217 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:05:43.167  1830  2217 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:05:43.168  1830  2217 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:06:17.203  1830  1902 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-04 09:06:37.496  1830  2288 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:06:37.526  1830  2288 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:06:37.527  1830  2288 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:06:49.176  1830  1902 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-04 09:07:00.070  1830  2291 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:07:00.116  1830  2291 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:07:00.117  1830  2291 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:07:03.906  3898  3898 W NetStrazh: capture probe lost (1): Android routes around the VPN interface
+11-04 09:07:06.149  1830  3882 I Vpn     : Established by lab.netstrazh on tun1
+--------- beginning of crash
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: FATAL EXCEPTION: main
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: PID: 4042
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: java.lang.IllegalStateException: UiAutomationService android.accessibilityservice.IAccessibilityServiceClient$Stub$Proxy@396e753already registered!
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at android.os.Parcel.createException(Parcel.java:2079)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:2039)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at android.os.Parcel.readException(Parcel.java:1987)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at android.view.accessibility.IAccessibilityManager$Stub$Proxy.registerUiTestAutomationService(IAccessibilityManager.java:642)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at android.app.UiAutomationConnection.registerUiTestAutomationServiceLocked(UiAutomationConnection.java:451)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at android.app.UiAutomationConnection.connect(UiAutomationConnection.java:101)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at android.app.UiAutomation.connect(UiAutomation.java:241)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at android.app.UiAutomation.connect(UiAutomation.java:217)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at com.android.uiautomator.core.UiAutomationShellWrapper.connect(UiAutomationShellWrapper.java:31)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at com.android.commands.uiautomator.DumpCommand.run(DumpCommand.java:74)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at com.android.commands.uiautomator.Launcher.main(Launcher.java:83)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:338)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: Caused by: android.os.RemoteException: Remote stack trace:
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at com.android.server.accessibility.UiAutomationManager.registerUiTestAutomationServiceLocked(UiAutomationManager.java:93)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at com.android.server.accessibility.AccessibilityManagerService.registerUiTestAutomationService(AccessibilityManagerService.java:852)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at android.view.accessibility.IAccessibilityManager$Stub.onTransact(IAccessibilityManager.java:332)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at android.os.Binder.execTransactInternal(Binder.java:1021)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 	at android.os.Binder.execTransact(Binder.java:994)
+11-04 09:07:13.142  4042  4042 E AndroidRuntime: 
+11-04 09:07:13.149  4042  4042 E AndroidRuntime: Error reporting crash
+11-04 09:07:13.149  4042  4042 E AndroidRuntime: java.lang.RuntimeException: Bad file descriptor
+11-04 09:07:13.149  4042  4042 E AndroidRuntime: 	at android.os.BinderProxy.transactNative(Native Method)
+11-04 09:07:13.149  4042  4042 E AndroidRuntime: 	at android.os.BinderProxy.transact(BinderProxy.java:510)
+11-04 09:07:13.149  4042  4042 E AndroidRuntime: 	at android.os.ServiceManagerProxy.getService(ServiceManagerNative.java:128)
+11-04 09:07:13.149  4042  4042 E AndroidRuntime: 	at android.os.ServiceManager.rawGetService(ServiceManager.java:263)
+11-04 09:07:13.149  4042  4042 E AndroidRuntime: 	at android.os.ServiceManager.getService(ServiceManager.java:129)
+11-04 09:07:13.149  4042  4042 E AndroidRuntime: 	at android.app.ActivityManager$1.create(ActivityManager.java:4054)
+11-04 09:07:13.149  4042  4042 E AndroidRuntime: 	at android.app.ActivityManager$1.create(ActivityManager.java:4051)
+11-04 09:07:13.149  4042  4042 E AndroidRuntime: 	at android.util.Singleton.get(Singleton.java:38)
+11-04 09:07:13.149  4042  4042 E AndroidRuntime: 	at android.app.ActivityManager.getService(ActivityManager.java:4042)
+11-04 09:07:13.149  4042  4042 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$KillApplicationHandler.uncaughtException(RuntimeInit.java:145)
+11-04 09:07:13.149  4042  4042 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1073)
+11-04 09:07:13.149  4042  4042 E AndroidRuntime: 	at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:1068)
+11-04 09:07:13.149  4042  4042 E AndroidRuntime: 	at java.lang.Thread.dispatchUncaughtException(Thread.java:2187)
+11-04 09:07:36.248  1830  1902 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-04 09:07:44.119  1830  1874 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:07:44.165  1830  1874 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:07:44.165  1830  1874 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:07:54.387  1830  1902 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-04 09:08:02.035  1830  1867 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:08:02.056  1830  1867 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:08:02.056  1830  1867 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:08:08.134  1830  1902 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-04 09:10:21.235  1830  4162 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:10:21.263  1830  4162 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:10:21.263  1830  4162 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:10:32.583  1830  1902 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-04 09:10:39.504  1830  3673 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:10:39.601  1830  3673 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:10:39.601  1830  3673 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:10:51.136  1830  1902 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-04 09:10:57.748  1830  1968 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:10:57.798  1830  1968 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:10:57.798  1830  1968 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:11:07.655  1830  1902 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-04 09:11:13.795  1830  2288 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:11:13.799  1830  2288 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:11:13.799  1830  2288 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:11:23.475  1830  1902 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-04 09:13:12.003  1830  2378 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:13:12.064  1830  2378 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:13:12.065  1830  2378 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:13:12.911  4837  4857 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null
+11-04 09:13:17.118  1830  2336 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-04 09:13:17.119  1830  2336 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:13:17.191  1830  2336 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:13:17.275  1830  2336 I Vpn     : Established by lab.netstrazh on tun1
+11-04 09:13:18.430  4837  4857 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=false, appliedExcluded=false, observedUid=10118, installedUid=10118, lastError=null
+11-04 09:13:19.225  1830  4233 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-04 09:13:19.225  1830  4233 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:13:19.269  1830  4233 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:13:19.334  1830  4233 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:13:20.077  4837  4857 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null
+11-04 09:13:23.353  4837  4837 W NetStrazh: capture probe lost (1): Android routes around the VPN interface
+11-04 09:13:24.053  1830  2378 I Vpn     : Established by lab.netstrazh on tun1
+11-04 09:13:36.144  4837  4857 I NetStrazhRuntimeTest: LAN TCP remains direct with proxy enabled: Seen(started=1793783615823, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=80, rx=210, blocked=false, via=)
+11-04 09:13:36.549  4837  4857 I NetStrazhRuntimeTest: LAN UDP remains direct with proxy enabled: Seen(started=1793783616250, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=29, rx=43, blocked=false, via=)
+11-04 09:13:38.696  4837  4857 I NetStrazhRuntimeTest: TCP rejected by actual app rule: Seen(started=1793783618167, uid=10116, proto=TCP, ip=198.51.100.10, port=18080, tx=0, rx=0, blocked=true, via=)
+11-04 09:13:40.187  4837  4857 I NetStrazhRuntimeTest: TCP allowed and attributed after unblock: Seen(started=1793783618903, uid=10116, proto=TCP, ip=198.51.100.10, port=18080, tx=88, rx=213, blocked=false, via=proxy)
+11-04 09:13:43.732  4837  4857 I NetStrazhRuntimeTest: UDP rejected by actual app rule: Seen(started=1793783620661, uid=10116, proto=UDP, ip=198.51.100.10, port=18081, tx=0, rx=0, blocked=true, via=)
+11-04 09:13:44.291  4837  4857 I NetStrazhRuntimeTest: UDP allowed and attributed after unblock: Seen(started=1793783623816, uid=10116, proto=UDP, ip=198.51.100.10, port=18081, tx=33, rx=47, blocked=false, via=proxy)
+11-04 09:13:44.978  1830  1968 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-04 09:13:44.978  1830  1968 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:13:44.992  1830  1968 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:13:45.063  1830  1968 I Vpn     : Established by lab.netstrazh on tun0
+11-04 09:13:45.734  4837  4837 I NetStrazh: proxy served by com.v2ray.ang: keeping it out of the VPN
+11-04 09:13:46.438  1830  2217 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-04 09:13:46.438  1830  2217 D Vpn     : setting state=CONNECTING, reason=establish
+11-04 09:13:46.469  1830  2217 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-04 09:13:46.539  1830  2217 I Vpn     : Established by lab.netstrazh on tun1
+11-04 09:13:47.198  4837  4857 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null
+11-04 09:13:47.696  1830  1902 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect

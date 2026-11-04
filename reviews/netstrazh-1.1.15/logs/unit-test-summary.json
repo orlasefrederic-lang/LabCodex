@@ -1,0 +1,26 @@
+[
+  {
+    "name": "lab.netstrazh.net.DnsPipeTest",
+    "tests": "8",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "4.839"
+  },
+  {
+    "name": "lab.netstrazh.net.PacketTest",
+    "tests": "13",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.01"
+  },
+  {
+    "name": "lab.netstrazh.net.SocksTest",
+    "tests": "12",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "1.534"
+  }
+]
