@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Targeted Netmon 1.3 regression checks.
 
-Prepared by static review on 2026-11-08; NOT executed in that review because
-the execution environment was unavailable. Assertions describe correct behavior.
+Prepared by static review and executed after environment recovery on 2026-11-08.
+On original 1.3: 3 methods pass; 2 fail (3 failures including subtests).
+Assertions describe correct behavior; V13-1 remains unfixed in the archive.
 No Windows APIs, firewall changes or network requests are used.
 
 Usage:
