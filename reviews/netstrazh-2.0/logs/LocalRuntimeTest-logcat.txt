@@ -1,0 +1,23 @@
+--------- beginning of main
+--------- beginning of system
+11-09 05:59:51.843  1829  3501 I Vpn     : Switched from [Legacy VPN] to lab.netstrazh
+11-09 05:59:51.847  1829  3501 D Vpn     : setting state=IDLE, reason=prepare
+11-09 05:59:57.965  1829  2259 D Vpn     : setting state=CONNECTING, reason=establish
+11-09 05:59:58.088  1829  2259 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-09 05:59:58.089  1829  2259 I Vpn     : Established by lab.netstrazh on tun0
+11-09 06:00:16.424  1829  1907 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-09 06:00:37.400  1829  5778 D Vpn     : setting state=CONNECTING, reason=establish
+11-09 06:00:37.724  1829  5778 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-09 06:00:37.725  1829  5778 I Vpn     : Established by lab.netstrazh on tun0
+11-09 06:00:42.985  5796  5815 I NetStrazhRuntimeTest: attributed direct TCP payload: Seen(started=1794204041366, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=78, rx=208, blocked=false, via=)
+11-09 06:00:43.990  5796  5815 I NetStrazhRuntimeTest: attributed direct UDP payload: Seen(started=1794204043826, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=27, rx=41, blocked=false, via=)
+11-09 06:00:45.338  5796  5815 I NetStrazhRuntimeTest: TCP rejected by actual app rule: Seen(started=1794204045024, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=0, rx=0, blocked=true, via=)
+11-09 06:00:45.993  5796  5815 I NetStrazhRuntimeTest: TCP allowed and attributed after unblock: Seen(started=1794204045729, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=84, rx=214, blocked=false, via=)
+11-09 06:00:49.902  5796  5815 I NetStrazhRuntimeTest: UDP rejected by actual app rule: Seen(started=1794204046891, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=0, rx=0, blocked=true, via=)
+11-09 06:00:50.235  5796  5815 I NetStrazhRuntimeTest: UDP allowed and attributed after unblock: Seen(started=1794204049958, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=34, rx=48, blocked=false, via=)
+11-09 06:00:50.934  5796  5815 I NetStrazhRuntimeTest: Reopening MainActivity after test-runner activity cleanup
+11-09 06:00:56.798  1829  1907 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-09 06:00:58.445  1829  1969 D Vpn     : setting state=CONNECTING, reason=establish
+11-09 06:00:58.461  1829  1969 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-09 06:00:58.461  1829  1969 I Vpn     : Established by lab.netstrazh on tun0
+11-09 06:01:32.432  1829  1907 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect

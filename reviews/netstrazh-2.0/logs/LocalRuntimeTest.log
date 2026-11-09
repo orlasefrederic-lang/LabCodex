@@ -1,0 +1,100 @@
+INSTRUMENTATION_STATUS: class=lab.netstrazh.LocalRuntimeTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+lab.netstrazh.LocalRuntimeTest:
+INSTRUMENTATION_STATUS: test=t01_localHttpIsRelayedAndAttributed
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.LocalRuntimeTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=t01_localHttpIsRelayedAndAttributed
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=lab.netstrazh.LocalRuntimeTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=t02_localUdpIsRelayedAndAttributed
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.LocalRuntimeTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=t02_localUdpIsRelayedAndAttributed
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=lab.netstrazh.LocalRuntimeTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=t03_tcpRuleBlocksAndUnblockingRestoresTraffic
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.LocalRuntimeTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=t03_tcpRuleBlocksAndUnblockingRestoresTraffic
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=lab.netstrazh.LocalRuntimeTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=t04_udpRuleBlocksAndUnblockingRestoresTraffic
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.LocalRuntimeTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=t04_udpRuleBlocksAndUnblockingRestoresTraffic
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=lab.netstrazh.LocalRuntimeTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=t05_powerToggleStopsAndRestartsProtection
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.LocalRuntimeTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=5
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: timeout waiting for TCP captured after UI power cycle
+	at org.junit.Assert.fail(Assert.java:89)
+	at lab.netstrazh.RuntimeFixture$Companion.waitFor(LocalRuntimeTest.kt:329)
+	at lab.netstrazh.RuntimeFixture.expectSeen(LocalRuntimeTest.kt:223)
+	at lab.netstrazh.LocalRuntimeTest.t05_powerToggleStopsAndRestartsProtection(LocalRuntimeTest.kt:106)
+
+INSTRUMENTATION_STATUS: stream=
+Error in t05_powerToggleStopsAndRestartsProtection(lab.netstrazh.LocalRuntimeTest):
+java.lang.AssertionError: timeout waiting for TCP captured after UI power cycle
+	at org.junit.Assert.fail(Assert.java:89)
+	at lab.netstrazh.RuntimeFixture$Companion.waitFor(LocalRuntimeTest.kt:329)
+	at lab.netstrazh.RuntimeFixture.expectSeen(LocalRuntimeTest.kt:223)
+	at lab.netstrazh.LocalRuntimeTest.t05_powerToggleStopsAndRestartsProtection(LocalRuntimeTest.kt:106)
+
+INSTRUMENTATION_STATUS: test=t05_powerToggleStopsAndRestartsProtection
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 63.647
+There was 1 failure:
+1) t05_powerToggleStopsAndRestartsProtection(lab.netstrazh.LocalRuntimeTest)
+java.lang.AssertionError: timeout waiting for TCP captured after UI power cycle
+	at org.junit.Assert.fail(Assert.java:89)
+	at lab.netstrazh.RuntimeFixture$Companion.waitFor(LocalRuntimeTest.kt:329)
+	at lab.netstrazh.RuntimeFixture.expectSeen(LocalRuntimeTest.kt:223)
+	at lab.netstrazh.LocalRuntimeTest.t05_powerToggleStopsAndRestartsProtection(LocalRuntimeTest.kt:106)
+
+FAILURES!!!
+Tests run: 5,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

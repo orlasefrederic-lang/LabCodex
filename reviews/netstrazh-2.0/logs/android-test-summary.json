@@ -1,0 +1,42 @@
+{
+  "DomainRegressionTest": {
+    "tests": 5,
+    "failures": 1,
+    "status": "FAIL"
+  },
+  "DomainRegressionTest-t03-repeat": {
+    "tests": 1,
+    "failures": 0,
+    "status": "PASS"
+  },
+  "LocalRuntimeTest": {
+    "tests": 5,
+    "failures": 1,
+    "status": "FAIL"
+  },
+  "IndependentClientTest": {
+    "tests": 1,
+    "failures": 0,
+    "status": "PASS"
+  },
+  "RealV2rayTest": {
+    "tests": 7,
+    "failures": 2,
+    "status": "FAIL"
+  },
+  "SettledRealV2rayTest": {
+    "tests": 7,
+    "failures": 0,
+    "status": "PASS"
+  },
+  "UnknownUidReviewTest": {
+    "tests": 2,
+    "failures": 0,
+    "status": "PASS"
+  },
+  "E2eTest-ui-stats": {
+    "tests": 2,
+    "failures": 0,
+    "status": "PASS"
+  }
+}

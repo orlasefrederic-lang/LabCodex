@@ -1,0 +1,248 @@
+{
+  "baseline": "1.1.15",
+  "candidate": "2.0",
+  "summary": {
+    "same": 43,
+    "changed": 14,
+    "added": 2,
+    "removed": 0
+  },
+  "files": [
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/.github/workflows/android.yml",
+      "status": "changed"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/.gitignore",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/README.md",
+      "status": "changed"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/VERSION",
+      "status": "added"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/build.gradle.kts",
+      "status": "changed"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/proguard-rules.pro",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/signing/netstrazh.jks",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/androidTest/java/lab/netstrazh/E2eTest.kt",
+      "status": "changed"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/androidTest/java/lab/netstrazh/TestSocks.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/AndroidManifest.xml",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/App.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/BootReceiver.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/data/Apps.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/data/Db.kt",
+      "status": "changed"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/data/ProxyApps.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/data/Rules.kt",
+      "status": "changed"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/data/SysStats.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/net/Dns.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/net/Hosts.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/net/Packet.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/net/Sniff.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/net/Socks.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/ui/AppActivity.kt",
+      "status": "changed"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/ui/FirewallPage.kt",
+      "status": "changed"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/ui/JournalPage.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/ui/LivePage.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/ui/MainActivity.kt",
+      "status": "changed"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/ui/PickerActivity.kt",
+      "status": "changed"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/ui/SettingsActivity.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/ui/TrafficPage.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/ui/Ui.kt",
+      "status": "changed"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/vpn/DnsPipe.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/vpn/Engine.kt",
+      "status": "changed"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/vpn/FirewallService.kt",
+      "status": "changed"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/vpn/Live.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/vpn/Nat.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/vpn/NetMonitor.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/vpn/ProxyTester.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/vpn/UdpRelay.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/java/lab/netstrazh/vpn/Upstream.kt",
+      "status": "changed"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/res/drawable/ic_launcher_fg.xml",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/res/drawable/ic_stat_shield.xml",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/res/values-night/colors.xml",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/res/values/colors.xml",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/res/values/strings.xml",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/main/res/values/styles.xml",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/test/java/lab/netstrazh/net/DnsPipeTest.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/test/java/lab/netstrazh/net/PacketTest.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/test/java/lab/netstrazh/net/SocksTest.kt",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/app/src/test/java/lab/netstrazh/vpn/UpstreamDeadlineTest.kt",
+      "status": "added"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/build.gradle.kts",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/gradle.properties",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/gradle/wrapper/gradle-wrapper.jar",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/gradle/wrapper/gradle-wrapper.properties",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/gradlew",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/gradlew.bat",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/NetStrazh/settings.gradle.kts",
+      "status": "same"
+    },
+    {
+      "file": "Lab-claude-confident-cray-n5kkx8/README.md",
+      "status": "same"
+    }
+  ]
+}

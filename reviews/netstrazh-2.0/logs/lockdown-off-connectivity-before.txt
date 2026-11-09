@@ -1,0 +1,279 @@
+NetworkFactories for: TelephonyNetworkFactory[0] UntrustedWifiNetworkFactory PhoneSwitcherNetworkRequstListener WifiNetworkFactory
+
+Active default network: 100
+
+Current Networks:
+  NetworkAgentInfo{ ni{[type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), failover: false, available: true, roaming: false]}  network{100}  nethandle{432902426637}  lp{{InterfaceName: wlan0 LinkAddresses: [ fe80::15:b2ff:fe00:0/64,fec0::15:b2ff:fe00:0/64,fec0::e50c:74e5:bf86:2cf4/64,10.0.2.16/24 ] DnsAddresses: [ /10.0.2.3 ] Domains: null MTU: 0 TcpBufferSizes: 524288,1048576,2097152,262144,524288,1048576 Routes: [ fe80::/64 -> :: wlan0,::/0 -> fe80::2 wlan0,fec0::/64 -> :: wlan0,10.0.2.0/24 -> 0.0.0.0 wlan0,0.0.0.0/0 -> 10.0.2.2 wlan0 ]}}  nc{[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps Specifier: <WifiNetworkAgentSpecifier [WifiConfiguration=, SSID="AndroidWifi", BSSID=02:15:b2:00:01:00, mOriginalRequestorUid=-1, mOriginalRequestorPackageName=]> SignalStrength: -30 SSID: "AndroidWifi"]}  Score{20}  everValidated{false}  lastValidated{false}  created{true} lingering{false} explicitlySelected{false} acceptUnvalidated{false} everCaptivePortalDetected{false} lastCaptivePortalDetected{false} captivePortalValidationPending{false} partialConnectivity{false} acceptPartialConnectivity{false} clat{mBaseIface: null, mIface: null, mState: IDLE} }
+    Requests: REQUEST:2 LISTEN:6 BACKGROUND_REQUEST:0 total:8
+      NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+      NetworkRequest [ LISTEN id=4, [] ]
+      NetworkRequest [ LISTEN id=5, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000] ]
+      NetworkRequest [ LISTEN id=6, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000] ]
+      NetworkRequest [ REQUEST id=7, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+      NetworkRequest [ LISTEN id=11, [ Transports: WIFI Capabilities: NOT_VPN] ]
+      NetworkRequest [ LISTEN id=13, [ Transports: WIFI Capabilities: INTERNET&TRUSTED&NOT_VPN&FOREGROUND Uid: 1001] ]
+      NetworkRequest [ LISTEN id=15, [] ]
+    Lingered:
+  NetworkAgentInfo{ ni{[type: MOBILE[LTE], state: CONNECTED/CONNECTED, reason: connected, extra: epc.tmobile.com, failover: false, available: true, roaming: false]}  network{101}  nethandle{437197393933}  lp{{InterfaceName: radio0 LinkAddresses: [ fe80::f88a:72ff:fe95:1125/64,fec0::f88a:72ff:fe95:1125/64,fec0::5018:f318:235f:5293/64,10.0.2.15/24 ] DnsAddresses: [ /10.0.2.3 ] Domains: null MTU: 1500 TcpBufferSizes: 524288,1048576,2097152,262144,524288,1048576 Routes: [ ::/0 -> fe80::2 radio0,0.0.0.0/0 -> 10.0.2.2 radio0,fe80::/64 -> :: radio0,fec0::/64 -> :: radio0,10.0.2.0/24 -> 0.0.0.0 radio0 ]}}  nc{[ Transports: CELLULAR Capabilities: MMS&SUPL&DUN&FOTA&IMS&CBS&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&NOT_ROAMING&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=51200Kbps LinkDnBandwidth>=102400Kbps Specifier: <1>]}  Score{10}  everValidated{false}  lastValidated{false}  created{true} lingering{false} explicitlySelected{false} acceptUnvalidated{false} everCaptivePortalDetected{false} lastCaptivePortalDetected{false} captivePortalValidationPending{false} partialConnectivity{false} acceptPartialConnectivity{false} clat{mBaseIface: null, mIface: null, mState: IDLE} }
+    Requests: REQUEST:0 LISTEN:5 BACKGROUND_REQUEST:1 total:6
+      NetworkRequest [ BACKGROUND_REQUEST id=2, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+      NetworkRequest [ LISTEN id=4, [] ]
+      NetworkRequest [ LISTEN id=5, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000] ]
+      NetworkRequest [ LISTEN id=6, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000] ]
+      NetworkRequest [ LISTEN id=8, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000] ]
+      NetworkRequest [ LISTEN id=15, [] ]
+    Lingered:
+  NetworkAgentInfo{ ni{[type: VPN[], state: DISCONNECTED/DISCONNECTED, reason: agentDisconnect, extra: (none), failover: false, available: false, roaming: false]}  network{123}  nethandle{531686674445}  lp{{InterfaceName: tun0 LinkAddresses: [ 10.111.0.1/24 ] DnsAddresses: [ /10.111.0.53 ] Domains:  MTU: 0 Routes: [ 0.0.0.0/1 -> 0.0.0.0 tun0,128.0.0.0/2 -> 0.0.0.0 tun0,192.0.0.0/3 -> 0.0.0.0 tun0,::/0 unreachable,10.111.0.0/24 -> 0.0.0.0 tun0 ]}}  nc{[ Transports: WIFI|VPN Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps Uids: <{0-99999}> EstablishingAppUid: 10116]}  Score{101}  everValidated{true}  lastValidated{true}  created{true} lingering{false} explicitlySelected{false} acceptUnvalidated{false} everCaptivePortalDetected{false} lastCaptivePortalDetected{false} captivePortalValidationPending{false} partialConnectivity{false} acceptPartialConnectivity{false} clat{mBaseIface: null, mIface: null, mState: IDLE} }
+    Requests: REQUEST:0 LISTEN:5 BACKGROUND_REQUEST:0 total:5
+      NetworkRequest [ LISTEN id=4, [] ]
+      NetworkRequest [ TRACK_DEFAULT id=9, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000] ]
+      NetworkRequest [ LISTEN id=10, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 1000] ]
+      NetworkRequest [ TRACK_DEFAULT id=12, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10097] ]
+      NetworkRequest [ LISTEN id=15, [] ]
+    Lingered:
+
+Restrict background: false
+
+Status for known UIDs:
+  
+Network Requests:
+  uid/pid:1000/1829 NetworkRequest [ REQUEST id=1, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+  uid/pid:1000/1829 NetworkRequest [ BACKGROUND_REQUEST id=2, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+  uid/pid:1000/1829 NetworkRequest [ LISTEN id=4, [] ]
+  uid/pid:1000/1829 NetworkRequest [ LISTEN id=5, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000] ]
+  uid/pid:1000/1829 NetworkRequest [ LISTEN id=6, [ Capabilities: NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000] ]
+  uid/pid:1000/1829 NetworkRequest [ REQUEST id=7, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+  uid/pid:1000/1829 NetworkRequest [ LISTEN id=8, [ Transports: CELLULAR Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 1000] ]
+  uid/pid:1000/1829 NetworkRequest [ TRACK_DEFAULT id=9, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 1000] ]
+  uid/pid:1000/1829 NetworkRequest [ LISTEN id=10, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&VALIDATED Uid: 1000] ]
+  uid/pid:10097/2042 NetworkRequest [ LISTEN id=11, [ Transports: WIFI Capabilities: NOT_VPN] ]
+  uid/pid:10097/2042 NetworkRequest [ TRACK_DEFAULT id=12, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10097] ]
+  uid/pid:1001/2200 NetworkRequest [ LISTEN id=13, [ Transports: WIFI Capabilities: INTERNET&TRUSTED&NOT_VPN&FOREGROUND Uid: 1001] ]
+  uid/pid:10097/2042 NetworkRequest [ LISTEN id=15, [] ]
+
+mLegacyTypeTracker:
+  Supported types: 0 1 2 3 4 5 10 11 12 13 14 15 17
+  Current state:
+    1 NetworkAgentInfo [WIFI () - 100] CONNECTED/CONNECTED
+    17 NetworkAgentInfo [VPN () - 123] DISCONNECTED/DISCONNECTED
+
+
+Tethering:
+  Configuration:
+    subId: 1
+    tetherableUsbRegexs: []
+    tetherableWifiRegexs: [wlan\d]
+    tetherableBluetoothRegexs: []
+    isDunRequired: true
+    chooseUpstreamAutomatically: true
+    preferredUpstreamIfaceTypes: [ETHERNET, WIFI, BLUETOOTH, MOBILE_DUN]
+    legacyDhcpRanges: [192.168.42.2, 192.168.42.254, 192.168.43.2, 192.168.43.254, 192.168.44.2, 192.168.44.254, 192.168.45.2, 192.168.45.254, 192.168.46.2, 192.168.46.254, 192.168.47.2, 192.168.47.254, 192.168.48.2, 192.168.48.254, 192.168.49.2, 192.168.49.254]
+    defaultIPv4DNS: [8.8.4.4, 8.8.8.8]
+    provisioningApp: []
+    provisioningAppNoUi: 
+    enableLegacyDhcpServer: false
+  Entitlement:
+    mCellularUpstreamPermitted: true
+  Tether state:
+    wlan0 - AvailableState - lastError = 0
+    Upstream wanted: false
+    Current upstream interface(s): null
+  Hardware offload:
+    Offload HALs not started
+    Current upstream: null
+    Exempt prefixes: []
+    NAT timeout update callbacks received during the last offload session: 0
+    NAT timeout update netlink errors during the last offload session: 0
+  Log:
+    2026-11-08T16:06:57.542 - MARK constructed
+    2026-11-08T16:06:57.599 - [config] TetheringConfiguration{subId:-1 tetherableUsbRegexs:[] tetherableWifiRegexs:[wlan\d] tetherableBluetoothRegexs:[] isDunRequired:false chooseUpstreamAutomatically:true preferredUpstreamIfaceTypes:[ETHERNET,WIFI,BLUETOOTH,MOBILE] provisioningApp:[] provisioningAppNoUi: enableLegacyDhcpServer:false}
+    2026-11-08T16:07:52.054 - OBSERVED default data subscription change
+    2026-11-08T16:07:52.622 - [config] TetheringConfiguration{subId:1 tetherableUsbRegexs:[] tetherableWifiRegexs:[wlan\d] tetherableBluetoothRegexs:[] isDunRequired:false chooseUpstreamAutomatically:true preferredUpstreamIfaceTypes:[ETHERNET,WIFI,BLUETOOTH,MOBILE] provisioningApp:[] provisioningAppNoUi: enableLegacyDhcpServer:false}
+    2026-11-08T16:07:52.777 - IGNORED reevaluate provisioning due to no carrier config loaded
+    2026-11-08T16:07:52.781 - USB bcast connected:true configured:true rndis:false
+    2026-11-08T16:07:52.782 - OBSERVED configuration changed
+    2026-11-08T16:07:53.514 - [config] TetheringConfiguration{subId:1 tetherableUsbRegexs:[] tetherableWifiRegexs:[wlan\d] tetherableBluetoothRegexs:[] isDunRequired:false chooseUpstreamAutomatically:true preferredUpstreamIfaceTypes:[ETHERNET,WIFI,BLUETOOTH,MOBILE] provisioningApp:[] provisioningAppNoUi: enableLegacyDhcpServer:false}
+    2026-11-08T16:08:03.648 - OBSERVED default data subscription change
+    2026-11-08T16:08:03.792 - IGNORED reevaluate provisioning due to no carrier config loaded
+    2026-11-08T16:08:08.133 - adding TetheringInterfaceStateMachine for: wlan0
+    2026-11-08T16:08:08.146 - OBSERVED iface=wlan0 state=1 error=0
+    2026-11-08T16:08:08.349 - OBSERVED LinkProperties update iface=wlan0 state=AVAILABLE lp={InterfaceName: wlan0 LinkAddresses: [ ] DnsAddresses: [ ] Domains: null MTU: 0 Routes: [ ]}
+    2026-11-08T16:08:08.349 - InitialState got EVENT_IFACE_SERVING_STATE_INACTIVE
+    2026-11-08T16:08:08.353 - InitialState got EVENT_IFACE_UPDATE_LINKPROPERTIES
+    2026-11-08T16:08:08.353 - [wlan0] InitialState got CMD_IPV6_TETHER_UPDATE
+    2026-11-08T16:08:08.423 - active iface (wlan0) reported as added, ignoring
+    2026-11-08T16:08:21.062 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-08T16:08:28.269 - OBSERVED carrier config change
+    2026-11-08T16:08:28.621 - [config] TetheringConfiguration{subId:1 tetherableUsbRegexs:[] tetherableWifiRegexs:[wlan\d] tetherableBluetoothRegexs:[] isDunRequired:true chooseUpstreamAutomatically:true preferredUpstreamIfaceTypes:[ETHERNET,WIFI,BLUETOOTH,MOBILE_DUN] provisioningApp:[] provisioningAppNoUi: enableLegacyDhcpServer:false}
+    2026-11-08T16:08:45.832 - OBSERVED carrier config change
+    2026-11-08T16:08:46.400 - [config] TetheringConfiguration{subId:1 tetherableUsbRegexs:[] tetherableWifiRegexs:[wlan\d] tetherableBluetoothRegexs:[] isDunRequired:true chooseUpstreamAutomatically:true preferredUpstreamIfaceTypes:[ETHERNET,WIFI,BLUETOOTH,MOBILE_DUN] provisioningApp:[] provisioningAppNoUi: enableLegacyDhcpServer:false}
+    2026-11-09T05:59:57.875 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T05:59:58.243 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T06:00:05.320 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T06:00:16.489 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T06:00:17.510 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T06:00:37.352 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T06:00:37.433 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T06:00:43.299 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T06:00:56.799 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T06:00:57.777 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T06:00:58.590 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T06:00:58.592 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T06:01:01.020 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T06:01:32.456 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T06:01:34.524 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T06:01:55.606 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T06:01:55.772 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T06:01:56.956 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T06:02:08.780 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T06:02:11.503 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T06:02:20.181 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T06:02:20.292 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T06:02:24.692 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T06:02:32.401 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T06:02:34.292 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T06:02:41.580 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T06:02:41.617 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T06:02:42.954 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T06:02:55.423 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T06:02:57.729 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T06:03:04.875 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T06:03:04.875 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T06:03:07.643 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T06:03:15.010 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T06:03:15.219 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:43:23.174 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:43:23.175 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:43:31.295 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:43:36.687 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T11:43:38.207 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:45:47.183 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:45:47.455 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:45:51.273 - tun1 is not a tetherable iface, ignoring
+    2026-11-09T11:45:51.274 - tun1 is not a tetherable iface, ignoring
+    2026-11-09T11:45:54.875 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T11:45:57.001 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:45:57.173 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:45:59.322 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:45:59.903 - attempting to remove unknown iface (tun1), ignoring
+    2026-11-09T11:46:03.216 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:46:05.229 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:46:05.656 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:46:06.603 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:46:07.843 - tun1 is not a tetherable iface, ignoring
+    2026-11-09T11:46:07.845 - tun1 is not a tetherable iface, ignoring
+    2026-11-09T11:46:07.845 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T11:46:19.676 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:46:19.695 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:46:20.059 - attempting to remove unknown iface (tun1), ignoring
+    2026-11-09T11:46:20.714 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:46:21.490 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:46:22.015 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:46:26.132 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:46:26.134 - tun1 is not a tetherable iface, ignoring
+    2026-11-09T11:46:26.169 - tun1 is not a tetherable iface, ignoring
+    2026-11-09T11:46:26.170 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T11:46:26.633 - attempting to remove unknown iface (tun1), ignoring
+    2026-11-09T11:46:28.306 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:46:53.496 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:46:53.543 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:46:57.731 - tun1 is not a tetherable iface, ignoring
+    2026-11-09T11:46:57.890 - tun1 is not a tetherable iface, ignoring
+    2026-11-09T11:46:58.124 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T11:47:00.712 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:47:01.683 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:47:06.691 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:47:06.935 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:47:08.356 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:47:08.753 - attempting to remove unknown iface (tun1), ignoring
+    2026-11-09T11:47:10.766 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:47:12.755 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:47:24.099 - tun1 is not a tetherable iface, ignoring
+    2026-11-09T11:47:24.119 - tun1 is not a tetherable iface, ignoring
+    2026-11-09T11:47:24.662 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T11:47:26.946 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:47:26.946 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:47:28.745 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:47:28.781 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:47:29.833 - attempting to remove unknown iface (tun1), ignoring
+    2026-11-09T11:47:31.577 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:47:31.578 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:47:34.215 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T11:47:35.644 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:48:05.054 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:48:05.156 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:48:08.443 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:48:13.929 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T11:48:14.495 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:48:40.278 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:48:40.282 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:48:45.470 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:48:47.090 - tun1 is not a tetherable iface, ignoring
+    2026-11-09T11:48:47.097 - tun1 is not a tetherable iface, ignoring
+    2026-11-09T11:48:47.544 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T11:49:05.885 - attempting to remove unknown iface (tun1), ignoring
+    2026-11-09T11:49:08.764 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:49:50.420 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:49:50.482 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:49:52.688 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:50:58.866 - attempting to remove unknown iface (tun0), ignoring
+    2026-11-09T11:50:59.681 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:54:51.580 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:54:53.160 - tun0 is not a tetherable iface, ignoring
+    2026-11-09T11:55:01.475 - InitialState got CMD_UPSTREAM_CHANGED
+    2026-11-09T11:56:36.886 - attempting to remove unknown iface (tun0), ignoring
+
+Supported Socket keepalives: [1, 3, 0, 0, 0, 0, 0, 0]
+Reserved Privileged keepalives: 2
+Allowed Unprivileged keepalives per uid: 2
+Socket keepalives:
+
+Bad Wi-Fi avoidance: unrestricted
+
+MultipathPolicyTracker:
+  Network 101: quota 8929092, budget 7625030. Preference: HANDOVER|RELIABILITY
+
+mNetworkRequestInfoLogs (most recent first):
+  2026-11-09T11:56:38.591 - RELEASE uid/pid:10116/8169 NetworkRequest [ LISTEN id=31, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10116] ]
+  2026-11-09T11:54:52.902 - REGISTER uid/pid:10116/8169 NetworkRequest [ LISTEN id=31, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10116] ]
+  2026-11-09T11:54:17.723 - RELEASE uid/pid:1000/3176 NetworkRequest [ LISTEN id=30, [ Uid: 1000] ]
+  2026-11-09T11:51:19.908 - REGISTER uid/pid:1000/3176 NetworkRequest [ LISTEN id=30, [ Uid: 1000] ]
+  2026-11-09T11:51:10.673 - RELEASE uid/pid:10118/7374 NetworkRequest [ REQUEST id=24, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10118] ]
+  2026-11-09T11:50:55.899 - RELEASE uid/pid:10116/7957 NetworkRequest [ LISTEN id=29, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10116] ]
+  2026-11-09T11:49:50.271 - REGISTER uid/pid:10116/7957 NetworkRequest [ LISTEN id=29, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10116] ]
+  2026-11-09T11:49:05.462 - RELEASE uid/pid:10116/7779 NetworkRequest [ LISTEN id=28, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10116] ]
+  2026-11-09T11:48:40.343 - REGISTER uid/pid:10116/7779 NetworkRequest [ LISTEN id=28, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10116] ]
+  2026-11-09T11:48:10.690 - RELEASE uid/pid:10116/7779 NetworkRequest [ LISTEN id=27, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10116] ]
+  2026-11-09T11:48:04.911 - REGISTER uid/pid:10116/7779 NetworkRequest [ LISTEN id=27, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10116] ]
+  2026-11-09T11:47:35.139 - RELEASE uid/pid:10116/7610 NetworkRequest [ LISTEN id=26, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10116] ]
+  2026-11-09T11:46:53.408 - REGISTER uid/pid:10116/7610 NetworkRequest [ LISTEN id=26, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10116] ]
+  2026-11-09T11:46:24.676 - RELEASE uid/pid:10116/7429 NetworkRequest [ LISTEN id=25, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10116] ]
+  2026-11-09T11:45:46.905 - REGISTER uid/pid:10116/7429 NetworkRequest [ LISTEN id=25, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10116] ]
+  2026-11-09T11:45:08.225 - REGISTER uid/pid:10118/7374 NetworkRequest [ REQUEST id=24, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN Uid: 10118] ]
+  2026-11-09T11:43:36.385 - RELEASE uid/pid:10116/7209 NetworkRequest [ LISTEN id=23, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10116] ]
+  2026-11-09T11:43:23.089 - REGISTER uid/pid:10116/7209 NetworkRequest [ LISTEN id=23, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10116] ]
+  2026-11-09T06:03:15.474 - RELEASE uid/pid:10116/5906 NetworkRequest [ LISTEN id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10116] ]
+  2026-11-09T06:03:04.775 - REGISTER uid/pid:10116/5906 NetworkRequest [ LISTEN id=22, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10116] ]
+
+mNetworkInfoBlockingLogs (most recent first):
+
+NetTransition WakeLock activity (most recent first):
+  total acquisitions: 0
+  total releases: 0
+  cumulative duration: 0s
+  longest duration: 0s
+  
+  bandwidth update requests (by uid):
+
+NetworkStackClient logs:
+  2026-11-08T16:06:55.127 - Network stack init
+  2026-11-08T16:07:04.904 - Starting network stack
+  2026-11-08T16:07:04.905 - Starting network stack process
+  2026-11-08T16:07:05.052 - Network stack service start requested
+  2026-11-08T16:07:17.480 - Network stack service connected
+  2026-11-08T16:07:17.483 - Network stack service registered
+  
+  pendingNetStackRequests length: 0
+
+Permission Monitor:
+  Interface filtering rules:

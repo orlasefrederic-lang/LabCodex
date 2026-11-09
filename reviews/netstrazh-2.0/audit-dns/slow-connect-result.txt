@@ -1,0 +1,4 @@
+greeting=immediate connectReplyDelayMs=7500 localGreetingLimitMs=6000 connectLimitMs=20000 openElapsedMs=7554 viaProxy=true
+requestBytes=41 responseBytes=61 exactPayload=true server=exact CONNECT target and payload verified
+proxyEvents=[] downAt=0 lastError=null
+PASS: SOCKS CONNECT delayed beyond 6 seconds succeeds after immediate greeting, exchanges exact payload, and is not reported as a sleeping/frozen proxy. All traffic used a loopback fixture; no remote target contacted.

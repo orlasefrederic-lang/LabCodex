@@ -1,0 +1,198 @@
+initial before probe health: engineStartedAt=1794204115732 running=true captureVerifiedAt=1794204117345 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[226:WAITING:alive=true]
+initial launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+Status: ok
+LaunchState: COLD
+Activity: lab.netstrazh.reviewclient/.ProbeActivity
+TotalTime: 6180
+WaitTime: 6266
+Complete
+initial helper: {"marker":"client-initial-50186599","package":"lab.netstrazh.reviewclient","uid":10119,"pid":5978,"processNonce":"f452631e-5c26-438f-816a-f2bad9e3a197","sequence":1,"startedMs":1794204124098,"networkBefore":{"active":"105","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-initial-50186599 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":81,"ok":true,"localAddress":"10.111.0.1","localPort":44964,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Mon, 09 Nov 2026 06:02:04 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 38\r\nConnection: close\r\n\r\nnetstrazh-http:client-initial-50186599","responseBytes":211,"payload":"netstrazh-http:client-initial-50186599","finalLocalAddress":"10.111.0.1","finalLocalPort":44964,"durationMs":673},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-initial-50186599","requestBytes":31,"ok":true,"localAddress":"10.111.0.1","localPort":47470,"response":"netstrazh-udp:ns-test:client-initial-50186599","payload":"netstrazh-udp:ns-test:client-initial-50186599","responseBytes":45,"durationMs":149},"networkAfter":{"active":"105","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1794204125072}
+initial exact payload and VPN source: PASS
+initial capture since=1794204117815 uid=10119 rows=[Seen(started=1794204124941, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=31, rx=45, blocked=false, via=), Seen(started=1794204124332, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=81, rx=211, blocked=false, via=)] before=Counters(tx=0, rx=0, connections=0) after=Counters(tx=112, rx=256, connections=2)
+initial fresh capture: PASS
+initial after probe health: engineStartedAt=1794204115732 running=true captureVerifiedAt=1794204117345 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[226:WAITING:alive=true]
+foreground main before power=false: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh/.ui.MainActivity
+TotalTime: 764
+WaitTime: 866
+Complete
+off-1 before probe health: engineStartedAt=1794204115732 running=false captureVerifiedAt=1794204117345 captureRecoveries=0 captureBroken=false ns-capture-count=0 threads=[]
+off-1 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh.reviewclient/.ProbeActivity
+TotalTime: 2270
+WaitTime: 2527
+Complete
+off-1 helper: {"marker":"client-off-1-50199458","package":"lab.netstrazh.reviewclient","uid":10119,"pid":5978,"processNonce":"f452631e-5c26-438f-816a-f2bad9e3a197","sequence":2,"startedMs":1794204132548,"networkBefore":{"active":"100","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::e50c:74e5:bf86:2cf4","10.0.2.16"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-off-1-50199458 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":79,"ok":true,"localAddress":"10.0.2.16","localPort":49922,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Mon, 09 Nov 2026 06:02:12 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 36\r\nConnection: close\r\n\r\nnetstrazh-http:client-off-1-50199458","responseBytes":209,"payload":"netstrazh-http:client-off-1-50199458","finalLocalAddress":"10.0.2.16","finalLocalPort":49922,"durationMs":163},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-off-1-50199458","requestBytes":29,"ok":true,"localAddress":"10.0.2.16","localPort":44486,"response":"netstrazh-udp:ns-test:client-off-1-50199458","payload":"netstrazh-udp:ns-test:client-off-1-50199458","responseBytes":43,"durationMs":20},"networkAfter":{"active":"100","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::e50c:74e5:bf86:2cf4","10.0.2.16"]},"finishedMs":1794204133252}
+off-1 persistent helper process: PASS
+off-1 exact payload and physical source: PASS
+off-1 no fresh captured fixture flows: PASS
+off-1 after probe health: engineStartedAt=1794204115732 running=false captureVerifiedAt=1794204117345 captureRecoveries=0 captureBroken=false ns-capture-count=0 threads=[]
+foreground main before power=true: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh/.ui.MainActivity
+TotalTime: 1279
+WaitTime: 2292
+Complete
+restarted-1 before probe health: engineStartedAt=1794204140678 running=true captureVerifiedAt=1794204117345 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[232:TIMED_WAITING:alive=true]
+restarted-1 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh.reviewclient/.ProbeActivity
+TotalTime: 2331
+WaitTime: 2570
+Complete
+restarted-1 helper: {"marker":"client-restarted-1-50210751","package":"lab.netstrazh.reviewclient","uid":10119,"pid":5978,"processNonce":"f452631e-5c26-438f-816a-f2bad9e3a197","sequence":3,"startedMs":1794204143936,"networkBefore":{"active":"106","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-restarted-1-50210751 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":85,"ok":true,"localAddress":"10.111.0.1","localPort":44976,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Mon, 09 Nov 2026 06:02:24 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 42\r\nConnection: close\r\n\r\nnetstrazh-http:client-restarted-1-50210751","responseBytes":215,"payload":"netstrazh-http:client-restarted-1-50210751","finalLocalAddress":"10.111.0.1","finalLocalPort":44976,"durationMs":628},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-restarted-1-50210751","requestBytes":35,"ok":true,"localAddress":"10.111.0.1","localPort":33668,"response":"netstrazh-udp:ns-test:client-restarted-1-50210751","payload":"netstrazh-udp:ns-test:client-restarted-1-50210751","responseBytes":49,"durationMs":838},"networkAfter":{"active":"106","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1794204146463}
+restarted-1 persistent helper process: PASS
+restarted-1 exact payload and VPN source: PASS
+restarted-1 capture since=1794204141967 uid=10119 rows=[Seen(started=1794204145910, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=35, rx=49, blocked=false, via=), Seen(started=1794204145239, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=85, rx=215, blocked=false, via=)] before=Counters(tx=0, rx=0, connections=0) after=Counters(tx=120, rx=264, connections=2)
+restarted-1 fresh capture: PASS
+restarted-1 after probe health: engineStartedAt=1794204140678 running=true captureVerifiedAt=1794204142572 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[232:WAITING:alive=true]
+settled-1 fresh successful capture watchdog: PASS
+settled-1 before probe health: engineStartedAt=1794204140678 running=true captureVerifiedAt=1794204142572 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[232:WAITING:alive=true]
+settled-1 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Status: ok
+LaunchState: UNKNOWN (0)
+Activity: lab.netstrazh.reviewclient/.ProbeActivity
+TotalTime: 0
+WaitTime: 40
+Complete
+settled-1 helper: {"marker":"client-settled-1-50216651","package":"lab.netstrazh.reviewclient","uid":10119,"pid":5978,"processNonce":"f452631e-5c26-438f-816a-f2bad9e3a197","sequence":4,"startedMs":1794204148507,"networkBefore":{"active":"106","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-settled-1-50216651 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":83,"ok":true,"localAddress":"10.111.0.1","localPort":44980,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Mon, 09 Nov 2026 06:02:28 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 40\r\nConnection: close\r\n\r\nnetstrazh-http:client-settled-1-50216651","responseBytes":213,"payload":"netstrazh-http:client-settled-1-50216651","finalLocalAddress":"10.111.0.1","finalLocalPort":44980,"durationMs":526},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-settled-1-50216651","requestBytes":33,"ok":true,"localAddress":"10.111.0.1","localPort":52651,"response":"netstrazh-udp:ns-test:client-settled-1-50216651","payload":"netstrazh-udp:ns-test:client-settled-1-50216651","responseBytes":47,"durationMs":101},"networkAfter":{"active":"106","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1794204149329}
+settled-1 persistent helper process: PASS
+settled-1 exact payload and VPN source: PASS
+settled-1 capture since=1794204147868 uid=10119 rows=[Seen(started=1794204149272, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=33, rx=47, blocked=false, via=), Seen(started=1794204148724, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=83, rx=213, blocked=false, via=)] before=Counters(tx=120, rx=264, connections=2) after=Counters(tx=236, rx=524, connections=4)
+settled-1 fresh capture: PASS
+settled-1 after probe health: engineStartedAt=1794204140678 running=true captureVerifiedAt=1794204142572 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[232:WAITING:alive=true]
+foreground main before power=false: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh/.ui.MainActivity
+TotalTime: 495
+WaitTime: 1064
+Complete
+off-2 before probe health: engineStartedAt=1794204140678 running=false captureVerifiedAt=1794204142572 captureRecoveries=0 captureBroken=false ns-capture-count=0 threads=[]
+off-2 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh.reviewclient/.ProbeActivity
+TotalTime: 1284
+WaitTime: 1676
+Complete
+off-2 helper: {"marker":"client-off-2-50223151","package":"lab.netstrazh.reviewclient","uid":10119,"pid":5978,"processNonce":"f452631e-5c26-438f-816a-f2bad9e3a197","sequence":5,"startedMs":1794204155611,"networkBefore":{"active":"100","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::e50c:74e5:bf86:2cf4","10.0.2.16"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-off-2-50223151 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":79,"ok":true,"localAddress":"10.0.2.16","localPort":49938,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Mon, 09 Nov 2026 06:02:35 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 36\r\nConnection: close\r\n\r\nnetstrazh-http:client-off-2-50223151","responseBytes":209,"payload":"netstrazh-http:client-off-2-50223151","finalLocalAddress":"10.0.2.16","finalLocalPort":49938,"durationMs":58},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-off-2-50223151","requestBytes":29,"ok":true,"localAddress":"10.0.2.16","localPort":58840,"response":"netstrazh-udp:ns-test:client-off-2-50223151","payload":"netstrazh-udp:ns-test:client-off-2-50223151","responseBytes":43,"durationMs":14},"networkAfter":{"active":"100","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::e50c:74e5:bf86:2cf4","10.0.2.16"]},"finishedMs":1794204155734}
+off-2 persistent helper process: PASS
+off-2 exact payload and physical source: PASS
+off-2 no fresh captured fixture flows: PASS
+off-2 after probe health: engineStartedAt=1794204140678 running=false captureVerifiedAt=1794204142572 captureRecoveries=0 captureBroken=false ns-capture-count=0 threads=[]
+foreground main before power=true: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh/.ui.MainActivity
+TotalTime: 718
+WaitTime: 1032
+Complete
+restarted-2 before probe health: engineStartedAt=1794204161860 running=true captureVerifiedAt=1794204162677 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[240:WAITING:alive=true]
+restarted-2 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh.reviewclient/.ProbeActivity
+TotalTime: 2194
+WaitTime: 2431
+Complete
+restarted-2 helper: {"marker":"client-restarted-2-50231772","package":"lab.netstrazh.reviewclient","uid":10119,"pid":5978,"processNonce":"f452631e-5c26-438f-816a-f2bad9e3a197","sequence":6,"startedMs":1794204166429,"networkBefore":{"active":"107","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-restarted-2-50231772 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":85,"ok":true,"localAddress":"10.111.0.1","localPort":44990,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Mon, 09 Nov 2026 06:02:46 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 42\r\nConnection: close\r\n\r\nnetstrazh-http:client-restarted-2-50231772","responseBytes":215,"payload":"netstrazh-http:client-restarted-2-50231772","finalLocalAddress":"10.111.0.1","finalLocalPort":44990,"durationMs":244},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-restarted-2-50231772","requestBytes":35,"ok":true,"localAddress":"10.111.0.1","localPort":58441,"response":"netstrazh-udp:ns-test:client-restarted-2-50231772","payload":"netstrazh-udp:ns-test:client-restarted-2-50231772","responseBytes":49,"durationMs":133},"networkAfter":{"active":"107","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1794204166951}
+restarted-2 persistent helper process: PASS
+restarted-2 exact payload and VPN source: PASS
+restarted-2 capture since=1794204162989 uid=10119 rows=[Seen(started=1794204166865, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=35, rx=49, blocked=false, via=), Seen(started=1794204166651, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=85, rx=215, blocked=false, via=)] before=Counters(tx=0, rx=0, connections=0) after=Counters(tx=120, rx=264, connections=2)
+restarted-2 fresh capture: PASS
+restarted-2 after probe health: engineStartedAt=1794204161860 running=true captureVerifiedAt=1794204162677 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[240:WAITING:alive=true]
+settled-2 fresh successful capture watchdog: PASS
+settled-2 before probe health: engineStartedAt=1794204161860 running=true captureVerifiedAt=1794204162677 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[240:WAITING:alive=true]
+settled-2 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Status: ok
+LaunchState: UNKNOWN (0)
+Activity: lab.netstrazh.reviewclient/.ProbeActivity
+TotalTime: 0
+WaitTime: 25
+Complete
+settled-2 helper: {"marker":"client-settled-2-50238151","package":"lab.netstrazh.reviewclient","uid":10119,"pid":5978,"processNonce":"f452631e-5c26-438f-816a-f2bad9e3a197","sequence":7,"startedMs":1794204170432,"networkBefore":{"active":"107","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-settled-2-50238151 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":83,"ok":true,"localAddress":"10.111.0.1","localPort":44996,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Mon, 09 Nov 2026 06:02:50 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 40\r\nConnection: close\r\n\r\nnetstrazh-http:client-settled-2-50238151","responseBytes":213,"payload":"netstrazh-http:client-settled-2-50238151","finalLocalAddress":"10.111.0.1","finalLocalPort":44996,"durationMs":175},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-settled-2-50238151","requestBytes":33,"ok":true,"localAddress":"10.111.0.1","localPort":54948,"response":"netstrazh-udp:ns-test:client-settled-2-50238151","payload":"netstrazh-udp:ns-test:client-settled-2-50238151","responseBytes":47,"durationMs":128},"networkAfter":{"active":"107","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1794204171070}
+settled-2 persistent helper process: PASS
+settled-2 exact payload and VPN source: PASS
+settled-2 capture since=1794204169368 uid=10119 rows=[Seen(started=1794204170838, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=33, rx=47, blocked=false, via=), Seen(started=1794204170714, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=83, rx=213, blocked=false, via=)] before=Counters(tx=120, rx=264, connections=2) after=Counters(tx=236, rx=524, connections=4)
+settled-2 fresh capture: PASS
+settled-2 after probe health: engineStartedAt=1794204161860 running=true captureVerifiedAt=1794204162677 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[240:WAITING:alive=true]
+foreground main before power=false: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh/.ui.MainActivity
+TotalTime: 1153
+WaitTime: 1300
+Complete
+off-3 before probe health: engineStartedAt=1794204161860 running=false captureVerifiedAt=1794204162677 captureRecoveries=0 captureBroken=false ns-capture-count=0 threads=[]
+off-3 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh.reviewclient/.ProbeActivity
+TotalTime: 2320
+WaitTime: 3975
+Complete
+off-3 helper: {"marker":"client-off-3-50244530","package":"lab.netstrazh.reviewclient","uid":10119,"pid":5978,"processNonce":"f452631e-5c26-438f-816a-f2bad9e3a197","sequence":8,"startedMs":1794204179368,"networkBefore":{"active":"100","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::e50c:74e5:bf86:2cf4","10.0.2.16"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-off-3-50244530 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":79,"ok":true,"localAddress":"10.0.2.16","localPort":49954,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Mon, 09 Nov 2026 06:02:59 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 36\r\nConnection: close\r\n\r\nnetstrazh-http:client-off-3-50244530","responseBytes":209,"payload":"netstrazh-http:client-off-3-50244530","finalLocalAddress":"10.0.2.16","finalLocalPort":49954,"durationMs":108},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-off-3-50244530","requestBytes":29,"ok":true,"localAddress":"10.0.2.16","localPort":46566,"response":"netstrazh-udp:ns-test:client-off-3-50244530","payload":"netstrazh-udp:ns-test:client-off-3-50244530","responseBytes":43,"durationMs":49},"networkAfter":{"active":"100","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::e50c:74e5:bf86:2cf4","10.0.2.16"]},"finishedMs":1794204180192}
+off-3 persistent helper process: PASS
+off-3 exact payload and physical source: PASS
+off-3 no fresh captured fixture flows: PASS
+off-3 after probe health: engineStartedAt=1794204161860 running=false captureVerifiedAt=1794204162677 captureRecoveries=0 captureBroken=false ns-capture-count=0 threads=[]
+foreground main before power=true: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh/.ui.MainActivity
+TotalTime: 865
+WaitTime: 1044
+Complete
+restarted-3 before probe health: engineStartedAt=1794204184959 running=true captureVerifiedAt=1794204162677 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[248:WAITING:alive=true]
+restarted-3 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh.reviewclient/.ProbeActivity
+TotalTime: 2861
+WaitTime: 3204
+Complete
+restarted-3 helper: {"marker":"client-restarted-3-50255748","package":"lab.netstrazh.reviewclient","uid":10119,"pid":5978,"processNonce":"f452631e-5c26-438f-816a-f2bad9e3a197","sequence":9,"startedMs":1794204188131,"networkBefore":{"active":"108","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-restarted-3-50255748 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":85,"ok":true,"localAddress":"10.111.0.1","localPort":45006,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Mon, 09 Nov 2026 06:03:07 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 42\r\nConnection: close\r\n\r\nnetstrazh-http:client-restarted-3-50255748","responseBytes":215,"payload":"netstrazh-http:client-restarted-3-50255748","finalLocalAddress":"10.111.0.1","finalLocalPort":45006,"durationMs":228},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-restarted-3-50255748","requestBytes":35,"ok":true,"localAddress":"10.111.0.1","localPort":46015,"response":"netstrazh-udp:ns-test:client-restarted-3-50255748","payload":"netstrazh-udp:ns-test:client-restarted-3-50255748","responseBytes":49,"durationMs":189},"networkAfter":{"active":"108","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1794204190043}
+restarted-3 persistent helper process: PASS
+restarted-3 exact payload and VPN source: PASS
+restarted-3 capture since=1794204186965 uid=10119 rows=[Seen(started=1794204188612, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=35, rx=49, blocked=false, via=), Seen(started=1794204188291, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=85, rx=215, blocked=false, via=)] before=Counters(tx=0, rx=0, connections=0) after=Counters(tx=120, rx=264, connections=2)
+restarted-3 fresh capture: PASS
+restarted-3 after probe health: engineStartedAt=1794204184959 running=true captureVerifiedAt=1794204187029 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[248:WAITING:alive=true]
+settled-3 fresh successful capture watchdog: PASS
+settled-3 before probe health: engineStartedAt=1794204184959 running=true captureVerifiedAt=1794204187029 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[248:WAITING:alive=true]
+settled-3 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Status: ok
+LaunchState: UNKNOWN (0)
+Activity: lab.netstrazh.reviewclient/.ProbeActivity
+TotalTime: 0
+WaitTime: 42
+Complete
+settled-3 helper: {"marker":"client-settled-3-50261410","package":"lab.netstrazh.reviewclient","uid":10119,"pid":5978,"processNonce":"f452631e-5c26-438f-816a-f2bad9e3a197","sequence":10,"startedMs":1794204193404,"networkBefore":{"active":"108","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-settled-3-50261410 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":83,"ok":true,"localAddress":"10.111.0.1","localPort":45012,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Mon, 09 Nov 2026 06:03:13 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 40\r\nConnection: close\r\n\r\nnetstrazh-http:client-settled-3-50261410","responseBytes":213,"payload":"netstrazh-http:client-settled-3-50261410","finalLocalAddress":"10.111.0.1","finalLocalPort":45012,"durationMs":382},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-settled-3-50261410","requestBytes":33,"ok":true,"localAddress":"10.111.0.1","localPort":42886,"response":"netstrazh-udp:ns-test:client-settled-3-50261410","payload":"netstrazh-udp:ns-test:client-settled-3-50261410","responseBytes":47,"durationMs":138},"networkAfter":{"active":"108","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1794204194281}
+settled-3 persistent helper process: PASS
+settled-3 exact payload and VPN source: PASS
+settled-3 capture since=1794204192627 uid=10119 rows=[Seen(started=1794204194203, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=33, rx=47, blocked=false, via=), Seen(started=1794204194078, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=83, rx=213, blocked=false, via=)] before=Counters(tx=120, rx=264, connections=2) after=Counters(tx=236, rx=524, connections=4)
+settled-3 fresh capture: PASS
+settled-3 after probe health: engineStartedAt=1794204184959 running=true captureVerifiedAt=1794204187029 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[248:WAITING:alive=true]
+RESULT failures=0
+after final close health: engineStartedAt=1794204184959 running=false captureVerifiedAt=1794204187029 captureRecoveries=0 captureBroken=false ns-capture-count=0 threads=[]

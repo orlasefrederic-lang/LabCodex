@@ -1,0 +1,10 @@
+{
+  "build-output/app/outputs/apk/debug/app-debug.apk": {
+    "bytes": 2841102,
+    "sha256": "5d5da742bd32bea923b3c9e87c338b6c01b96f50998f832d9bc1bbe7e54a3303"
+  },
+  "build-output/app/outputs/apk/androidTest/debug/app-debug-androidTest.apk": {
+    "bytes": 2429950,
+    "sha256": "f65a9eeb2f3f24c336909d4d87bbe1fc5fbe340150fa7fdb3b5a94b5314e48cb"
+  }
+}

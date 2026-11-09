@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab.netstrazh.vpn.UpstreamDeadlineTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-11-08T16:06:09" hostname="3a61143c6fe1" time="6.358">
+  <properties/>
+  <testcase name="greetingAndConnectShareTheBudget" classname="lab.netstrazh.vpn.UpstreamDeadlineTest" time="0.311"/>
+  <testcase name="wholeLookupEndsWithinTheTotal" classname="lab.netstrazh.vpn.UpstreamDeadlineTest" time="6.025"/>
+  <testcase name="answersWithinTheBudget" classname="lab.netstrazh.vpn.UpstreamDeadlineTest" time="0.021"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

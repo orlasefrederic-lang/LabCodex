@@ -1,0 +1,13 @@
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  User 0 active services:
+  * ServiceRecord{2bc01f2 u0 com.v2ray.ang/.service.CoreProxyOnlyService}
+    intent={cmp=com.v2ray.ang/.service.CoreProxyOnlyService}
+    packageName=com.v2ray.ang
+    processName=com.v2ray.ang:daemon
+    baseDir=/data/app/com.v2ray.ang-4ge3QPxgRy318t9rG-9eoQ==/base.apk
+    dataDir=/data/user/0/com.v2ray.ang
+    app=ProcessRecord{b4876c0 7374:com.v2ray.ang:daemon/u0a118}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=CORE_M_CH_ID_V2 pri=-1 contentView=null vibrate=null sound=null defaults=0x0 flags=0x6a color=0x00000000 actions=2 vis=PRIVATE)
+    createTime=-3m49s985ms startingBgTimeout=--
+    lastActivity=-3m46s833ms restartTime=-3m46s833ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1

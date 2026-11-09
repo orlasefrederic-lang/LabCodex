@@ -1,0 +1,4 @@
+case=slow-proxy-name budgetMs=50 boundaryDelayMs=250 elapsedMs=279 createdSockets=1 openAfterFailure=1 openAfterUpstreamClose=1 outcome=IOException: DNS-сервер 198.51.100.10 не ответил через туннель за 1 с
+case=deadline-expires-during-protect budgetMs=50 boundaryDelayMs=250 elapsedMs=250 createdSockets=1 openAfterFailure=1 openAfterUpstreamClose=1 outcome=IOException: DNS-сервер 198.51.100.10 не ответил через туннель за 1 с
+case=slow-dns-name totalBudgetMs=6000 eachResolveDelayMs=4000 resolveCalls=2 elapsedMs=7002 outcome=IOException: нет ответа DNS через туннель
+CONFIRMED: synchronous host.resolve can exceed caller DNS deadline; a deadline thrown after newChannel but before its try/catch leaves that channel open at return. These are bounded boundary-delay scenarios, not a measured Android resolver failure or permanent descriptor exhaustion.

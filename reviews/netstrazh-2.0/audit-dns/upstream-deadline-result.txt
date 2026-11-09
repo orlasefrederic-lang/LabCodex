@@ -1,0 +1,5 @@
+once attempt=1 budgetMs=300 greetingDelayMs=220 connectReplyDelayMs=220 elapsedMs=386 outcome=IOException: DNS-сервер 198.51.100.10 не ответил через туннель за 1 с
+once attempt=2 budgetMs=300 greetingDelayMs=220 connectReplyDelayMs=220 elapsedMs=300 outcome=IOException: DNS-сервер 198.51.100.10 не ответил через туннель за 1 с
+once attempt=3 budgetMs=300 greetingDelayMs=220 connectReplyDelayMs=220 elapsedMs=300 outcome=IOException: DNS-сервер 198.51.100.10 не ответил через туннель за 1 с
+total advertisedBudgetMs=6000 pipeBudgetMs=3000 fallbackGreetingDelayMs=2200 fallbackConnectReplyDelayMs=2200 elapsedMs=6003 outcome=IOException: DNS-сервер 198.51.100.10 не ответил через туннель за 3 с
+PASS: former cumulative SOCKS greeting/CONNECT deadline overruns are fixed for numeric DNS and proxy addresses. Only loopback fixture used; no actual remote DNS connection.

@@ -1,0 +1,29 @@
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  User 0 active services:
+  * ServiceRecord{5f9333a u0 lab.netstrazh/.vpn.FirewallService}
+    intent={act=android.net.VpnService pkg=lab.netstrazh}
+    packageName=lab.netstrazh
+    processName=lab.netstrazh
+    permission=android.permission.BIND_VPN_SERVICE
+    baseDir=/data/app/lab.netstrazh-Efdkr9oLYenaMPX8I8qycQ==/base.apk
+    dataDir=/data/user/0/lab.netstrazh
+    app=ProcessRecord{ba01d4d 8169:lab.netstrazh/u0a116}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(channel=status pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0x00000000 actions=1 vis=PRIVATE)
+    createTime=-1m24s154ms startingBgTimeout=--
+    lastActivity=-1m16s120ms restartTime=-1m20s298ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+    Bindings:
+    * IntentBindRecord{2a82002 CREATE}:
+      intent={act=android.net.VpnService cmp=lab.netstrazh/.vpn.FirewallService}
+      binder=android.os.BinderProxy@ee26d13
+      requested=true received=true hasBound=true doRebind=false
+      * Client AppBindRecord{3566b50 ProcessRecord{244e0ee 1829:system/1000}}
+        Per-process Connections:
+          ConnectionRecord{2a84878 u0 CR FGS lab.netstrazh/.vpn.FirewallService:@21a65db}
+    All Connections:
+      ConnectionRecord{2a84878 u0 CR FGS lab.netstrazh/.vpn.FirewallService:@21a65db}
+
+  Connection bindings to services:
+  * ConnectionRecord{2a84878 u0 CR FGS lab.netstrazh/.vpn.FirewallService:@21a65db}
+    binding=AppBindRecord{3566b50 lab.netstrazh/.vpn.FirewallService:system}
+    conn=android.app.LoadedApk$ServiceDispatcher$InnerConnection@21a65db flags=0x4000001

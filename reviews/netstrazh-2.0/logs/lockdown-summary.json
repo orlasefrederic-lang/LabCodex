@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "uid": 10119,
+  "same_pid": 5978,
+  "on": "TCP/UDP exact payload through TUN",
+  "off": "TCP/UDP denied EACCES with app stopped and lockdown still enabled",
+  "control": "TCP/UDP exact payload via physical address after disabling lockdown",
+  "settings_restored": {
+    "always_on_vpn_app": "null",
+    "always_on_vpn_lockdown": "null"
+  },
+  "scope": "Android10 API29 x86; proxyOFF; LAN IPv4 only; forced service stop, not every startup race"
+}

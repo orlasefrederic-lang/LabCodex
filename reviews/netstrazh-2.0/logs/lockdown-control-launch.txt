@@ -1,0 +1,8 @@
+Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+Warning: Activity not started, its current task has been brought to the front
+Status: ok
+LaunchState: HOT
+Activity: lab.netstrazh.reviewclient/.ProbeActivity
+TotalTime: 3711
+WaitTime: 5092
+Complete

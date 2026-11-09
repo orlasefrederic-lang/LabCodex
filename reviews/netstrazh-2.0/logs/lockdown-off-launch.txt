@@ -1,0 +1,8 @@
+Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+Warning: Activity not started, intent has been delivered to currently running top-most instance.
+Status: ok
+LaunchState: UNKNOWN (0)
+Activity: lab.netstrazh.reviewclient/.ProbeActivity
+TotalTime: 0
+WaitTime: 561
+Complete

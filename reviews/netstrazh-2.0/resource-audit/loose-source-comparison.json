@@ -1,0 +1,239 @@
+{
+  "commit": "5edab39c4301f45940155552a7e6dca868c63541",
+  "scope": "original archive files under NetStrazh",
+  "summary": {
+    "same": 27,
+    "different": 26,
+    "missing": 4
+  },
+  "files": [
+    {
+      "file": ".gitignore",
+      "status": "missing"
+    },
+    {
+      "file": "VERSION",
+      "status": "missing"
+    },
+    {
+      "file": "gradlew",
+      "status": "same"
+    },
+    {
+      "file": "gradle.properties",
+      "status": "same"
+    },
+    {
+      "file": "build.gradle.kts",
+      "status": "same"
+    },
+    {
+      "file": "settings.gradle.kts",
+      "status": "same"
+    },
+    {
+      "file": "README.md",
+      "status": "different"
+    },
+    {
+      "file": "gradlew.bat",
+      "status": "same"
+    },
+    {
+      "file": "app/build.gradle.kts",
+      "status": "different"
+    },
+    {
+      "file": "app/proguard-rules.pro",
+      "status": "same"
+    },
+    {
+      "file": "gradle/wrapper/gradle-wrapper.jar",
+      "status": "same"
+    },
+    {
+      "file": "gradle/wrapper/gradle-wrapper.properties",
+      "status": "same"
+    },
+    {
+      "file": "app/signing/netstrazh.jks",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/AndroidManifest.xml",
+      "status": "same"
+    },
+    {
+      "file": "app/src/test/java/lab/netstrazh/net/SocksTest.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/test/java/lab/netstrazh/net/DnsPipeTest.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/test/java/lab/netstrazh/net/PacketTest.kt",
+      "status": "same"
+    },
+    {
+      "file": "app/src/test/java/lab/netstrazh/vpn/UpstreamDeadlineTest.kt",
+      "status": "missing"
+    },
+    {
+      "file": "app/src/main/res/values-night/colors.xml",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/res/values/colors.xml",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/res/values/strings.xml",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/res/values/styles.xml",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/res/drawable/ic_launcher_fg.xml",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/res/drawable/ic_stat_shield.xml",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/BootReceiver.kt",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/App.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/net/Sniff.kt",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/net/Packet.kt",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/net/Dns.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/net/Hosts.kt",
+      "status": "missing"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/net/Socks.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/vpn/NetMonitor.kt",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/vpn/Live.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/vpn/DnsPipe.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/vpn/UdpRelay.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/vpn/Engine.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/vpn/Nat.kt",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/vpn/Upstream.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/vpn/ProxyTester.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/vpn/FirewallService.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/data/Db.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/data/ProxyApps.kt",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/data/SysStats.kt",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/data/Apps.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/data/Rules.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/ui/TrafficPage.kt",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/ui/SettingsActivity.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/ui/AppActivity.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/ui/PickerActivity.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/ui/JournalPage.kt",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/ui/FirewallPage.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/ui/LivePage.kt",
+      "status": "same"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/ui/MainActivity.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/main/java/lab/netstrazh/ui/Ui.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/androidTest/java/lab/netstrazh/TestSocks.kt",
+      "status": "different"
+    },
+    {
+      "file": "app/src/androidTest/java/lab/netstrazh/E2eTest.kt",
+      "status": "different"
+    }
+  ]
+}

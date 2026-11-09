@@ -1,0 +1,16 @@
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  User 0 active services:
+  * ServiceRecord{2bc01f2 u0 com.v2ray.ang/.service.CoreProxyOnlyService}
+    intent={cmp=com.v2ray.ang/.service.CoreProxyOnlyService}
+    packageName=com.v2ray.ang
+    processName=com.v2ray.ang:daemon
+    baseDir=/data/app/com.v2ray.ang-4ge3QPxgRy318t9rG-9eoQ==/base.apk
+    dataDir=/data/user/0/com.v2ray.ang
+    app=ProcessRecord{b4876c0 7374:com.v2ray.ang:daemon/u0a118}
+    createTime=-5s107ms startingBgTimeout=--
+    lastActivity=-1s955ms restartTime=-1s955ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=false lastStartId=1
+    executeNesting=2 executeFg=true executingStart=-1s844ms
+    Delivered Starts:
+    #0 id=1 dur=-1s844ms dc=1
+      intent=Intent { cmp=com.v2ray.ang/.service.CoreProxyOnlyService }
