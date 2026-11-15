@@ -1,0 +1,42 @@
+{
+  "marker": "lockdown-off-1794723021399906048",
+  "package": "lab.netstrazh.reviewclient",
+  "uid": 10119,
+  "pid": 3868,
+  "processNonce": "cf393f61-a857-4203-82b9-5133e395d1e1",
+  "sequence": 2,
+  "startedMs": 1794723027594,
+  "networkBefore": {
+    "active": "null",
+    "bound": "null",
+    "vpn": false,
+    "linkAddresses": []
+  },
+  "tcp": {
+    "host": "10.0.2.2",
+    "port": 18080,
+    "request": "GET /echo/lockdown-off-1794723021399906048 HTTP/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n",
+    "requestBytes": 90,
+    "ok": false,
+    "finalLocalAddress": "::",
+    "finalLocalPort": -1,
+    "error": "java.net.ConnectException: failed to connect to /10.0.2.2 (port 18080) from /:: (port 0) after 4999ms: connect failed: EACCES (Permission denied)",
+    "durationMs": 634
+  },
+  "udp": {
+    "host": "10.0.2.2",
+    "port": 18081,
+    "request": "ns-test:lockdown-off-1794723021399906048",
+    "requestBytes": 40,
+    "ok": false,
+    "error": "java.net.ConnectException: failed to connect to /10.0.2.2 (port 18081) from /:: (port 46607): connect failed: EACCES (Permission denied)",
+    "durationMs": 115
+  },
+  "networkAfter": {
+    "active": "null",
+    "bound": "null",
+    "vpn": false,
+    "linkAddresses": []
+  },
+  "finishedMs": 1794723028420
+}

@@ -1,0 +1,41 @@
+INSTRUMENTATION_STATUS: class=lab.netstrazh.HostRulesReviewTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+lab.netstrazh.HostRulesReviewTest:
+INSTRUMENTATION_STATUS: test=hostListPreservesLegacyRulesCountsRealBlockedAttemptAndUnblocks
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.HostRulesReviewTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: same local target and Host return exact payload after unblock
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at lab.netstrazh.HostRulesReviewTest.hostListPreservesLegacyRulesCountsRealBlockedAttemptAndUnblocks(HostRulesReviewTest.kt:81)
+
+INSTRUMENTATION_STATUS: stream=
+Error in hostListPreservesLegacyRulesCountsRealBlockedAttemptAndUnblocks(lab.netstrazh.HostRulesReviewTest):
+java.lang.AssertionError: same local target and Host return exact payload after unblock
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at lab.netstrazh.HostRulesReviewTest.hostListPreservesLegacyRulesCountsRealBlockedAttemptAndUnblocks(HostRulesReviewTest.kt:81)
+
+INSTRUMENTATION_STATUS: test=hostListPreservesLegacyRulesCountsRealBlockedAttemptAndUnblocks
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 31.006
+There was 1 failure:
+1) hostListPreservesLegacyRulesCountsRealBlockedAttemptAndUnblocks(lab.netstrazh.HostRulesReviewTest)
+java.lang.AssertionError: same local target and Host return exact payload after unblock
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at lab.netstrazh.HostRulesReviewTest.hostListPreservesLegacyRulesCountsRealBlockedAttemptAndUnblocks(HostRulesReviewTest.kt:81)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

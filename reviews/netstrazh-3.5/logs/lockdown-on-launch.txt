@@ -1,0 +1,7 @@
+Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+Status: ok
+LaunchState: COLD
+Activity: lab.netstrazh.reviewclient/.ProbeActivity
+TotalTime: 5779
+WaitTime: 5802
+Complete

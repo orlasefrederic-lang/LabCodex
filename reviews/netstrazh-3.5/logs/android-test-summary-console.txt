@@ -1,0 +1,91 @@
+[
+  {
+    "log": "AppListReviewTest.log",
+    "tests": 1,
+    "failures": 0,
+    "result": "pass"
+  },
+  {
+    "log": "DomainRegressionTest.log",
+    "tests": 5,
+    "failures": 0,
+    "result": "pass"
+  },
+  {
+    "log": "HostHistoryReviewTest.log",
+    "tests": 1,
+    "failures": 0,
+    "result": "pass",
+    "interpretation": "PASS means the historical-count defect was reproduced with a synthetic journal row."
+  },
+  {
+    "log": "HostRulesReviewTest-fixture-fixed.log",
+    "tests": 1,
+    "failures": 0,
+    "result": "pass"
+  },
+  {
+    "log": "HostRulesReviewTest.log",
+    "tests": 1,
+    "failures": 1,
+    "result": "fail",
+    "interpretation": "Initial review-fixture bug: dotted HTTP path marker was rejected with404. Original log retained; corrected-fixture run separate."
+  },
+  {
+    "log": "IndependentClientTest.log",
+    "tests": 1,
+    "failures": 0,
+    "result": "pass"
+  },
+  {
+    "log": "InsideRealV2rayTest.log",
+    "tests": 3,
+    "failures": 0,
+    "result": "pass"
+  },
+  {
+    "log": "LocalRuntimeTest.log",
+    "tests": 5,
+    "failures": 1,
+    "result": "fail"
+  },
+  {
+    "log": "LockdownColdStartReviewTest.log",
+    "tests": 1,
+    "failures": 0,
+    "result": "pass",
+    "interpretation": "PASS means cold-start wrong proxy exclusion and failed HTTP were reproduced; existing recheck restored exact TCP/UDP and both app UIDs capture."
+  },
+  {
+    "log": "LockdownRealV2rayTest-diagnostic-repeat.log",
+    "tests": 0,
+    "failures": 1,
+    "result": "setup-failed",
+    "interpretation": "Class setup failed before any payload test method executed."
+  },
+  {
+    "log": "LockdownRealV2rayTest.log",
+    "tests": 0,
+    "failures": 1,
+    "result": "setup-failed",
+    "interpretation": "Class setup failed before any payload test method executed."
+  },
+  {
+    "log": "RealV2rayTest.log",
+    "tests": 7,
+    "failures": 3,
+    "result": "fail"
+  },
+  {
+    "log": "SettledRealV2rayTest.log",
+    "tests": 7,
+    "failures": 0,
+    "result": "pass"
+  },
+  {
+    "log": "UnknownUidReviewTest.log",
+    "tests": 2,
+    "failures": 0,
+    "result": "pass"
+  }
+]

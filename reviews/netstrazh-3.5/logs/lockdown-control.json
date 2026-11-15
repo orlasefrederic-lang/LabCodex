@@ -1,0 +1,60 @@
+{
+  "marker": "lockdown-control-1794723450140574498",
+  "package": "lab.netstrazh.reviewclient",
+  "uid": 10119,
+  "pid": 3868,
+  "processNonce": "cf393f61-a857-4203-82b9-5133e395d1e1",
+  "sequence": 3,
+  "startedMs": 1794723450915,
+  "networkBefore": {
+    "active": "100",
+    "bound": "null",
+    "vpn": false,
+    "linkAddresses": [
+      "fe80::15:b2ff:fe00:0",
+      "fec0::15:b2ff:fe00:0",
+      "fec0::106f:a923:332e:4e3",
+      "10.0.2.16"
+    ]
+  },
+  "tcp": {
+    "host": "10.0.2.2",
+    "port": 18080,
+    "request": "GET /echo/lockdown-control-1794723450140574498 HTTP/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n",
+    "requestBytes": 94,
+    "ok": true,
+    "localAddress": "10.0.2.16",
+    "localPort": 54824,
+    "response": "HTTP/1.1 200 OK\r\nServer: NetStrazhLocalFixture/1 \r\nDate: Sun, 15 Nov 2026 06:17:31 GMT\r\nContent-Type: text/plain; charset=us-ascii\r\nContent-Length: 51\r\nConnection: close\r\n\r\nnetstrazh-http:lockdown-control-1794723450140574498",
+    "responseBytes": 224,
+    "payload": "netstrazh-http:lockdown-control-1794723450140574498",
+    "finalLocalAddress": "10.0.2.16",
+    "finalLocalPort": 54824,
+    "durationMs": 160
+  },
+  "udp": {
+    "host": "10.0.2.2",
+    "port": 18081,
+    "request": "ns-test:lockdown-control-1794723450140574498",
+    "requestBytes": 44,
+    "ok": true,
+    "localAddress": "10.0.2.16",
+    "localPort": 39926,
+    "response": "netstrazh-udp:ns-test:lockdown-control-1794723450140574498",
+    "payload": "netstrazh-udp:ns-test:lockdown-control-1794723450140574498",
+    "responseBytes": 58,
+    "durationMs": 72
+  },
+  "networkAfter": {
+    "active": "100",
+    "bound": "null",
+    "vpn": false,
+    "linkAddresses": [
+      "fe80::15:b2ff:fe00:0",
+      "fec0::15:b2ff:fe00:0",
+      "fec0::106f:a923:332e:4e3",
+      "10.0.2.16"
+    ]
+  },
+  "finishedMs": 1794723451483
+}

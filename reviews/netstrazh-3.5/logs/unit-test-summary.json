@@ -1,0 +1,50 @@
+{
+  "suites": [
+    {
+      "name": "lab.netstrazh.net.SocksTest",
+      "tests": "12",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "1.532"
+    },
+    {
+      "name": "lab.netstrazh.net.DnsPipeTest",
+      "tests": "8",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "4.821"
+    },
+    {
+      "name": "lab.netstrazh.net.PacketTest",
+      "tests": "13",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.009"
+    },
+    {
+      "name": "lab.netstrazh.vpn.UpstreamDeadlineTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "6.308"
+    },
+    {
+      "name": "lab.netstrazh.vpn.UpstreamBoundaryTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "8.222"
+    }
+  ],
+  "totals": {
+    "tests": 40,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}

@@ -1,0 +1,7 @@
+{"ready": true, "bind": "127.0.0.1", "http": 18080, "udp": 18081}
+{"kind": "http", "message": "\"GET /echo/lockdown-on-1794722983055653109 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "lockdown-on-1794722983055653109"}
+{"kind": "http", "message": "\"GET /echo/lockdown-recheck-http-857321 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "lockdown-recheck-udp-859796"}
+{"kind": "http", "message": "\"GET /echo/lockdown-control-1794723450140574498 HTTP/1.1\" 200 -"}
+{"kind": "udp", "token": "lockdown-control-1794723450140574498"}

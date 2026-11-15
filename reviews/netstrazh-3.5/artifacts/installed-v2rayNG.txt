@@ -1,0 +1,4 @@
+    userId=10118
+    codePath=/data/app/com.v2ray.ang-4ge3QPxgRy318t9rG-9eoQ==
+    versionCode=4000751 minSdk=24 targetSdk=37
+    versionName=2.3.11

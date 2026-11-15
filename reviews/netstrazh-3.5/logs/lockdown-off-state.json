@@ -1,0 +1,14 @@
+{
+  "pid": {
+    "exit": 1,
+    "stdout": ""
+  },
+  "always_on_vpn_app": {
+    "exit": 0,
+    "stdout": "lab.netstrazh"
+  },
+  "always_on_vpn_lockdown": {
+    "exit": 0,
+    "stdout": "1"
+  }
+}

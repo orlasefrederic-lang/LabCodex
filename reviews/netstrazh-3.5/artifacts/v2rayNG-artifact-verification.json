@@ -1,0 +1,17 @@
+{
+  "v2rayNG_2.3.11_x86.apk": {
+    "sha256": "c08d64819ba791322a3f5d93449e2950b913836a20ad786d65ae2a240518b570",
+    "bytes": 35155354,
+    "source": "https://github.com/2dust/v2rayNG/releases/download/2.3.11/v2rayNG_2.3.11_x86.apk"
+  },
+  "v2rayNG_2.3.11_x86.apk.sig": {
+    "sha256": "c6c25682dd9a3521ce24dffdb1ee0379242901304fcf430516e0a95d4ddf9bed",
+    "bytes": 171,
+    "source": "https://github.com/2dust/v2rayNG/releases/download/2.3.11/v2rayNG_2.3.11_x86.apk.sig"
+  },
+  "v2rayN-public-key.asc": {
+    "sha256": "e61a5be0450ee99e18df7d84f3cf5adb775cf437e0717e3cb39c80ed317cd922",
+    "bytes": 547,
+    "source": "https://github.com/2dust/v2rayNG/releases/download/2.3.11/v2rayN-public-key.asc"
+  }
+}

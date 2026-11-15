@@ -1,0 +1,8 @@
+{
+  "ro.build.version.release": "10",
+  "ro.build.version.sdk": "29",
+  "ro.product.cpu.abi": "x86",
+  "ro.build.fingerprint": "Android/sdk_phone_x86/generic_x86:10/QSR1.210820.001/7663313:userdebug/test-keys",
+  "acceleration": "TCG; no KVM",
+  "resume_note": "After quota pause stock SystemUI ANR appeared. Selected Wait; UI returned to launcher before app installation and instrumentation. No UI dump concurrent with instrumentation."
+}

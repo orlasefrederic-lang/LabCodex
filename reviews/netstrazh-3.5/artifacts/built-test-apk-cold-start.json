@@ -1,0 +1,6 @@
+{
+  "file": "build-output/app/outputs/apk/androidTest/debug/app-debug-androidTest.apk",
+  "sha256": "a62e9f927390410ee964eea0fd236fac59cc506d5954592b899abe6699d993d9",
+  "bytes": 2567146,
+  "purpose": "Adds diagnostic LockdownColdStartReviewTest; production sources unchanged"
+}

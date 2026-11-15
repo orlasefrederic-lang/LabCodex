@@ -1,0 +1,4 @@
+case=slow-proxy-name budgetMs=50 boundaryDelayMs=250 elapsedMs=66 createdSockets=0 openAfterFailure=0 openAfterUpstreamClose=0 outcome=IOException: DNS-сервер 198.51.100.10 не ответил через туннель за 1 с
+case=deadline-expires-during-protect budgetMs=50 boundaryDelayMs=250 elapsedMs=263 createdSockets=1 openAfterFailure=0 openAfterUpstreamClose=0 outcome=IOException: DNS-сервер 198.51.100.10 не ответил через туннель за 1 с
+case=slow-dns-name totalBudgetMs=6000 eachResolveDelayMs=4000 resolveCalls=1 elapsedMs=6026 outcome=IOException: DNS-сервер 198.51.100.10 не ответил через туннель за 2 с
+PASS: slow hostname resolution no longer exceeds DNS caller deadline; pipeline and fallback share one resolution; former socket cleanup defect fixed. Deliberately slow synchronous protect still consumes 250 ms beyond a 50 ms budget, but no channel remains open. Boundary-delay harness, not a measured Android protect/resolver failure.

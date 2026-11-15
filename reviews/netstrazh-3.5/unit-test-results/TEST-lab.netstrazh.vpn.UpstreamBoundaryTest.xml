@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab.netstrazh.vpn.UpstreamBoundaryTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-14T14:12:00" hostname="4541b974f64b" time="8.222">
+  <properties/>
+  <testcase name="slowDnsServerNameStaysWithinTheTotal" classname="lab.netstrazh.vpn.UpstreamBoundaryTest" time="6.008"/>
+  <testcase name="proxyThatComesUpAMomentLaterIsWaitedFor" classname="lab.netstrazh.vpn.UpstreamBoundaryTest" time="0.907"/>
+  <testcase name="slowProxyNameDoesNotOutliveTheBudget" classname="lab.netstrazh.vpn.UpstreamBoundaryTest" time="1.004"/>
+  <testcase name="timeRunningOutWhileProtectingLeavesNoChannelOpen" classname="lab.netstrazh.vpn.UpstreamBoundaryTest" time="0.303"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

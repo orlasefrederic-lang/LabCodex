@@ -1,0 +1,122 @@
+[
+  {
+    "phase": "initial",
+    "uid": 10119,
+    "pid": 4635,
+    "nonce": "7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce",
+    "vpn": true,
+    "bound": "null",
+    "tcp_ok": true,
+    "tcp_source": "10.111.0.1",
+    "udp_ok": true,
+    "udp_source": "10.111.0.1"
+  },
+  {
+    "phase": "off-1",
+    "uid": 10119,
+    "pid": 4635,
+    "nonce": "7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce",
+    "vpn": false,
+    "bound": "null",
+    "tcp_ok": true,
+    "tcp_source": "10.0.2.16",
+    "udp_ok": true,
+    "udp_source": "10.0.2.16"
+  },
+  {
+    "phase": "restarted-1",
+    "uid": 10119,
+    "pid": 4635,
+    "nonce": "7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce",
+    "vpn": true,
+    "bound": "null",
+    "tcp_ok": true,
+    "tcp_source": "10.111.0.1",
+    "udp_ok": true,
+    "udp_source": "10.111.0.1"
+  },
+  {
+    "phase": "settled-1",
+    "uid": 10119,
+    "pid": 4635,
+    "nonce": "7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce",
+    "vpn": true,
+    "bound": "null",
+    "tcp_ok": true,
+    "tcp_source": "10.111.0.1",
+    "udp_ok": true,
+    "udp_source": "10.111.0.1"
+  },
+  {
+    "phase": "off-2",
+    "uid": 10119,
+    "pid": 4635,
+    "nonce": "7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce",
+    "vpn": false,
+    "bound": "null",
+    "tcp_ok": true,
+    "tcp_source": "10.0.2.16",
+    "udp_ok": true,
+    "udp_source": "10.0.2.16"
+  },
+  {
+    "phase": "restarted-2",
+    "uid": 10119,
+    "pid": 4635,
+    "nonce": "7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce",
+    "vpn": true,
+    "bound": "null",
+    "tcp_ok": true,
+    "tcp_source": "10.111.0.1",
+    "udp_ok": true,
+    "udp_source": "10.111.0.1"
+  },
+  {
+    "phase": "settled-2",
+    "uid": 10119,
+    "pid": 4635,
+    "nonce": "7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce",
+    "vpn": true,
+    "bound": "null",
+    "tcp_ok": true,
+    "tcp_source": "10.111.0.1",
+    "udp_ok": true,
+    "udp_source": "10.111.0.1"
+  },
+  {
+    "phase": "off-3",
+    "uid": 10119,
+    "pid": 4635,
+    "nonce": "7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce",
+    "vpn": false,
+    "bound": "null",
+    "tcp_ok": true,
+    "tcp_source": "10.0.2.16",
+    "udp_ok": true,
+    "udp_source": "10.0.2.16"
+  },
+  {
+    "phase": "restarted-3",
+    "uid": 10119,
+    "pid": 4635,
+    "nonce": "7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce",
+    "vpn": true,
+    "bound": "null",
+    "tcp_ok": true,
+    "tcp_source": "10.111.0.1",
+    "udp_ok": true,
+    "udp_source": "10.111.0.1"
+  },
+  {
+    "phase": "settled-3",
+    "uid": 10119,
+    "pid": 4635,
+    "nonce": "7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce",
+    "vpn": true,
+    "bound": "null",
+    "tcp_ok": true,
+    "tcp_source": "10.111.0.1",
+    "udp_ok": true,
+    "udp_source": "10.111.0.1"
+  }
+]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="lab.netstrazh.net.DnsPipeTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-11-14T14:11:54" hostname="4541b974f64b" time="4.821">
+  <properties/>
+  <testcase name="oneDeadlineCoversOpenWriteWaitAndAnswer" classname="lab.netstrazh.net.DnsPipeTest" time="1.625"/>
+  <testcase name="stalledConnectionIsReplaced" classname="lab.netstrazh.net.DnsPipeTest" time="0.303"/>
+  <testcase name="slowOpenAndBlockedWritesAreBounded" classname="lab.netstrazh.net.DnsPipeTest" time="2.705"/>
+  <testcase name="refusedAnswerHasHeaderAndQuestionOnly" classname="lab.netstrazh.net.DnsPipeTest" time="0.007"/>
+  <testcase name="ednsLimitAndTruncation" classname="lab.netstrazh.net.DnsPipeTest" time="0.001"/>
+  <testcase name="reconnectsWhenResolverClosesIdleConnection" classname="lab.netstrazh.net.DnsPipeTest" time="0.16"/>
+  <testcase name="pipelinedOutOfOrderAnswersAreMatchedAndIdsRestored" classname="lab.netstrazh.net.DnsPipeTest" time="0.011"/>
+  <testcase name="hostRulesCoverSubdomains" classname="lab.netstrazh.net.DnsPipeTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

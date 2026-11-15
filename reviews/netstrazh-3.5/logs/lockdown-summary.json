@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "uid": 10119,
+  "same_pid": 3868,
+  "same_process_nonce": "cf393f61-a857-4203-82b9-5133e395d1e1",
+  "on": "TCP/UDP exact payload from TUN10.111.0.1",
+  "off": "both denied EACCES, no NetStrazh PID, system lockdown1",
+  "control": "TCP/UDP exact payload from physical10.0.2.16",
+  "settings_restored": true,
+  "scope": "One ordinary UID, fresh sockets, LAN IPv4, AOSP Android10. Does not prove every startup transition or phone/OEM behavior."
+}

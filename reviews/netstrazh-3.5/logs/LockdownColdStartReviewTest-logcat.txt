@@ -1,0 +1,64 @@
+--------- beginning of main
+--------- beginning of system
+11-15 06:00:53.035  1839  2008 I Vpn     : Switched from [Legacy VPN] to lab.netstrazh
+11-15 06:00:53.092  1839  2008 D Vpn     : setting state=IDLE, reason=prepare
+11-15 06:02:15.433  1839  2354 D Vpn     : setting state=CONNECTING, reason=establish
+11-15 06:02:15.547  1839  2354 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-15 06:02:15.560  1839  2354 I Vpn     : Established by lab.netstrazh on tun0
+11-15 06:02:27.137  2599  2599 W NetStrazh: capture probe lost (1): Android routes around the VPN interface
+11-15 06:02:28.489  1839  2702 I Vpn     : Established by lab.netstrazh on tun1
+11-15 06:05:58.597  1839  1914 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-15 06:06:09.597  1839  3002 D Vpn     : setting state=CONNECTING, reason=establish
+11-15 06:06:09.644  1839  3002 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-15 06:06:09.660  1839  3002 I Vpn     : Established by lab.netstrazh on tun0
+11-15 06:06:10.004  3646  3668 I NetStrazhRuntimeTest: included v2ray readiness begins: running=true, currentCfg=SOCKS5:127.0.0.1:10808, app=com.v2ray.ang, bypass=true, dnsViaProxy=false, udpDirect=false, directIfDown=false, expectedCfg=SOCKS5:127.0.0.1:10808, app=com.v2ray.ang, bypass=true, dnsViaProxy=false, udpDirect=false, directIfDown=false, cfgMatches=true, prefsCfg=SOCKS5:127.0.0.1:10808, app=com.v2ray.ang, bypass=true, dnsViaProxy=false, udpDirect=false, directIfDown=false, prefsMatch=true, proxyUid=-2, installedUid=10118, lastError=null, appliedExcluded=[com.v2ray.ang], engineStartedAt=1794722769664, captureVerifiedAt=0, captureBroken=false, captureRecoveries=0, systemLockdown=true, reportedLockdown=false
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest: included v2ray readiness failed: running=true, currentCfg=SOCKS5:127.0.0.1:10808, app=com.v2ray.ang, bypass=true, dnsViaProxy=false, udpDirect=false, directIfDown=false, expectedCfg=SOCKS5:127.0.0.1:10808, app=com.v2ray.ang, bypass=true, dnsViaProxy=false, udpDirect=false, directIfDown=false, cfgMatches=true, prefsCfg=SOCKS5:127.0.0.1:10808, app=com.v2ray.ang, bypass=true, dnsViaProxy=false, udpDirect=false, directIfDown=false, prefsMatch=true, proxyUid=-3, installedUid=10118, lastError=null, appliedExcluded=[com.v2ray.ang], engineStartedAt=1794722769664, captureVerifiedAt=1794722770834, captureBroken=false, captureRecoveries=0, systemLockdown=true, reportedLockdown=false
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest: 
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest: v2rayNG services:
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest: ACTIVITY MANAGER SERVICES (dumpsys activity services)
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:   Last ANR service:
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest: ServiceRecord{f39ceba u0 com.android.systemui/.SystemUIService}
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     intent={cmp=com.android.systemui/.SystemUIService}
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     packageName=com.android.systemui
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     processName=com.android.systemui
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     baseDir=/system/product/priv-app/SystemUI/SystemUI.apk
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     dataDir=/data/user_de/0/com.android.systemui
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     app=ProcessRecord{295ce89 2045:com.android.systemui/u0a97}
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     createTime=-20s627ms startingBgTimeout=--
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     lastActivity=-20s93ms restartTime=-20s93ms createdFromFg=true
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     startRequested=true delayedStop=false stopIfKilled=false callStart=false lastStartId=1
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     executeNesting=2 executeFg=true executingStart=-20s21ms
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     Delivered Starts:
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     #0 id=1 dur=-20s21ms dc=1
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:       intent=Intent { flg=0x100 cmp=com.android.systemui/.SystemUIService }
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest: 
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:   User 0 active services:
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:   * ServiceRecord{990aae u0 com.v2ray.ang/.service.CoreProxyOnlyService}
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     intent={cmp=com.v2ray.ang/.service.CoreProxyOnlyService}
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     packageName=com.v2ray.ang
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     processName=com.v2ray.ang:daemon
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     baseDir=/data/app/com.v2ray.ang-4ge3QPxgRy318t9rG-9eoQ==/base.apk
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     dataDir=/data/user/0/com.v2ray.ang
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     app=ProcessRecord{ffc00a4 3573:com.v2ray.ang:daemon/u0a118}
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     isForeground=true foregroundId=1 foregroundNoti=Notification(channel=CORE_M_CH_ID_V2 pri=-1 contentView=null vibrate=null sound=null defaults=0x0 flags=0x6a color=0x00000000 actions=2 vis=PRIVATE)
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     createTime=-1m36s564ms startingBgTimeout=--
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     lastActivity=-1m34s327ms restartTime=-1m34s327ms createdFromFg=true
+11-15 06:07:10.662  3646  3668 E NetStrazhRuntimeTest:     startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=1
+11-15 06:07:10.894  1839  1914 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-15 06:09:43.547  1839  2538 D Vpn     : setting state=CONNECTING, reason=establish
+11-15 06:09:43.602  1839  2538 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-15 06:09:43.605  1839  2538 I Vpn     : Established by lab.netstrazh on tun0
+11-15 06:10:21.004  1839  1914 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-15 06:13:56.127  1839  3914 D Vpn     : setting state=CONNECTING, reason=establish
+11-15 06:13:56.450  1839  3914 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-15 06:13:56.461  1839  3914 I Vpn     : Established by lab.netstrazh on tun0
+11-15 06:13:59.632  4008  4027 I NetStrazhRuntimeTest: LOCKDOWN_COLD_START {"characterization":true,"requestedBypass":true,"coldState":{"time":1794723239570,"running":true,"systemLockdown":true,"reportedLockdown":false,"appliedExcluded":["com.v2ray.ang"],"engineStartedAt":1794723236463,"captureVerifiedAt":1794723239490,"captureBroken":false,"captureRecoveries":0,"observedProxyUid":-3,"installedProxyUid":10118,"lastError":null}}
+11-15 06:14:01.556  4008  4027 I NetStrazhRuntimeTest: LOCKDOWN_COLD_START {"characterization":true,"requestedBypass":true,"coldState":{"time":1794723239570,"running":true,"systemLockdown":true,"reportedLockdown":false,"appliedExcluded":["com.v2ray.ang"],"engineStartedAt":1794723236463,"captureVerifiedAt":1794723239490,"captureBroken":false,"captureRecoveries":0,"observedProxyUid":-3,"installedProxyUid":10118,"lastError":null},"coldHttp":{"marker":"lockdown-cold-853453","exactPayload":false,"localAddress":"10.111.0.1","localPort":54406,"statusLine":"","body":"","durationMs":1848}}
+11-15 06:14:01.767  1839  3914 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-15 06:14:01.767  1839  3914 D Vpn     : setting state=CONNECTING, reason=establish
+11-15 06:14:01.797  1839  3914 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-15 06:14:01.863  1839  3914 I Vpn     : Established by lab.netstrazh on tun1
+11-15 06:14:05.847  4008  4027 I NetStrazhRuntimeTest: origin app TCP through proxy after lockdown recheck: Seen(started=1794723243792, uid=10116, proto=TCP, ip=198.51.100.10, port=18080, tx=91, rx=216, blocked=false, via=proxy)
+11-15 06:14:06.979  4008  4027 I NetStrazhRuntimeTest: origin app UDP through proxy after lockdown recheck: Seen(started=1794723246023, uid=10116, proto=UDP, ip=198.51.100.10, port=18081, tx=35, rx=49, blocked=false, via=proxy)
+11-15 06:14:07.104  4008  4027 I NetStrazhRuntimeTest: LOCKDOWN_COLD_START {"characterization":true,"requestedBypass":true,"coldState":{"time":1794723239570,"running":true,"systemLockdown":true,"reportedLockdown":false,"appliedExcluded":["com.v2ray.ang"],"engineStartedAt":1794723236463,"captureVerifiedAt":1794723239490,"captureBroken":false,"captureRecoveries":0,"observedProxyUid":-3,"installedProxyUid":10118,"lastError":null},"coldHttp":{"marker":"lockdown-cold-853453","exactPayload":false,"localAddress":"10.111.0.1","localPort":54406,"statusLine":"","body":"","durationMs":1848},"beforeRecheck":{"time":1794723241556,"running":true,"systemLockdown":true,"reportedLockdown":false,"appliedExcluded":["com.v2ray.ang"],"engineStartedAt":1794723236463,"captureVerifiedAt":1794723239490,"captureBroken":false,"captureRecoveries":0,"observedProxyUid":-3,"installedProxyUid":10118,"lastError":null},"recoveredState":{"time":1794723243499,"running":true,"systemLockdown":true,"reportedLockdown":true,"appliedExcluded":[],"engineStartedAt":1794723242101,"captureVerifiedAt":1794723243471,"captureBroken":false,"captureRecoveries":0,"observedProxyUid":10118,"installedProxyUid":10118,"lastError":null},"tcpExactPayloadAfterRecheck":true,"proxyTcpCapture":{"uid":10118,"protocol":"TCP","destination":"10.0.2.2","port":18080,"tx":91,"rx":216,"via":"","startedAt":1794723244124},"udpExactPayloadAfterRecheck":true,"proxyUdpCapture":{"uid":10118,"protocol":"UDP","destination":"10.0.2.2","port":18081,"tx":35,"rx":49,"via":"","lastAt":1794723246533},"result":"cold-start-defect-reproduced-and-existing-recheck-restores-local-proxy"}
+11-15 06:14:07.294  1839  1914 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect

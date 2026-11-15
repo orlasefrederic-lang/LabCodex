@@ -1,0 +1,69 @@
+{
+  "remarks": "NetStrazh controlled local fixture",
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "fixture-socks",
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": {
+        "auth": "noauth",
+        "udp": true,
+        "ip": "127.0.0.1"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "blocked",
+      "protocol": "blackhole",
+      "settings": {}
+    },
+    {
+      "tag": "fixture-http",
+      "protocol": "freedom",
+      "settings": {
+        "redirect": "10.0.2.2:18080"
+      }
+    },
+    {
+      "tag": "fixture-udp",
+      "protocol": "freedom",
+      "settings": {
+        "redirect": "10.0.2.2:18081"
+      }
+    }
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "fixture-socks"
+        ],
+        "ip": [
+          "198.51.100.10/32"
+        ],
+        "port": "18080",
+        "network": "tcp",
+        "outboundTag": "fixture-http"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "fixture-socks"
+        ],
+        "ip": [
+          "198.51.100.10/32"
+        ],
+        "port": "18081",
+        "network": "udp",
+        "outboundTag": "fixture-udp"
+      }
+    ]
+  }
+}

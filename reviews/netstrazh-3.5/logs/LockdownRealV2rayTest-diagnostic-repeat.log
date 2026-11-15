@@ -1,0 +1,62 @@
+INSTRUMENTATION_STATUS: class=lab.netstrazh.LockdownRealV2rayTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=3
+INSTRUMENTATION_STATUS: stream=
+lab.netstrazh.LockdownRealV2rayTest:
+INSTRUMENTATION_STATUS: test=null
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.LockdownRealV2rayTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=3
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: timeout waiting for included v2rayNG owner and fresh capture
+running=true, currentCfg=SOCKS5:127.0.0.1:10808, app=com.v2ray.ang, bypass=true, dnsViaProxy=false, udpDirect=false, directIfDown=false, expectedCfg=SOCKS5:127.0.0.1:10808, app=com.v2ray.ang, bypass=true, dnsViaProxy=false, udpDirect=false, directIfDown=false, cfgMatches=true, prefsCfg=SOCKS5:127.0.0.1:10808, app=com.v2ray.ang, bypass=true, dnsViaProxy=false, udpDirect=false, directIfDown=false, prefsMatch=true, proxyUid=-3, installedUid=10118, lastError=null, appliedExcluded=[com.v2ray.ang], engineStartedAt=1794722769664, captureVerifiedAt=1794722770834, captureBroken=false, captureRecoveries=0, systemLockdown=true, reportedLockdown=false
+	at lab.netstrazh.IncludedV2rayFixture.start(InsideRealV2rayTest.kt:124)
+	at lab.netstrazh.LockdownRealV2rayTest$Companion.start(InsideRealV2rayTest.kt:55)
+	at lab.netstrazh.LockdownRealV2rayTest.start(Unknown Source:2)
+	... 24 trimmed
+Caused by: java.lang.AssertionError: timeout waiting for included v2rayNG owner and fresh capture
+	at org.junit.Assert.fail(Assert.java:89)
+	at lab.netstrazh.RuntimeFixture$Companion.waitFor(LocalRuntimeTest.kt:329)
+	at lab.netstrazh.IncludedV2rayFixture.start(InsideRealV2rayTest.kt:108)
+	... 27 more
+
+INSTRUMENTATION_STATUS: stream=
+Error in lab.netstrazh.LockdownRealV2rayTest:
+java.lang.AssertionError: timeout waiting for included v2rayNG owner and fresh capture
+running=true, currentCfg=SOCKS5:127.0.0.1:10808, app=com.v2ray.ang, bypass=true, dnsViaProxy=false, udpDirect=false, directIfDown=false, expectedCfg=SOCKS5:127.0.0.1:10808, app=com.v2ray.ang, bypass=true, dnsViaProxy=false, udpDirect=false, directIfDown=false, cfgMatches=true, prefsCfg=SOCKS5:127.0.0.1:10808, app=com.v2ray.ang, bypass=true, dnsViaProxy=false, udpDirect=false, directIfDown=false, prefsMatch=true, proxyUid=-3, installedUid=10118, lastError=null, appliedExcluded=[com.v2ray.ang], engineStartedAt=1794722769664, captureVerifiedAt=1794722770834, captureBroken=false, captureRecoveries=0, systemLockdown=true, reportedLockdown=false
+	at lab.netstrazh.IncludedV2rayFixture.start(InsideRealV2rayTest.kt:124)
+	at lab.netstrazh.LockdownRealV2rayTest$Companion.start(InsideRealV2rayTest.kt:55)
+	at lab.netstrazh.LockdownRealV2rayTest.start(Unknown Source:2)
+	... 24 trimmed
+Caused by: java.lang.AssertionError: timeout waiting for included v2rayNG owner and fresh capture
+	at org.junit.Assert.fail(Assert.java:89)
+	at lab.netstrazh.RuntimeFixture$Companion.waitFor(LocalRuntimeTest.kt:329)
+	at lab.netstrazh.IncludedV2rayFixture.start(InsideRealV2rayTest.kt:108)
+	... 27 more
+
+INSTRUMENTATION_STATUS: test=null
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 74.415
+There was 1 failure:
+1) lab.netstrazh.LockdownRealV2rayTest
+java.lang.AssertionError: timeout waiting for included v2rayNG owner and fresh capture
+running=true, currentCfg=SOCKS5:127.0.0.1:10808, app=com.v2ray.ang, bypass=true, dnsViaProxy=false, udpDirect=false, directIfDown=false, expectedCfg=SOCKS5:127.0.0.1:10808, app=com.v2ray.ang, bypass=true, dnsViaProxy=false, udpDirect=false, directIfDown=false, cfgMatches=true, prefsCfg=SOCKS5:127.0.0.1:10808, app=com.v2ray.ang, bypass=true, dnsViaProxy=false, udpDirect=false, directIfDown=false, prefsMatch=true, proxyUid=-3, installedUid=10118, lastError=null, appliedExcluded=[com.v2ray.ang], engineStartedAt=1794722769664, captureVerifiedAt=1794722770834, captureBroken=false, captureRecoveries=0, systemLockdown=true, reportedLockdown=false
+	at lab.netstrazh.IncludedV2rayFixture.start(InsideRealV2rayTest.kt:124)
+	at lab.netstrazh.LockdownRealV2rayTest$Companion.start(InsideRealV2rayTest.kt:55)
+	at lab.netstrazh.LockdownRealV2rayTest.start(Unknown Source:2)
+	... 24 trimmed
+Caused by: java.lang.AssertionError: timeout waiting for included v2rayNG owner and fresh capture
+	at org.junit.Assert.fail(Assert.java:89)
+	at lab.netstrazh.RuntimeFixture$Companion.waitFor(LocalRuntimeTest.kt:329)
+	at lab.netstrazh.IncludedV2rayFixture.start(InsideRealV2rayTest.kt:108)
+	... 27 more
+
+FAILURES!!!
+Tests run: 0,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

@@ -1,0 +1,47 @@
+INSTRUMENTATION_STATUS: class=lab.netstrazh.LockdownRealV2rayTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=3
+INSTRUMENTATION_STATUS: stream=
+lab.netstrazh.LockdownRealV2rayTest:
+INSTRUMENTATION_STATUS: test=null
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=lab.netstrazh.LockdownRealV2rayTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=3
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: timeout waiting for included v2rayNG owner and fresh capture
+	at org.junit.Assert.fail(Assert.java:89)
+	at lab.netstrazh.RuntimeFixture$Companion.waitFor(LocalRuntimeTest.kt:329)
+	at lab.netstrazh.IncludedV2rayFixture.start(InsideRealV2rayTest.kt:89)
+	at lab.netstrazh.LockdownRealV2rayTest$Companion.start(InsideRealV2rayTest.kt:55)
+	at lab.netstrazh.LockdownRealV2rayTest.start(Unknown Source:2)
+
+INSTRUMENTATION_STATUS: stream=
+Error in lab.netstrazh.LockdownRealV2rayTest:
+java.lang.AssertionError: timeout waiting for included v2rayNG owner and fresh capture
+	at org.junit.Assert.fail(Assert.java:89)
+	at lab.netstrazh.RuntimeFixture$Companion.waitFor(LocalRuntimeTest.kt:329)
+	at lab.netstrazh.IncludedV2rayFixture.start(InsideRealV2rayTest.kt:89)
+	at lab.netstrazh.LockdownRealV2rayTest$Companion.start(InsideRealV2rayTest.kt:55)
+	at lab.netstrazh.LockdownRealV2rayTest.start(Unknown Source:2)
+
+INSTRUMENTATION_STATUS: test=null
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 75.605
+There was 1 failure:
+1) lab.netstrazh.LockdownRealV2rayTest
+java.lang.AssertionError: timeout waiting for included v2rayNG owner and fresh capture
+	at org.junit.Assert.fail(Assert.java:89)
+	at lab.netstrazh.RuntimeFixture$Companion.waitFor(LocalRuntimeTest.kt:329)
+	at lab.netstrazh.IncludedV2rayFixture.start(InsideRealV2rayTest.kt:89)
+	at lab.netstrazh.LockdownRealV2rayTest$Companion.start(InsideRealV2rayTest.kt:55)
+	at lab.netstrazh.LockdownRealV2rayTest.start(Unknown Source:2)
+
+FAILURES!!!
+Tests run: 0,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

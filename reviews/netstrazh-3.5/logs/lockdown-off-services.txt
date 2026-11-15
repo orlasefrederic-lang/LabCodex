@@ -1,0 +1,18 @@
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  Last ANR service:
+ServiceRecord{f39ceba u0 com.android.systemui/.SystemUIService}
+    intent={cmp=com.android.systemui/.SystemUIService}
+    packageName=com.android.systemui
+    processName=com.android.systemui
+    baseDir=/system/product/priv-app/SystemUI/SystemUI.apk
+    dataDir=/data/user_de/0/com.android.systemui
+    app=ProcessRecord{295ce89 2045:com.android.systemui/u0a97}
+    createTime=-20s627ms startingBgTimeout=--
+    lastActivity=-20s93ms restartTime=-20s93ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=false lastStartId=1
+    executeNesting=2 executeFg=true executingStart=-20s21ms
+    Delivered Starts:
+    #0 id=1 dur=-20s21ms dc=1
+      intent=Intent { flg=0x100 cmp=com.android.systemui/.SystemUIService }
+
+  (nothing)

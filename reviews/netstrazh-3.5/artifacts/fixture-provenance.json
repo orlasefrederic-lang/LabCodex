@@ -1,0 +1,6 @@
+{
+  "official_apk": "v2rayNG_2.3.11_x86.apk",
+  "verification": "Identity metadata copied from prior audit; APK reused from /workspace/netstrazh-v1.1.10-review/artifacts. Current installed version and fixture mode checked separately. No new release signature verification claimed.",
+  "android": "API29 default x86 r8",
+  "host": "local TCP18080 UDP18081; no private VPN server or credentials"
+}

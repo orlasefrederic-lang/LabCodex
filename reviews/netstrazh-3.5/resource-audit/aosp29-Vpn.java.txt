@@ -1,0 +1,113 @@
+https://raw.githubusercontent.com/aosp-mirror/platform_frameworks_base/android-10.0.0_r47/services/core/java/com/android/server/connectivity/Vpn.java
+
+400:      *     <li>target {@link VERSION_CODES#N API 24} or above, and
+401:      *     <li>not opt out through the {@link VpnService#SERVICE_META_DATA_SUPPORTS_ALWAYS_ON}
+402:      *         meta-data field.
+403:      * </ul>
+404:      *
+405:      * @param packageName the canonical package name of the VPN app
+406:      * @return {@code true} if and only if the VPN app exists and supports always-on mode
+407:      */
+408:     public boolean isAlwaysOnPackageSupported(String packageName) {
+409:         enforceSettingsPermission();
+410: 
+411:         if (packageName == null) {
+412:             return false;
+413:         }
+414: 
+415:         PackageManager pm = mContext.getPackageManager();
+416:         ApplicationInfo appInfo = null;
+417:         try {
+418:             appInfo = pm.getApplicationInfoAsUser(packageName, 0 /*flags*/, mUserHandle);
+419:         } catch (NameNotFoundException unused) {
+420:             Log.w(TAG, "Can't find \"" + packageName + "\" when checking always-on support");
+421:         }
+422:         if (appInfo == null || appInfo.targetSdkVersion < VERSION_CODES.N) {
+423:             return false;
+424:         }
+425: 
+426:         final Intent intent = new Intent(VpnConfig.SERVICE_INTERFACE);
+427:         intent.setPackage(packageName);
+428:         List<ResolveInfo> services =
+429:                 pm.queryIntentServicesAsUser(intent, PackageManager.GET_META_DATA, mUserHandle);
+430:         if (services == null || services.size() == 0) {
+431:             return false;
+432:         }
+433: 
+434:         for (ResolveInfo rInfo : services) {
+435:             final Bundle metaData = rInfo.serviceInfo.metaData;
+
+1147: 
+1148:     private boolean isRunningLocked() {
+1149:         return mNetworkAgent != null && mInterface != null;
+1150:     }
+1151: 
+1152:     // Returns true if the VPN has been established and the calling UID is its owner. Used to check
+1153:     // that a call to mutate VPN state is admissible.
+1154:     @VisibleForTesting
+1155:     protected boolean isCallerEstablishedOwnerLocked() {
+1156:         return isRunningLocked() && Binder.getCallingUid() == mOwnerUID;
+1157:     }
+1158: 
+1159:     // Note: Return type guarantees results are deduped and sorted, which callers require.
+1160:     private SortedSet<Integer> getAppsUids(List<String> packageNames, int userHandle) {
+1161:         SortedSet<Integer> uids = new TreeSet<Integer>();
+1162:         for (String app : packageNames) {
+1163:             int uid = getAppUid(app, userHandle);
+1164:             if (uid != -1) uids.add(uid);
+1165:         }
+1166:         return uids;
+1167:     }
+1168: 
+1169:     /**
+1170:      * Creates a {@link Set} of non-intersecting {@link UidRange} objects including all UIDs
+1171:      * associated with one user, and any restricted profiles attached to that user.
+1172:      *
+1173:      * <p>If one of {@param allowedApplications} or {@param disallowedApplications} is provided,
+1174:      * the UID ranges will match the app whitelist or blacklist specified there. Otherwise, all UIDs
+1175:      * in each user and profile will be included.
+1176:      *
+1177:      * @param userHandle The userId to create UID ranges for along with any of its restricted
+1178:      *                   profiles.
+1179:      * @param allowedApplications (optional) whitelist of applications to include.
+1180:      * @param disallowedApplications (optional) blacklist of applications to exclude.
+1181:      */
+1182:     @VisibleForTesting
+
+
+
+
+1563:     /**
+1564:      * This method should only be called by ConnectivityService because it doesn't
+1565:      * have enough data to fill VpnInfo.primaryUnderlyingIface field.
+1566:      */
+1567:     public synchronized VpnInfo getVpnInfo() {
+1568:         if (!isRunningLocked()) {
+1569:             return null;
+1570:         }
+1571: 
+1572:         VpnInfo info = new VpnInfo();
+1573:         info.ownerUid = mOwnerUID;
+1574:         info.vpnIface = mInterface;
+1575:         return info;
+1576:     }
+1577: 
+1578:     public synchronized boolean appliesToUid(int uid) {
+1579:         if (!isRunningLocked()) {
+1580:             return false;
+1581:         }
+1582:         return mNetworkCapabilities.appliesToUid(uid);
+1583:     }
+1584: 
+1585:     /**
+1586:      * @param uid The target uid.
+1587:      *
+1588:      * @return {@code true} if {@code uid} is included in one of the mBlockedUsers ranges and the
+1589:      * VPN is not connected, or if the VPN is connected but does not apply to the {@code uid}.
+1590:      *
+1591:      * @apiNote This method don't check VPN lockdown status.
+1592:      * @see #mBlockedUsers
+1593:      */
+1594:     public synchronized boolean isBlockingUid(int uid) {
+1595:         if (mNetworkInfo.isConnected()) {
+1596:             return !appliesToUid(uid);

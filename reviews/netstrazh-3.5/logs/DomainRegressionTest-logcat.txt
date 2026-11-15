@@ -1,0 +1,8 @@
+--------- beginning of main
+--------- beginning of system
+11-14 19:29:06.587  1829  1879 I Vpn     : Switched from [Legacy VPN] to lab.netstrazh
+11-14 19:29:06.607  1829  1879 D Vpn     : setting state=IDLE, reason=prepare
+11-14 19:29:13.793  1829  1879 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:29:13.825  1829  1879 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:29:13.840  1829  1879 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:29:25.853  1829  1913 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect

@@ -1,0 +1,12 @@
+[
+  {
+    "marker": "unblocked-host-list-review.example.test",
+    "status": 404,
+    "body": "not found"
+  },
+  {
+    "marker": "unblocked-host-list-review",
+    "status": 200,
+    "body": "netstrazh-http:unblocked-host-list-review"
+  }
+]

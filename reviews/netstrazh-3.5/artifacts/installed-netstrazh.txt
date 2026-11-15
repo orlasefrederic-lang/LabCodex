@@ -1,0 +1,4 @@
+    userId=10116
+    codePath=/data/app/lab.netstrazh--eWT9UYcfvYpWw89ohMYEg==
+    versionCode=135 minSdk=29 targetSdk=34
+    versionName=3.5

@@ -1,0 +1,82 @@
+{
+  "characterization": true,
+  "requestedBypass": true,
+  "coldState": {
+    "time": 1794723239570,
+    "running": true,
+    "systemLockdown": true,
+    "reportedLockdown": false,
+    "appliedExcluded": [
+      "com.v2ray.ang"
+    ],
+    "engineStartedAt": 1794723236463,
+    "captureVerifiedAt": 1794723239490,
+    "captureBroken": false,
+    "captureRecoveries": 0,
+    "observedProxyUid": -3,
+    "installedProxyUid": 10118,
+    "lastError": null
+  },
+  "coldHttp": {
+    "marker": "lockdown-cold-853453",
+    "exactPayload": false,
+    "localAddress": "10.111.0.1",
+    "localPort": 54406,
+    "statusLine": "",
+    "body": "",
+    "durationMs": 1848
+  },
+  "beforeRecheck": {
+    "time": 1794723241556,
+    "running": true,
+    "systemLockdown": true,
+    "reportedLockdown": false,
+    "appliedExcluded": [
+      "com.v2ray.ang"
+    ],
+    "engineStartedAt": 1794723236463,
+    "captureVerifiedAt": 1794723239490,
+    "captureBroken": false,
+    "captureRecoveries": 0,
+    "observedProxyUid": -3,
+    "installedProxyUid": 10118,
+    "lastError": null
+  },
+  "recoveredState": {
+    "time": 1794723243499,
+    "running": true,
+    "systemLockdown": true,
+    "reportedLockdown": true,
+    "appliedExcluded": [],
+    "engineStartedAt": 1794723242101,
+    "captureVerifiedAt": 1794723243471,
+    "captureBroken": false,
+    "captureRecoveries": 0,
+    "observedProxyUid": 10118,
+    "installedProxyUid": 10118,
+    "lastError": null
+  },
+  "tcpExactPayloadAfterRecheck": true,
+  "proxyTcpCapture": {
+    "uid": 10118,
+    "protocol": "TCP",
+    "destination": "10.0.2.2",
+    "port": 18080,
+    "tx": 91,
+    "rx": 216,
+    "via": "",
+    "startedAt": 1794723244124
+  },
+  "udpExactPayloadAfterRecheck": true,
+  "proxyUdpCapture": {
+    "uid": 10118,
+    "protocol": "UDP",
+    "destination": "10.0.2.2",
+    "port": 18081,
+    "tx": 35,
+    "rx": 49,
+    "via": "",
+    "lastAt": 1794723246533
+  },
+  "result": "cold-start-defect-reproduced-and-existing-recheck-restores-local-proxy"
+}

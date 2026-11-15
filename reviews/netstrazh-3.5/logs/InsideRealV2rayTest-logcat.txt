@@ -1,0 +1,373 @@
+--------- beginning of main
+--------- beginning of system
+11-14 19:29:06.587  1829  1879 I Vpn     : Switched from [Legacy VPN] to lab.netstrazh
+11-14 19:29:06.607  1829  1879 D Vpn     : setting state=IDLE, reason=prepare
+11-14 19:29:13.793  1829  1879 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:29:13.825  1829  1879 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:29:13.840  1829  1879 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:29:25.853  1829  1913 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-14 19:29:41.394  1829  2965 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:29:41.403  1829  2965 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:29:41.403  1829  2965 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:29:46.012  4431  4450 I NetStrazhRuntimeTest: attributed direct TCP payload: Seen(started=1794684585258, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=78, rx=208, blocked=false, via=)
+11-14 19:29:46.582  4431  4450 I NetStrazhRuntimeTest: attributed direct UDP payload: Seen(started=1794684586347, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=27, rx=41, blocked=false, via=)
+11-14 19:29:47.645  4431  4450 I NetStrazhRuntimeTest: TCP rejected by actual app rule: Seen(started=1794684587287, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=0, rx=0, blocked=true, via=)
+11-14 19:29:47.954  4431  4450 I NetStrazhRuntimeTest: TCP allowed and attributed after unblock: Seen(started=1794684587709, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=84, rx=214, blocked=false, via=)
+11-14 19:29:51.387  4431  4450 I NetStrazhRuntimeTest: UDP rejected by actual app rule: Seen(started=1794684588225, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=0, rx=0, blocked=true, via=)
+11-14 19:29:51.853  4431  4450 I NetStrazhRuntimeTest: UDP allowed and attributed after unblock: Seen(started=1794684591534, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=34, rx=48, blocked=false, via=)
+11-14 19:29:52.020  4431  4450 I NetStrazhRuntimeTest: Reopening MainActivity after test-runner activity cleanup
+11-14 19:29:56.462  1829  1913 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-14 19:29:59.132  1829  1877 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:29:59.161  1829  1877 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:29:59.162  1829  1877 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:30:33.413  1829  1913 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-14 19:30:57.362  1829  4544 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:30:57.390  1829  4544 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:30:57.391  1829  4544 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:30:59.009  4560  4579 I NetStrazhExternalTest: initial before probe health: engineStartedAt=1794684657417 running=true captureVerifiedAt=1794684658792 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[221:WAITING:alive=true]
+11-14 19:31:06.365  4560  4579 I NetStrazhExternalTest: initial launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+11-14 19:31:06.365  4560  4579 I NetStrazhExternalTest: Status: ok
+11-14 19:31:06.365  4560  4579 I NetStrazhExternalTest: LaunchState: COLD
+11-14 19:31:06.365  4560  4579 I NetStrazhExternalTest: Activity: lab.netstrazh.reviewclient/.ProbeActivity
+11-14 19:31:06.365  4560  4579 I NetStrazhExternalTest: TotalTime: 6293
+11-14 19:31:06.365  4560  4579 I NetStrazhExternalTest: WaitTime: 6337
+11-14 19:31:06.365  4560  4579 I NetStrazhExternalTest: Complete
+11-14 19:31:07.293  4560  4579 I NetStrazhExternalTest: initial helper: {"marker":"client-initial-19160177","package":"lab.netstrazh.reviewclient","uid":10119,"pid":4635,"processNonce":"7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce","sequence":1,"startedMs":1794684664809,"networkBefore":{"active":"105","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-initial-19160177 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":81,"ok":true,"localAddress":"10.111.0.1","localPort":46042,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Sat, 14 Nov 2026 19:31:06 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 38\r\nConnection: close\r\n\r\nnetstrazh-http:client-initial-19160177","responseBytes":211,"payload":"netstrazh-http:client-initial-19160177","finalLocalAddress":"10.111.0.1","finalLocalPort":46042,"durationMs":818},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-initial-19160177","requestBytes":31,"ok":true,"localAddress":"10.111.0.1","localPort":47202,"response":"netstrazh-udp:ns-test:client-initial-19160177","payload":"netstrazh-udp:ns-test:client-initial-19160177","responseBytes":45,"durationMs":181},"networkAfter":{"active":"105","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1794684665892}
+11-14 19:31:07.312  4560  4579 I NetStrazhExternalTest: initial exact payload and VPN source: PASS
+11-14 19:31:07.544  4560  4579 I NetStrazhExternalTest: initial capture since=1794684659012 uid=10119 rows=[Seen(started=1794684665832, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=31, rx=45, blocked=false, via=), Seen(started=1794684664995, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=81, rx=211, blocked=false, via=)] before=Counters(tx=0, rx=0, connections=0) after=Counters(tx=112, rx=256, connections=2)
+11-14 19:31:07.545  4560  4579 I NetStrazhExternalTest: initial fresh capture: PASS
+11-14 19:31:07.574  4560  4579 I NetStrazhExternalTest: initial after probe health: engineStartedAt=1794684657417 running=true captureVerifiedAt=1794684658792 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[221:WAITING:alive=true]
+11-14 19:31:08.956  4560  4579 I NetStrazhExternalTest: foreground main before power=false: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+11-14 19:31:08.956  4560  4579 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+11-14 19:31:08.956  4560  4579 I NetStrazhExternalTest: Status: ok
+11-14 19:31:08.956  4560  4579 I NetStrazhExternalTest: LaunchState: HOT
+11-14 19:31:08.956  4560  4579 I NetStrazhExternalTest: Activity: lab.netstrazh/.ui.MainActivity
+11-14 19:31:08.956  4560  4579 I NetStrazhExternalTest: TotalTime: 702
+11-14 19:31:08.956  4560  4579 I NetStrazhExternalTest: WaitTime: 900
+11-14 19:31:08.956  4560  4579 I NetStrazhExternalTest: Complete
+11-14 19:31:09.395  1829  1913 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-14 19:31:10.369  4560  4579 I NetStrazhExternalTest: off-1 before probe health: engineStartedAt=1794684657417 running=false captureVerifiedAt=1794684658792 captureRecoveries=0 captureBroken=false ns-capture-count=0 threads=[]
+11-14 19:31:12.798  4560  4579 I NetStrazhExternalTest: off-1 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+11-14 19:31:12.798  4560  4579 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+11-14 19:31:12.798  4560  4579 I NetStrazhExternalTest: Status: ok
+11-14 19:31:12.798  4560  4579 I NetStrazhExternalTest: LaunchState: HOT
+11-14 19:31:12.798  4560  4579 I NetStrazhExternalTest: Activity: lab.netstrazh.reviewclient/.ProbeActivity
+11-14 19:31:12.798  4560  4579 I NetStrazhExternalTest: TotalTime: 972
+11-14 19:31:12.798  4560  4579 I NetStrazhExternalTest: WaitTime: 1179
+11-14 19:31:12.798  4560  4579 I NetStrazhExternalTest: Complete
+11-14 19:31:13.739  4560  4579 I NetStrazhExternalTest: off-1 helper: {"marker":"client-off-1-19171537","package":"lab.netstrazh.reviewclient","uid":10119,"pid":4635,"processNonce":"7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce","sequence":2,"startedMs":1794684671896,"networkBefore":{"active":"100","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::707d:5bbe:7b98:f5ee","10.0.2.16"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-off-1-19171537 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":79,"ok":true,"localAddress":"10.0.2.16","localPort":56058,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Sat, 14 Nov 2026 19:31:12 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 36\r\nConnection: close\r\n\r\nnetstrazh-http:client-off-1-19171537","responseBytes":209,"payload":"netstrazh-http:client-off-1-19171537","finalLocalAddress":"10.0.2.16","finalLocalPort":56058,"durationMs":75},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-off-1-19171537","requestBytes":29,"ok":true,"localAddress":"10.0.2.16","localPort":43507,"response":"netstrazh-udp:ns-test:client-off-1-19171537","payload":"netstrazh-udp:ns-test:client-off-1-19171537","responseBytes":43,"durationMs":190},"networkAfter":{"active":"100","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::707d:5bbe:7b98:f5ee","10.0.2.16"]},"finishedMs":1794684672533}
+11-14 19:31:13.765  4560  4579 I NetStrazhExternalTest: off-1 persistent helper process: PASS
+11-14 19:31:13.791  4560  4579 I NetStrazhExternalTest: off-1 exact payload and physical source: PASS
+11-14 19:31:14.151  4560  4579 I NetStrazhExternalTest: off-1 no fresh captured fixture flows: PASS
+11-14 19:31:14.154  4560  4579 I NetStrazhExternalTest: off-1 after probe health: engineStartedAt=1794684657417 running=false captureVerifiedAt=1794684658792 captureRecoveries=0 captureBroken=false ns-capture-count=0 threads=[]
+11-14 19:31:15.835  4560  4579 I NetStrazhExternalTest: foreground main before power=true: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+11-14 19:31:15.835  4560  4579 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+11-14 19:31:15.835  4560  4579 I NetStrazhExternalTest: Status: ok
+11-14 19:31:15.835  4560  4579 I NetStrazhExternalTest: LaunchState: HOT
+11-14 19:31:15.835  4560  4579 I NetStrazhExternalTest: Activity: lab.netstrazh/.ui.MainActivity
+11-14 19:31:15.835  4560  4579 I NetStrazhExternalTest: TotalTime: 401
+11-14 19:31:15.835  4560  4579 I NetStrazhExternalTest: WaitTime: 535
+11-14 19:31:15.835  4560  4579 I NetStrazhExternalTest: Complete
+11-14 19:31:16.957  1829  2100 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:31:16.959  1829  2100 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:31:16.960  1829  2100 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:31:18.262  4560  4579 I NetStrazhExternalTest: restarted-1 before probe health: engineStartedAt=1794684676964 running=true captureVerifiedAt=1794684677453 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[228:WAITING:alive=true]
+11-14 19:31:20.613  4560  4579 I NetStrazhExternalTest: restarted-1 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+11-14 19:31:20.613  4560  4579 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+11-14 19:31:20.613  4560  4579 I NetStrazhExternalTest: Status: ok
+11-14 19:31:20.613  4560  4579 I NetStrazhExternalTest: LaunchState: HOT
+11-14 19:31:20.613  4560  4579 I NetStrazhExternalTest: Activity: lab.netstrazh.reviewclient/.ProbeActivity
+11-14 19:31:20.613  4560  4579 I NetStrazhExternalTest: TotalTime: 997
+11-14 19:31:20.613  4560  4579 I NetStrazhExternalTest: WaitTime: 1217
+11-14 19:31:20.613  4560  4579 I NetStrazhExternalTest: Complete
+11-14 19:31:21.230  4560  4579 I NetStrazhExternalTest: restarted-1 helper: {"marker":"client-restarted-1-19179456","package":"lab.netstrazh.reviewclient","uid":10119,"pid":4635,"processNonce":"7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce","sequence":3,"startedMs":1794684679877,"networkBefore":{"active":"106","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-restarted-1-19179456 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":85,"ok":true,"localAddress":"10.111.0.1","localPort":46054,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Sat, 14 Nov 2026 19:31:20 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 42\r\nConnection: close\r\n\r\nnetstrazh-http:client-restarted-1-19179456","responseBytes":215,"payload":"netstrazh-http:client-restarted-1-19179456","finalLocalAddress":"10.111.0.1","finalLocalPort":46054,"durationMs":378},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-restarted-1-19179456","requestBytes":35,"ok":true,"localAddress":"10.111.0.1","localPort":44931,"response":"netstrazh-udp:ns-test:client-restarted-1-19179456","payload":"netstrazh-udp:ns-test:client-restarted-1-19179456","responseBytes":49,"durationMs":59},"networkAfter":{"active":"106","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1794684680400}
+11-14 19:31:21.279  4560  4579 I NetStrazhExternalTest: restarted-1 persistent helper process: PASS
+11-14 19:31:21.284  4560  4579 I NetStrazhExternalTest: restarted-1 exact payload and VPN source: PASS
+11-14 19:31:21.698  4560  4579 I NetStrazhExternalTest: restarted-1 capture since=1794684678285 uid=10119 rows=[Seen(started=1794684680334, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=35, rx=49, blocked=false, via=), Seen(started=1794684680054, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=85, rx=215, blocked=false, via=)] before=Counters(tx=0, rx=0, connections=0) after=Counters(tx=120, rx=264, connections=2)
+11-14 19:31:21.698  4560  4579 I NetStrazhExternalTest: restarted-1 fresh capture: PASS
+11-14 19:31:21.900  4560  4579 I NetStrazhExternalTest: restarted-1 after probe health: engineStartedAt=1794684676964 running=true captureVerifiedAt=1794684677453 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[228:WAITING:alive=true]
+11-14 19:31:21.901  4560  4579 I NetStrazhExternalTest: settled-1 fresh successful capture watchdog: PASS
+11-14 19:31:21.950  4560  4579 I NetStrazhExternalTest: settled-1 before probe health: engineStartedAt=1794684676964 running=true captureVerifiedAt=1794684677453 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[228:WAITING:alive=true]
+11-14 19:31:22.618  4560  4579 I NetStrazhExternalTest: settled-1 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+11-14 19:31:22.618  4560  4579 I NetStrazhExternalTest: Warning: Activity not started, intent has been delivered to currently running top-most instance.
+11-14 19:31:22.618  4560  4579 I NetStrazhExternalTest: Status: ok
+11-14 19:31:22.618  4560  4579 I NetStrazhExternalTest: LaunchState: UNKNOWN (0)
+11-14 19:31:22.618  4560  4579 I NetStrazhExternalTest: Activity: lab.netstrazh.reviewclient/.ProbeActivity
+11-14 19:31:22.618  4560  4579 I NetStrazhExternalTest: TotalTime: 0
+11-14 19:31:22.618  4560  4579 I NetStrazhExternalTest: WaitTime: 49
+11-14 19:31:22.618  4560  4579 I NetStrazhExternalTest: Complete
+11-14 19:31:23.593  4560  4579 I NetStrazhExternalTest: settled-1 helper: {"marker":"client-settled-1-19183117","package":"lab.netstrazh.reviewclient","uid":10119,"pid":4635,"processNonce":"7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce","sequence":4,"startedMs":1794684682492,"networkBefore":{"active":"106","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-settled-1-19183117 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":83,"ok":true,"localAddress":"10.111.0.1","localPort":46058,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Sat, 14 Nov 2026 19:31:23 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 40\r\nConnection: close\r\n\r\nnetstrazh-http:client-settled-1-19183117","responseBytes":213,"payload":"netstrazh-http:client-settled-1-19183117","finalLocalAddress":"10.111.0.1","finalLocalPort":46058,"durationMs":320},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-settled-1-19183117","requestBytes":33,"ok":true,"localAddress":"10.111.0.1","localPort":51763,"response":"netstrazh-udp:ns-test:client-settled-1-19183117","payload":"netstrazh-udp:ns-test:client-settled-1-19183117","responseBytes":47,"durationMs":300},"networkAfter":{"active":"106","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1794684683163}
+11-14 19:31:23.594  4560  4579 I NetStrazhExternalTest: settled-1 persistent helper process: PASS
+11-14 19:31:23.598  4560  4579 I NetStrazhExternalTest: settled-1 exact payload and VPN source: PASS
+11-14 19:31:23.702  4560  4579 I NetStrazhExternalTest: settled-1 capture since=1794684681953 uid=10119 rows=[Seen(started=1794684683100, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=33, rx=47, blocked=false, via=), Seen(started=1794684682690, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=83, rx=213, blocked=false, via=)] before=Counters(tx=120, rx=264, connections=2) after=Counters(tx=236, rx=524, connections=4)
+11-14 19:31:23.702  4560  4579 I NetStrazhExternalTest: settled-1 fresh capture: PASS
+11-14 19:31:23.710  4560  4579 I NetStrazhExternalTest: settled-1 after probe health: engineStartedAt=1794684676964 running=true captureVerifiedAt=1794684677453 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[228:WAITING:alive=true]
+11-14 19:31:26.018  4560  4579 I NetStrazhExternalTest: foreground main before power=false: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+11-14 19:31:26.018  4560  4579 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+11-14 19:31:26.018  4560  4579 I NetStrazhExternalTest: Status: ok
+11-14 19:31:26.018  4560  4579 I NetStrazhExternalTest: LaunchState: HOT
+11-14 19:31:26.018  4560  4579 I NetStrazhExternalTest: Activity: lab.netstrazh/.ui.MainActivity
+11-14 19:31:26.018  4560  4579 I NetStrazhExternalTest: TotalTime: 1481
+11-14 19:31:26.018  4560  4579 I NetStrazhExternalTest: WaitTime: 1771
+11-14 19:31:26.018  4560  4579 I NetStrazhExternalTest: Complete
+11-14 19:31:26.880  1829  1913 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-14 19:31:27.079  4560  4579 I NetStrazhExternalTest: off-2 before probe health: engineStartedAt=1794684676964 running=false captureVerifiedAt=1794684677453 captureRecoveries=0 captureBroken=false ns-capture-count=0 threads=[]
+11-14 19:31:29.534  4560  4579 I NetStrazhExternalTest: off-2 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+11-14 19:31:29.534  4560  4579 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+11-14 19:31:29.534  4560  4579 I NetStrazhExternalTest: Status: ok
+11-14 19:31:29.534  4560  4579 I NetStrazhExternalTest: LaunchState: HOT
+11-14 19:31:29.534  4560  4579 I NetStrazhExternalTest: Activity: lab.netstrazh.reviewclient/.ProbeActivity
+11-14 19:31:29.534  4560  4579 I NetStrazhExternalTest: TotalTime: 1131
+11-14 19:31:29.534  4560  4579 I NetStrazhExternalTest: WaitTime: 1534
+11-14 19:31:29.534  4560  4579 I NetStrazhExternalTest: Complete
+11-14 19:31:30.200  4560  4579 I NetStrazhExternalTest: off-2 helper: {"marker":"client-off-2-19188264","package":"lab.netstrazh.reviewclient","uid":10119,"pid":4635,"processNonce":"7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce","sequence":5,"startedMs":1794684688287,"networkBefore":{"active":"100","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::707d:5bbe:7b98:f5ee","10.0.2.16"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-off-2-19188264 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":79,"ok":true,"localAddress":"10.0.2.16","localPort":56074,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Sat, 14 Nov 2026 19:31:29 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 36\r\nConnection: close\r\n\r\nnetstrazh-http:client-off-2-19188264","responseBytes":209,"payload":"netstrazh-http:client-off-2-19188264","finalLocalAddress":"10.0.2.16","finalLocalPort":56074,"durationMs":435},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-off-2-19188264","requestBytes":29,"ok":true,"localAddress":"10.0.2.16","localPort":52851,"response":"netstrazh-udp:ns-test:client-off-2-19188264","payload":"netstrazh-udp:ns-test:client-off-2-19188264","responseBytes":43,"durationMs":84},"networkAfter":{"active":"100","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::707d:5bbe:7b98:f5ee","10.0.2.16"]},"finishedMs":1794684689065}
+11-14 19:31:30.201  4560  4579 I NetStrazhExternalTest: off-2 persistent helper process: PASS
+11-14 19:31:30.203  4560  4579 I NetStrazhExternalTest: off-2 exact payload and physical source: PASS
+11-14 19:31:30.273  4560  4579 I NetStrazhExternalTest: off-2 no fresh captured fixture flows: PASS
+11-14 19:31:30.275  4560  4579 I NetStrazhExternalTest: off-2 after probe health: engineStartedAt=1794684676964 running=false captureVerifiedAt=1794684677453 captureRecoveries=0 captureBroken=false ns-capture-count=0 threads=[]
+11-14 19:31:31.892  4560  4579 I NetStrazhExternalTest: foreground main before power=true: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+11-14 19:31:31.892  4560  4579 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+11-14 19:31:31.892  4560  4579 I NetStrazhExternalTest: Status: ok
+11-14 19:31:31.892  4560  4579 I NetStrazhExternalTest: LaunchState: HOT
+11-14 19:31:31.892  4560  4579 I NetStrazhExternalTest: Activity: lab.netstrazh/.ui.MainActivity
+11-14 19:31:31.892  4560  4579 I NetStrazhExternalTest: TotalTime: 727
+11-14 19:31:31.892  4560  4579 I NetStrazhExternalTest: WaitTime: 872
+11-14 19:31:31.892  4560  4579 I NetStrazhExternalTest: Complete
+11-14 19:31:32.728  1829  1983 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:31:32.740  1829  1983 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:31:32.740  1829  1983 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:31:34.080  4560  4579 I NetStrazhExternalTest: restarted-2 before probe health: engineStartedAt=1794684692743 running=true captureVerifiedAt=1794684693756 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[235:WAITING:alive=true]
+11-14 19:31:35.724  4560  4579 I NetStrazhExternalTest: restarted-2 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+11-14 19:31:35.724  4560  4579 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+11-14 19:31:35.724  4560  4579 I NetStrazhExternalTest: Status: ok
+11-14 19:31:35.724  4560  4579 I NetStrazhExternalTest: LaunchState: HOT
+11-14 19:31:35.724  4560  4579 I NetStrazhExternalTest: Activity: lab.netstrazh.reviewclient/.ProbeActivity
+11-14 19:31:35.724  4560  4579 I NetStrazhExternalTest: TotalTime: 790
+11-14 19:31:35.724  4560  4579 I NetStrazhExternalTest: WaitTime: 896
+11-14 19:31:35.724  4560  4579 I NetStrazhExternalTest: Complete
+11-14 19:31:36.730  4560  4579 I NetStrazhExternalTest: restarted-2 helper: {"marker":"client-restarted-2-19195251","package":"lab.netstrazh.reviewclient","uid":10119,"pid":4635,"processNonce":"7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce","sequence":6,"startedMs":1794684695146,"networkBefore":{"active":"107","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-restarted-2-19195251 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":85,"ok":true,"localAddress":"10.111.0.1","localPort":46068,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Sat, 14 Nov 2026 19:31:36 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 42\r\nConnection: close\r\n\r\nnetstrazh-http:client-restarted-2-19195251","responseBytes":215,"payload":"netstrazh-http:client-restarted-2-19195251","finalLocalAddress":"10.111.0.1","finalLocalPort":46068,"durationMs":290},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-restarted-2-19195251","requestBytes":35,"ok":true,"localAddress":"10.111.0.1","localPort":43998,"response":"netstrazh-udp:ns-test:client-restarted-2-19195251","payload":"netstrazh-udp:ns-test:client-restarted-2-19195251","responseBytes":49,"durationMs":712},"networkAfter":{"active":"107","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1794684696290}
+11-14 19:31:36.731  4560  4579 I NetStrazhExternalTest: restarted-2 persistent helper process: PASS
+11-14 19:31:36.733  4560  4579 I NetStrazhExternalTest: restarted-2 exact payload and VPN source: PASS
+11-14 19:31:37.229  4560  4579 I NetStrazhExternalTest: restarted-2 capture since=1794684694087 uid=10119 rows=[Seen(started=1794684695997, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=35, rx=49, blocked=false, via=), Seen(started=1794684695260, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=85, rx=215, blocked=false, via=)] before=Counters(tx=0, rx=0, connections=0) after=Counters(tx=120, rx=264, connections=2)
+11-14 19:31:37.230  4560  4579 I NetStrazhExternalTest: restarted-2 fresh capture: PASS
+11-14 19:31:37.257  4560  4579 I NetStrazhExternalTest: restarted-2 after probe health: engineStartedAt=1794684692743 running=true captureVerifiedAt=1794684693756 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[235:WAITING:alive=true]
+11-14 19:31:37.257  4560  4579 I NetStrazhExternalTest: settled-2 fresh successful capture watchdog: PASS
+11-14 19:31:37.269  4560  4579 I NetStrazhExternalTest: settled-2 before probe health: engineStartedAt=1794684692743 running=true captureVerifiedAt=1794684693756 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[235:WAITING:alive=true]
+11-14 19:31:37.917  4560  4579 I NetStrazhExternalTest: settled-2 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+11-14 19:31:37.917  4560  4579 I NetStrazhExternalTest: Warning: Activity not started, intent has been delivered to currently running top-most instance.
+11-14 19:31:37.917  4560  4579 I NetStrazhExternalTest: Status: ok
+11-14 19:31:37.917  4560  4579 I NetStrazhExternalTest: LaunchState: UNKNOWN (0)
+11-14 19:31:37.917  4560  4579 I NetStrazhExternalTest: Activity: lab.netstrazh.reviewclient/.ProbeActivity
+11-14 19:31:37.917  4560  4579 I NetStrazhExternalTest: TotalTime: 0
+11-14 19:31:37.917  4560  4579 I NetStrazhExternalTest: WaitTime: 10
+11-14 19:31:37.917  4560  4579 I NetStrazhExternalTest: Complete
+11-14 19:31:39.568  4560  4579 I NetStrazhExternalTest: settled-2 helper: {"marker":"client-settled-2-19198443","package":"lab.netstrazh.reviewclient","uid":10119,"pid":4635,"processNonce":"7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce","sequence":7,"startedMs":1794684697695,"networkBefore":{"active":"107","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-settled-2-19198443 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":83,"ok":true,"localAddress":"10.111.0.1","localPort":46074,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Sat, 14 Nov 2026 19:31:39 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 40\r\nConnection: close\r\n\r\nnetstrazh-http:client-settled-2-19198443","responseBytes":213,"payload":"netstrazh-http:client-settled-2-19198443","finalLocalAddress":"10.111.0.1","finalLocalPort":46074,"durationMs":597},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-settled-2-19198443","requestBytes":33,"ok":true,"localAddress":"10.111.0.1","localPort":34862,"response":"netstrazh-udp:ns-test:client-settled-2-19198443","payload":"netstrazh-udp:ns-test:client-settled-2-19198443","responseBytes":47,"durationMs":92},"networkAfter":{"active":"107","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1794684698602}
+11-14 19:31:39.569  4560  4579 I NetStrazhExternalTest: settled-2 persistent helper process: PASS
+11-14 19:31:39.571  4560  4579 I NetStrazhExternalTest: settled-2 exact payload and VPN source: PASS
+11-14 19:31:39.678  4560  4579 I NetStrazhExternalTest: settled-2 capture since=1794684697279 uid=10119 rows=[Seen(started=1794684698572, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=33, rx=47, blocked=false, via=), Seen(started=1794684698090, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=83, rx=213, blocked=false, via=)] before=Counters(tx=120, rx=264, connections=2) after=Counters(tx=236, rx=524, connections=4)
+11-14 19:31:39.678  4560  4579 I NetStrazhExternalTest: settled-2 fresh capture: PASS
+11-14 19:31:39.682  4560  4579 I NetStrazhExternalTest: settled-2 after probe health: engineStartedAt=1794684692743 running=true captureVerifiedAt=1794684693756 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[235:WAITING:alive=true]
+11-14 19:31:40.842  4560  4579 I NetStrazhExternalTest: foreground main before power=false: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+11-14 19:31:40.842  4560  4579 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+11-14 19:31:40.842  4560  4579 I NetStrazhExternalTest: Status: ok
+11-14 19:31:40.842  4560  4579 I NetStrazhExternalTest: LaunchState: HOT
+11-14 19:31:40.842  4560  4579 I NetStrazhExternalTest: Activity: lab.netstrazh/.ui.MainActivity
+11-14 19:31:40.842  4560  4579 I NetStrazhExternalTest: TotalTime: 668
+11-14 19:31:40.842  4560  4579 I NetStrazhExternalTest: WaitTime: 802
+11-14 19:31:40.842  4560  4579 I NetStrazhExternalTest: Complete
+11-14 19:31:41.134  1829  1913 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-14 19:31:41.729  4560  4579 I NetStrazhExternalTest: off-3 before probe health: engineStartedAt=1794684692743 running=false captureVerifiedAt=1794684693756 captureRecoveries=0 captureBroken=false ns-capture-count=0 threads=[]
+11-14 19:31:44.649  4560  4579 I NetStrazhExternalTest: off-3 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+11-14 19:31:44.649  4560  4579 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+11-14 19:31:44.649  4560  4579 I NetStrazhExternalTest: Status: ok
+11-14 19:31:44.649  4560  4579 I NetStrazhExternalTest: LaunchState: HOT
+11-14 19:31:44.649  4560  4579 I NetStrazhExternalTest: Activity: lab.netstrazh.reviewclient/.ProbeActivity
+11-14 19:31:44.649  4560  4579 I NetStrazhExternalTest: TotalTime: 1280
+11-14 19:31:44.649  4560  4579 I NetStrazhExternalTest: WaitTime: 1798
+11-14 19:31:44.649  4560  4579 I NetStrazhExternalTest: Complete
+11-14 19:31:45.549  4560  4579 I NetStrazhExternalTest: off-3 helper: {"marker":"client-off-3-19202903","package":"lab.netstrazh.reviewclient","uid":10119,"pid":4635,"processNonce":"7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce","sequence":8,"startedMs":1794684703912,"networkBefore":{"active":"100","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::707d:5bbe:7b98:f5ee","10.0.2.16"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-off-3-19202903 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":79,"ok":true,"localAddress":"10.0.2.16","localPort":56090,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Sat, 14 Nov 2026 19:31:44 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 36\r\nConnection: close\r\n\r\nnetstrazh-http:client-off-3-19202903","responseBytes":209,"payload":"netstrazh-http:client-off-3-19202903","finalLocalAddress":"10.0.2.16","finalLocalPort":56090,"durationMs":440},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-off-3-19202903","requestBytes":29,"ok":true,"localAddress":"10.0.2.16","localPort":45958,"response":"netstrazh-udp:ns-test:client-off-3-19202903","payload":"netstrazh-udp:ns-test:client-off-3-19202903","responseBytes":43,"durationMs":116},"networkAfter":{"active":"100","bound":"null","vpn":false,"linkAddresses":["fe80::15:b2ff:fe00:0","fec0::15:b2ff:fe00:0","fec0::707d:5bbe:7b98:f5ee","10.0.2.16"]},"finishedMs":1794684704745}
+11-14 19:31:45.549  4560  4579 I NetStrazhExternalTest: off-3 persistent helper process: PASS
+11-14 19:31:45.570  4560  4579 I NetStrazhExternalTest: off-3 exact payload and physical source: PASS
+11-14 19:31:45.652  4560  4579 I NetStrazhExternalTest: off-3 no fresh captured fixture flows: PASS
+11-14 19:31:45.659  4560  4579 I NetStrazhExternalTest: off-3 after probe health: engineStartedAt=1794684692743 running=false captureVerifiedAt=1794684693756 captureRecoveries=0 captureBroken=false ns-capture-count=0 threads=[]
+11-14 19:31:47.203  4560  4579 I NetStrazhExternalTest: foreground main before power=true: Starting: Intent { cmp=lab.netstrazh/.ui.MainActivity }
+11-14 19:31:47.203  4560  4579 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+11-14 19:31:47.203  4560  4579 I NetStrazhExternalTest: Status: ok
+11-14 19:31:47.203  4560  4579 I NetStrazhExternalTest: LaunchState: HOT
+11-14 19:31:47.203  4560  4579 I NetStrazhExternalTest: Activity: lab.netstrazh/.ui.MainActivity
+11-14 19:31:47.203  4560  4579 I NetStrazhExternalTest: TotalTime: 656
+11-14 19:31:47.203  4560  4579 I NetStrazhExternalTest: WaitTime: 810
+11-14 19:31:47.203  4560  4579 I NetStrazhExternalTest: Complete
+11-14 19:31:47.974  1829  4812 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:31:48.024  1829  4812 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:31:48.024  1829  4812 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:31:49.333  4560  4579 I NetStrazhExternalTest: restarted-3 before probe health: engineStartedAt=1794684708027 running=true captureVerifiedAt=1794684708864 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[242:WAITING:alive=true]
+11-14 19:31:51.829  4560  4579 I NetStrazhExternalTest: restarted-3 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+11-14 19:31:51.829  4560  4579 I NetStrazhExternalTest: Warning: Activity not started, its current task has been brought to the front
+11-14 19:31:51.829  4560  4579 I NetStrazhExternalTest: Status: ok
+11-14 19:31:51.829  4560  4579 I NetStrazhExternalTest: LaunchState: HOT
+11-14 19:31:51.829  4560  4579 I NetStrazhExternalTest: Activity: lab.netstrazh.reviewclient/.ProbeActivity
+11-14 19:31:51.829  4560  4579 I NetStrazhExternalTest: TotalTime: 1206
+11-14 19:31:51.829  4560  4579 I NetStrazhExternalTest: WaitTime: 1455
+11-14 19:31:51.829  4560  4579 I NetStrazhExternalTest: Complete
+11-14 19:31:52.885  4560  4579 I NetStrazhExternalTest: restarted-3 helper: {"marker":"client-restarted-3-19210500","package":"lab.netstrazh.reviewclient","uid":10119,"pid":4635,"processNonce":"7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce","sequence":9,"startedMs":1794684710753,"networkBefore":{"active":"108","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-restarted-3-19210500 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":85,"ok":true,"localAddress":"10.111.0.1","localPort":46084,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Sat, 14 Nov 2026 19:31:52 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 42\r\nConnection: close\r\n\r\nnetstrazh-http:client-restarted-3-19210500","responseBytes":215,"payload":"netstrazh-http:client-restarted-3-19210500","finalLocalAddress":"10.111.0.1","finalLocalPort":46084,"durationMs":577},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-restarted-3-19210500","requestBytes":35,"ok":true,"localAddress":"10.111.0.1","localPort":35734,"response":"netstrazh-udp:ns-test:client-restarted-3-19210500","payload":"netstrazh-udp:ns-test:client-restarted-3-19210500","responseBytes":49,"durationMs":184},"networkAfter":{"active":"108","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1794684711664}
+11-14 19:31:52.917  4560  4579 I NetStrazhExternalTest: restarted-3 persistent helper process: PASS
+11-14 19:31:52.920  4560  4579 I NetStrazhExternalTest: restarted-3 exact payload and VPN source: PASS
+11-14 19:31:53.354  4560  4579 I NetStrazhExternalTest: restarted-3 capture since=1794684709336 uid=10119 rows=[Seen(started=1794684711401, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=35, rx=49, blocked=false, via=), Seen(started=1794684711009, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=85, rx=215, blocked=false, via=)] before=Counters(tx=0, rx=0, connections=0) after=Counters(tx=120, rx=264, connections=2)
+11-14 19:31:53.354  4560  4579 I NetStrazhExternalTest: restarted-3 fresh capture: PASS
+11-14 19:31:53.362  4560  4579 I NetStrazhExternalTest: restarted-3 after probe health: engineStartedAt=1794684708027 running=true captureVerifiedAt=1794684708864 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[242:WAITING:alive=true]
+11-14 19:31:53.362  4560  4579 I NetStrazhExternalTest: settled-3 fresh successful capture watchdog: PASS
+11-14 19:31:53.365  4560  4579 I NetStrazhExternalTest: settled-3 before probe health: engineStartedAt=1794684708027 running=true captureVerifiedAt=1794684708864 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[242:WAITING:alive=true]
+11-14 19:31:54.399  4560  4579 I NetStrazhExternalTest: settled-3 launch: Starting: Intent { cmp=lab.netstrazh.reviewclient/.ProbeActivity (has extras) }
+11-14 19:31:54.399  4560  4579 I NetStrazhExternalTest: Warning: Activity not started, intent has been delivered to currently running top-most instance.
+11-14 19:31:54.399  4560  4579 I NetStrazhExternalTest: Status: ok
+11-14 19:31:54.399  4560  4579 I NetStrazhExternalTest: LaunchState: UNKNOWN (0)
+11-14 19:31:54.399  4560  4579 I NetStrazhExternalTest: Activity: lab.netstrazh.reviewclient/.ProbeActivity
+11-14 19:31:54.399  4560  4579 I NetStrazhExternalTest: TotalTime: 0
+11-14 19:31:54.399  4560  4579 I NetStrazhExternalTest: WaitTime: 129
+11-14 19:31:54.399  4560  4579 I NetStrazhExternalTest: Complete
+11-14 19:31:55.706  4560  4579 I NetStrazhExternalTest: settled-3 helper: {"marker":"client-settled-3-19214551","package":"lab.netstrazh.reviewclient","uid":10119,"pid":4635,"processNonce":"7f43d2cc-d27d-41e7-a260-8bbc4aaf80ce","sequence":10,"startedMs":1794684714212,"networkBefore":{"active":"108","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"tcp":{"host":"10.0.2.2","port":18080,"request":"GET \/echo\/client-settled-3-19214551 HTTP\/1.1\r\nHost: 10.0.2.2\r\nConnection: close\r\n\r\n","requestBytes":83,"ok":true,"localAddress":"10.111.0.1","localPort":46090,"response":"HTTP\/1.1 200 OK\r\nServer: NetStrazhLocalFixture\/1 \r\nDate: Sat, 14 Nov 2026 19:31:55 GMT\r\nContent-Type: text\/plain; charset=us-ascii\r\nContent-Length: 40\r\nConnection: close\r\n\r\nnetstrazh-http:client-settled-3-19214551","responseBytes":213,"payload":"netstrazh-http:client-settled-3-19214551","finalLocalAddress":"10.111.0.1","finalLocalPort":46090,"durationMs":653},"udp":{"host":"10.0.2.2","port":18081,"request":"ns-test:client-settled-3-19214551","requestBytes":33,"ok":true,"localAddress":"10.111.0.1","localPort":60513,"response":"netstrazh-udp:ns-test:client-settled-3-19214551","payload":"netstrazh-udp:ns-test:client-settled-3-19214551","responseBytes":47,"durationMs":175},"networkAfter":{"active":"108","bound":"null","vpn":true,"linkAddresses":["10.111.0.1"]},"finishedMs":1794684715085}
+11-14 19:31:55.707  4560  4579 I NetStrazhExternalTest: settled-3 persistent helper process: PASS
+11-14 19:31:55.709  4560  4579 I NetStrazhExternalTest: settled-3 exact payload and VPN source: PASS
+11-14 19:31:55.763  4560  4579 I NetStrazhExternalTest: settled-3 capture since=1794684713386 uid=10119 rows=[Seen(started=1794684714977, uid=10119, proto=UDP, ip=10.0.2.2, port=18081, tx=33, rx=47, blocked=false, via=), Seen(started=1794684714750, uid=10119, proto=TCP, ip=10.0.2.2, port=18080, tx=83, rx=213, blocked=false, via=)] before=Counters(tx=120, rx=264, connections=2) after=Counters(tx=236, rx=524, connections=4)
+11-14 19:31:55.764  4560  4579 I NetStrazhExternalTest: settled-3 fresh capture: PASS
+11-14 19:31:55.807  4560  4579 I NetStrazhExternalTest: settled-3 after probe health: engineStartedAt=1794684708027 running=true captureVerifiedAt=1794684708864 captureRecoveries=0 captureBroken=false ns-capture-count=1 threads=[242:WAITING:alive=true]
+11-14 19:31:55.807  4560  4579 I NetStrazhExternalTest: RESULT failures=0
+11-14 19:31:56.232  1829  1913 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-14 19:32:00.513  4560  4579 I NetStrazhExternalTest: after final close health: engineStartedAt=1794684708027 running=false captureVerifiedAt=1794684708864 captureRecoveries=0 captureBroken=false ns-capture-count=0 threads=[]
+11-14 19:32:17.663  1829  1879 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:32:17.693  1829  1879 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:32:17.694  1829  1879 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:32:20.851  4915  4934 I NetStrazhRuntimeTest: UNKNOWN_UID host-policy scope checks passed; no DNS request or owner-race simulation
+11-14 19:32:21.653  1829  1913 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-14 19:32:31.991  1829  4812 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:32:32.031  1829  4812 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:32:32.031  1829  4812 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:32:34.441  4915  4934 I NetStrazhRuntimeTest: known TCP captured while unknown owner blocked: Seen(started=1794684753575, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=89, rx=219, blocked=false, via=)
+11-14 19:32:34.960  4915  4934 I NetStrazhRuntimeTest: known UDP captured while unknown owner blocked: Seen(started=1794684754492, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=39, rx=53, blocked=false, via=)
+11-14 19:32:41.922  4915  4934 I NetStrazhRuntimeTest: UNKNOWN_UID policy/card/local known-UID TCP+UDP passed; owner lookup failure not simulated
+11-14 19:32:43.375  1829  1913 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-14 19:33:03.314  1829  1879 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:33:03.367  1829  1879 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:33:03.368  1829  1879 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:33:07.551  5045  5071 I NetStrazhRuntimeTest: HOST_LIST before unblock: host-list-19275617.example.test для «Сетевой страж», заблокирован сегодня в 19:33, остановлено попыток: 1, последняя только что
+11-14 19:33:23.957  1829  1913 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-14 19:33:53.714  1829  2274 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:33:53.733  1829  2274 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:33:53.734  1829  2274 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:33:55.006  1829  2274 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-14 19:33:55.006  1829  2274 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:33:55.009  1829  2274 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:33:55.033  1829  2274 I Vpn     : Established by lab.netstrazh on tun1
+11-14 19:33:59.538  5203  5223 I NetStrazhRuntimeTest: TCP captured after app-list change 1/true: Seen(started=1794684838792, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=82, rx=212, blocked=false, via=)
+11-14 19:34:00.050  5203  5223 I NetStrazhRuntimeTest: UDP captured after app-list change 1/true: Seen(started=1794684839580, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=32, rx=46, blocked=false, via=)
+11-14 19:34:00.089  5203  5223 I NetStrazhRuntimeTest: APP_LIST round=1 exclude=true verified=1794684838266 started=1794684835229 recoveries=0
+11-14 19:34:00.222  1829  1983 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-14 19:34:00.234  1829  1983 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:34:00.244  1829  1983 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:34:00.281  1829  1983 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:34:02.821  5203  5223 I NetStrazhRuntimeTest: TCP captured after app-list change 1/false: Seen(started=1794684841852, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=83, rx=213, blocked=false, via=)
+11-14 19:34:03.369  5203  5223 I NetStrazhRuntimeTest: UDP captured after app-list change 1/false: Seen(started=1794684843185, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=33, rx=47, blocked=false, via=)
+11-14 19:34:03.383  5203  5223 I NetStrazhRuntimeTest: APP_LIST round=1 exclude=false verified=1794684841601 started=1794684840448 recoveries=0
+11-14 19:34:03.534  1829  2965 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-14 19:34:03.534  1829  2965 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:34:03.541  1829  2965 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:34:03.584  1829  2965 I Vpn     : Established by lab.netstrazh on tun1
+11-14 19:34:05.857  5203  5223 I NetStrazhRuntimeTest: TCP captured after app-list change 2/true: Seen(started=1794684845678, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=82, rx=212, blocked=false, via=)
+11-14 19:34:06.342  5203  5223 I NetStrazhRuntimeTest: UDP captured after app-list change 2/true: Seen(started=1794684845933, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=32, rx=46, blocked=false, via=)
+11-14 19:34:06.350  5203  5223 I NetStrazhRuntimeTest: APP_LIST round=2 exclude=true verified=1794684845305 started=1794684843717 recoveries=0
+11-14 19:34:06.530  1829  2276 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-14 19:34:06.531  1829  2276 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:34:06.533  1829  2276 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:34:06.592  1829  2276 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:34:08.828  5203  5223 I NetStrazhRuntimeTest: TCP captured after app-list change 2/false: Seen(started=1794684848243, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=83, rx=213, blocked=false, via=)
+11-14 19:34:09.141  5203  5223 I NetStrazhRuntimeTest: UDP captured after app-list change 2/false: Seen(started=1794684848911, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=33, rx=47, blocked=false, via=)
+11-14 19:34:09.149  5203  5223 I NetStrazhRuntimeTest: APP_LIST round=2 exclude=false verified=1794684847817 started=1794684846786 recoveries=0
+11-14 19:34:09.200  1829  1913 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-14 19:35:25.132  1829  2133 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:35:25.151  1829  2133 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:35:25.152  1829  2133 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:35:30.762  5484  5503 I NetStrazhRuntimeTest: HOST_LIST before unblock: host-list-19419788.example.test для «Сетевой страж», заблокирован сегодня в 19:35, остановлено попыток: 1, последняя только что
+11-14 19:35:47.260  1829  1913 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-14 19:36:05.403  1829  4544 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:36:05.454  1829  4544 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:36:05.455  1829  4544 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:36:06.330  5601  5620 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null
+11-14 19:36:10.925  1829  2133 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-14 19:36:10.925  1829  2133 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:36:10.945  1829  2133 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:36:11.005  1829  2133 I Vpn     : Established by lab.netstrazh on tun1
+11-14 19:36:11.445  5601  5620 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=false, appliedExcluded=false, observedUid=10118, installedUid=10118, lastError=null
+11-14 19:36:13.749  1829  5583 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-14 19:36:13.749  1829  5583 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:36:13.775  1829  5583 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:36:13.851  1829  5583 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:36:14.354  5601  5620 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null
+11-14 19:36:30.413  5601  5620 I NetStrazhRuntimeTest: LAN TCP remains direct with proxy enabled: Seen(started=1794684990012, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=81, rx=211, blocked=false, via=)
+11-14 19:36:30.684  5601  5620 I NetStrazhRuntimeTest: LAN UDP remains direct with proxy enabled: Seen(started=1794684990435, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=30, rx=44, blocked=false, via=)
+11-14 19:36:32.451  5601  5620 I NetStrazhRuntimeTest: TCP rejected by actual app rule: Seen(started=1794684992162, uid=10116, proto=TCP, ip=198.51.100.10, port=18080, tx=0, rx=0, blocked=true, via=)
+11-14 19:36:33.733  5601  5620 I NetStrazhRuntimeTest: TCP allowed and attributed after unblock: Seen(started=1794684992542, uid=10116, proto=TCP, ip=198.51.100.10, port=18080, tx=89, rx=214, blocked=false, via=proxy)
+11-14 19:36:37.073  5601  5620 I NetStrazhRuntimeTest: UDP rejected by actual app rule: Seen(started=1794684994100, uid=10116, proto=UDP, ip=198.51.100.10, port=18081, tx=0, rx=0, blocked=true, via=)
+11-14 19:36:37.573  5601  5620 I NetStrazhRuntimeTest: UDP allowed and attributed after unblock: Seen(started=1794684997138, uid=10116, proto=UDP, ip=198.51.100.10, port=18081, tx=34, rx=48, blocked=false, via=proxy)
+11-14 19:36:37.811  1829  2100 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-14 19:36:37.811  1829  2100 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:36:37.814  1829  2100 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:36:37.890  1829  2100 I Vpn     : Established by lab.netstrazh on tun1
+11-14 19:36:38.953  5601  5601 I NetStrazh: proxy served by com.v2ray.ang: keeping it out of the VPN
+11-14 19:36:39.435  1829  4812 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-14 19:36:39.435  1829  4812 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:36:39.443  1829  4812 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:36:39.542  1829  4812 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:36:40.177  5601  5620 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null
+11-14 19:36:40.721  1829  1913 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-14 19:36:59.431  1829  2276 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:36:59.463  1829  2276 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:36:59.463  1829  2276 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:37:01.245  5761  5781 I NetStrazhRuntimeTest: v2rayNG configuration ready; awaiting capture: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null, engineStartedAt=1794685019470, captureVerifiedAt=1794685020842, captureRecoveries=0, captureBroken=false
+11-14 19:37:01.248  5761  5781 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null, engineStartedAt=1794685019470, captureVerifiedAt=1794685020842, captureRecoveries=0, captureBroken=false
+11-14 19:37:04.403  1829  5330 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-14 19:37:04.404  1829  5330 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:37:04.411  1829  5330 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:37:04.484  1829  5330 I Vpn     : Established by lab.netstrazh on tun1
+11-14 19:37:05.164  5761  5781 I NetStrazhRuntimeTest: v2rayNG configuration ready; awaiting capture: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=false, appliedExcluded=false, observedUid=10118, installedUid=10118, lastError=null, engineStartedAt=1794685024765, captureVerifiedAt=1794685020842, captureRecoveries=0, captureBroken=false
+11-14 19:37:06.241  5761  5781 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=false, appliedExcluded=false, observedUid=10118, installedUid=10118, lastError=null, engineStartedAt=1794685024765, captureVerifiedAt=1794685026188, captureRecoveries=0, captureBroken=false
+11-14 19:37:06.939  1829  5330 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-14 19:37:06.939  1829  5330 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:37:06.943  1829  5330 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:37:07.035  1829  5330 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:37:07.499  5761  5781 I NetStrazhRuntimeTest: v2rayNG configuration ready; awaiting capture: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null, engineStartedAt=1794685027245, captureVerifiedAt=1794685026188, captureRecoveries=0, captureBroken=false
+11-14 19:37:08.118  5761  5781 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null, engineStartedAt=1794685027245, captureVerifiedAt=1794685027994, captureRecoveries=0, captureBroken=false
+11-14 19:37:10.355  5761  5781 I NetStrazhRuntimeTest: TCP through actual v2rayNG with app UID and payload: Seen(started=1794685028553, uid=10116, proto=TCP, ip=198.51.100.10, port=18080, tx=82, rx=207, blocked=false, via=proxy)
+11-14 19:37:10.773  5761  5781 I NetStrazhRuntimeTest: UDP through actual v2rayNG with app UID and payload: Seen(started=1794685030445, uid=10116, proto=UDP, ip=198.51.100.10, port=18081, tx=26, rx=40, blocked=false, via=proxy)
+11-14 19:37:11.109  5761  5781 I NetStrazhRuntimeTest: LAN TCP remains direct with proxy enabled: Seen(started=1794685030910, uid=10116, proto=TCP, ip=10.0.2.2, port=18080, tx=81, rx=211, blocked=false, via=)
+11-14 19:37:11.457  5761  5781 I NetStrazhRuntimeTest: LAN UDP remains direct with proxy enabled: Seen(started=1794685031124, uid=10116, proto=UDP, ip=10.0.2.2, port=18081, tx=30, rx=44, blocked=false, via=)
+11-14 19:37:13.264  5761  5781 I NetStrazhRuntimeTest: TCP rejected by actual app rule: Seen(started=1794685033005, uid=10116, proto=TCP, ip=198.51.100.10, port=18080, tx=0, rx=0, blocked=true, via=)
+11-14 19:37:14.742  5761  5781 I NetStrazhRuntimeTest: TCP allowed and attributed after unblock: Seen(started=1794685033384, uid=10116, proto=TCP, ip=198.51.100.10, port=18080, tx=89, rx=214, blocked=false, via=proxy)
+11-14 19:37:18.059  5761  5781 I NetStrazhRuntimeTest: UDP rejected by actual app rule: Seen(started=1794685035063, uid=10116, proto=UDP, ip=198.51.100.10, port=18081, tx=0, rx=0, blocked=true, via=)
+11-14 19:37:18.538  5761  5781 I NetStrazhRuntimeTest: UDP allowed and attributed after unblock: Seen(started=1794685038108, uid=10116, proto=UDP, ip=198.51.100.10, port=18081, tx=34, rx=48, blocked=false, via=proxy)
+11-14 19:37:18.872  1829  2380 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-14 19:37:18.872  1829  2380 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:37:18.880  1829  2380 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:37:18.961  1829  2380 I Vpn     : Established by lab.netstrazh on tun1
+11-14 19:37:21.145  5761  5761 I NetStrazh: proxy served by com.v2ray.ang: keeping it out of the VPN
+11-14 19:37:21.462  1829  4810 I Vpn     : Handover not possible due to changes to whitelisted/blacklisted apps
+11-14 19:37:21.462  1829  4810 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:37:21.465  1829  4810 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:37:21.514  1829  4810 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:37:21.865  5761  5781 I NetStrazhRuntimeTest: v2rayNG configuration ready; awaiting capture: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null, engineStartedAt=1794685041709, captureVerifiedAt=1794685027994, captureRecoveries=0, captureBroken=false
+11-14 19:37:22.797  5761  5781 I NetStrazhRuntimeTest: v2rayNG ready: running=true, endpoint=SOCKS5:127.0.0.1:10808, configuredApp=com.v2ray.ang, bypass=true, appliedExcluded=true, observedUid=-3, installedUid=10118, lastError=null, engineStartedAt=1794685041709, captureVerifiedAt=1794685042648, captureRecoveries=0, captureBroken=false
+11-14 19:37:24.190  5761  5781 I NetStrazhRuntimeTest: TCP proxied after automatic app discovery: Seen(started=1794685042877, uid=10116, proto=TCP, ip=198.51.100.10, port=18080, tx=98, rx=223, blocked=false, via=proxy)
+11-14 19:37:24.378  5761  5781 I NetStrazhRuntimeTest: UDP proxied after automatic app discovery: Seen(started=1794685044212, uid=10116, proto=UDP, ip=198.51.100.10, port=18081, tx=42, rx=56, blocked=false, via=proxy)
+11-14 19:37:24.679  1829  1913 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect
+11-14 19:37:40.874  1829  5333 D Vpn     : setting state=CONNECTING, reason=establish
+11-14 19:37:40.880  1829  5333 D Vpn     : setting state=CONNECTED, reason=agentConnect
+11-14 19:37:40.880  1829  5333 I Vpn     : Established by lab.netstrazh on tun0
+11-14 19:37:42.699  5917  5936 I NetStrazhRuntimeTest: included real v2ray ready: lockdown=false, requestedBypass=false, appliedExcluded=[], appUid=10116, proxyUid=10118, engine=1794685060889, verified=1794685062598
+11-14 19:37:45.251  5917  5936 I NetStrazhRuntimeTest: included real v2ray ready: lockdown=false, requestedBypass=false, appliedExcluded=[], appUid=10116, proxyUid=10118, engine=1794685060889, verified=1794685062598
+11-14 19:37:46.407  5917  5936 I NetStrazhRuntimeTest: included real v2ray ready: lockdown=false, requestedBypass=false, appliedExcluded=[], appUid=10116, proxyUid=10118, engine=1794685060889, verified=1794685062598
+11-14 19:37:48.413  5917  5936 I NetStrazhRuntimeTest: origin app TCP through included real proxy: Seen(started=1794685066501, uid=10116, proto=TCP, ip=198.51.100.10, port=18080, tx=101, rx=226, blocked=false, via=proxy)
+11-14 19:37:48.508  5917  5936 I NetStrazhRuntimeTest: included proxy own TCP capture (LAN destination): lab.netstrazh.data.LogRow@235307
+11-14 19:37:48.560  5917  5936 I NetStrazhRuntimeTest: included real v2ray ready: lockdown=false, requestedBypass=false, appliedExcluded=[], appUid=10116, proxyUid=10118, engine=1794685060889, verified=1794685062598
+11-14 19:37:48.791  5917  5936 I NetStrazhRuntimeTest: origin app UDP through included real proxy: Seen(started=1794685068583, uid=10116, proto=UDP, ip=198.51.100.10, port=18081, tx=46, rx=60, blocked=false, via=proxy)
+11-14 19:37:48.845  5917  5936 I NetStrazhRuntimeTest: included proxy own UDP capture (LAN destination): active uid=10118 10.0.2.2:18081 tx=46 rx=60 via=
+11-14 19:37:49.298  1829  1913 D Vpn     : setting state=DISCONNECTED, reason=agentDisconnect

@@ -1,0 +1,199 @@
+https://raw.githubusercontent.com/aosp-mirror/platform_frameworks_base/android-10.0.0_r47/services/core/java/com/android/server/ConnectivityService.java
+
+4547:                 return false;
+4548:             }
+4549: 
+4550:             return vpn.startAlwaysOnVpn();
+4551:         }
+4552:     }
+4553: 
+4554:     @Override
+4555:     public boolean isAlwaysOnVpnPackageSupported(int userId, String packageName) {
+4556:         enforceSettingsPermission();
+4557:         enforceCrossUserPermission(userId);
+4558: 
+4559:         synchronized (mVpns) {
+4560:             Vpn vpn = mVpns.get(userId);
+4561:             if (vpn == null) {
+4562:                 Slog.w(TAG, "User " + userId + " has no Vpn configuration");
+4563:                 return false;
+4564:             }
+4565:             return vpn.isAlwaysOnPackageSupported(packageName);
+4566:         }
+4567:     }
+4568: 
+4569:     @Override
+4570:     public boolean setAlwaysOnVpnPackage(
+4571:             int userId, String packageName, boolean lockdown, List<String> lockdownWhitelist) {
+4572:         enforceControlAlwaysOnVpnPermission();
+4573:         enforceCrossUserPermission(userId);
+4574: 
+4575:         synchronized (mVpns) {
+4576:             // Can't set always-on VPN if legacy VPN is already in lockdown mode.
+4577:             if (LockdownVpnTracker.isEnabled()) {
+4578:                 return false;
+4579:             }
+4580: 
+4581:             Vpn vpn = mVpns.get(userId);
+4582:             if (vpn == null) {
+
+4605:                 Slog.w(TAG, "User " + userId + " has no Vpn configuration");
+4606:                 return null;
+4607:             }
+4608:             return vpn.getAlwaysOnPackage();
+4609:         }
+4610:     }
+4611: 
+4612:     @Override
+4613:     public boolean isVpnLockdownEnabled(int userId) {
+4614:         enforceControlAlwaysOnVpnPermission();
+4615:         enforceCrossUserPermission(userId);
+4616: 
+4617:         synchronized (mVpns) {
+4618:             Vpn vpn = mVpns.get(userId);
+4619:             if (vpn == null) {
+4620:                 Slog.w(TAG, "User " + userId + " has no Vpn configuration");
+4621:                 return false;
+4622:             }
+4623:             return vpn.getLockdown();
+4624:         }
+4625:     }
+4626: 
+4627:     @Override
+4628:     public List<String> getVpnLockdownWhitelist(int userId) {
+4629:         enforceControlAlwaysOnVpnPermission();
+4630:         enforceCrossUserPermission(userId);
+4631: 
+4632:         synchronized (mVpns) {
+4633:             Vpn vpn = mVpns.get(userId);
+4634:             if (vpn == null) {
+4635:                 Slog.w(TAG, "User " + userId + " has no Vpn configuration");
+4636:                 return null;
+4637:             }
+4638:             return vpn.getLockdownWhitelist();
+4639:         }
+4640:     }
+
+7123:         if (vpn != null && !vpn.appliesToUid(uid)) {
+7124:             return INVALID_UID;
+7125:         }
+7126: 
+7127:         return uid;
+7128:     }
+7129: 
+7130:     @Override
+7131:     public boolean isCallerCurrentAlwaysOnVpnApp() {
+7132:         synchronized (mVpns) {
+7133:             Vpn vpn = getVpnIfOwner();
+7134:             return vpn != null && vpn.getAlwaysOn();
+7135:         }
+7136:     }
+7137: 
+7138:     @Override
+7139:     public boolean isCallerCurrentAlwaysOnVpnLockdownApp() {
+7140:         synchronized (mVpns) {
+7141:             Vpn vpn = getVpnIfOwner();
+7142:             return vpn != null && vpn.getLockdown();
+7143:         }
+7144:     }
+7145: 
+7146:     /**
+7147:      * Returns a IBinder to a TestNetworkService. Will be lazily created as needed.
+7148:      *
+7149:      * <p>The TestNetworkService must be run in the system server due to TUN creation.
+7150:      */
+7151:     @Override
+7152:     public IBinder startOrGetTestNetworkService() {
+7153:         synchronized (mTNSLock) {
+7154:             TestNetworkService.enforceTestNetworkPermissions(mContext);
+7155: 
+7156:             if (mTNS == null) {
+7157:                 mTNS = new TestNetworkService(mContext, mNMS);
+7158:             }
+7159: 
+7160:             return mTNS;
+7161:         }
+7162:     }
+7163: }
+
+7131:     public boolean isCallerCurrentAlwaysOnVpnApp() {
+7132:         synchronized (mVpns) {
+7133:             Vpn vpn = getVpnIfOwner();
+7134:             return vpn != null && vpn.getAlwaysOn();
+7135:         }
+7136:     }
+7137: 
+7138:     @Override
+7139:     public boolean isCallerCurrentAlwaysOnVpnLockdownApp() {
+7140:         synchronized (mVpns) {
+7141:             Vpn vpn = getVpnIfOwner();
+7142:             return vpn != null && vpn.getLockdown();
+7143:         }
+7144:     }
+7145: 
+7146:     /**
+7147:      * Returns a IBinder to a TestNetworkService. Will be lazily created as needed.
+7148:      *
+7149:      * <p>The TestNetworkService must be run in the system server due to TUN creation.
+7150:      */
+7151:     @Override
+7152:     public IBinder startOrGetTestNetworkService() {
+7153:         synchronized (mTNSLock) {
+7154:             TestNetworkService.enforceTestNetworkPermissions(mContext);
+7155: 
+7156:             if (mTNS == null) {
+7157:                 mTNS = new TestNetworkService(mContext, mNMS);
+7158:             }
+7159: 
+7160:             return mTNS;
+7161:         }
+7162:     }
+7163: }
+
+
+7067:             pw.println("    Print this help text.");
+7068:             pw.println("  airplane-mode [enable|disable]");
+7069:             pw.println("    Turn airplane mode on or off.");
+7070:             pw.println("  airplane-mode");
+7071:             pw.println("    Get airplane mode.");
+7072:         }
+7073:     }
+7074: 
+7075:     @GuardedBy("mVpns")
+7076:     private Vpn getVpnIfOwner() {
+7077:         final int uid = Binder.getCallingUid();
+7078:         final int user = UserHandle.getUserId(uid);
+7079: 
+7080:         final Vpn vpn = mVpns.get(user);
+7081:         if (vpn == null) {
+7082:             return null;
+7083:         } else {
+7084:             final VpnInfo info = vpn.getVpnInfo();
+7085:             return (info == null || info.ownerUid != uid) ? null : vpn;
+7086:         }
+7087:     }
+7088: 
+7089:     /**
+7090:      * Caller either needs to be an active VPN, or hold the NETWORK_STACK permission
+7091:      * for testing.
+7092:      */
+7093:     private Vpn enforceActiveVpnOrNetworkStackPermission() {
+7094:         if (checkNetworkStackPermission()) {
+7095:             return null;
+7096:         }
+7097:         synchronized (mVpns) {
+7098:             Vpn vpn = getVpnIfOwner();
+7099:             if (vpn != null) {
+7100:                 return vpn;
+7101:             }
+7102:         }
+7103:         throw new SecurityException("App must either be an active VPN or have the NETWORK_STACK "
+7104:                 + "permission");
+7105:     }
+7106: 
+7107:     /**
+7108:      * @param connectionInfo the connection to resolve.
+7109:      * @return {@code uid} if the connection is found and the app has permission to observe it
+7110:      * (e.g., if it is associated with the calling VPN app's tunnel) or {@code INVALID_UID} if the
+7111:      * connection is not found.
+7112:      */
